@@ -1,6 +1,4 @@
-logs/
 *.log
-data/
 __pycache__/
 *.pyc
 *.pyo
@@ -13,8 +11,6 @@ venv/
 ids/ml_models/*.h5
 ids/ml_models/*.pkl
 ids/ml_models/*.pb
-ids/blockchain/ledger/
-ids/blockchain/wallet/
 raspberry_pi/node-alpha/logs/
 raspberry_pi/node-beta/logs/
 esp32/sensor-1/build/
