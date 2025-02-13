@@ -1,0 +1,9 @@
+arduino-cli compile --fqbn esp32:esp32:esp32   --build-path ~/esp32-firmware/build/sensor1   --output-dir ~/esp32-firmware/build/sensor1   --build-property "build.project_name=sensor1_firmware"   ~/Blockchain-Distributed-IDS/esp32/sensor-1/firmware/
+arduino-cli compile --fqbn esp32:esp32:esp32   --build-path ~/esp32-firmware/build/sensor2   --output-dir ~/esp32-firmware/build/sensor2   --build-property "build.project_name=sensor2_firmware"   ~/Blockchain-Distributed-IDS/esp32/sensor-2/firmware/
+arduino-cli compile --fqbn esp32:esp32:esp32   --build-path ~/esp32-firmware/build/sensor3   --output-dir ~/esp32-firmware/build/sensor3   --build-property "build.project_name=sensor3_firmware"   ~/Blockchain-Distributed-IDS/esp32/sensor-3/firmware/
+
+arduino-cli upload -p /dev/ttyUSB0 --fqbn esp32:esp32:esp32   --input-file ~/esp32-firmware/build/sensor1/sensor1_firmware.bin
+arduino-cli upload -p /dev/ttyUSB1 --fqbn esp32:esp32:esp32   --input-file ~/esp32-firmware/build/sensor2/sensor2_firmware.bin
+arduino-cli upload -p /dev/ttyUSB2 --fqbn esp32:esp32:esp32   --input-file ~/esp32-firmware/build/sensor3/sensor3_firmware.bin
+
+arduino-cli monitor -p /dev/ttyUSB0 -c baudrate=115200
