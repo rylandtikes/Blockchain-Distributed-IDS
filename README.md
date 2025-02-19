@@ -9,7 +9,7 @@ A lightweight and scalable Distributed Intrusion Detection System (DIDS) leverag
 
 ## Acknowledgments
 
-This project builds upon various open-source tools contributions include:
+This project builds upon various open-source tool contributions including:
 
 - **Flower Federated Learning Framework**
   - Used for decentralized machine learning model training and updates across IDS nodes.
