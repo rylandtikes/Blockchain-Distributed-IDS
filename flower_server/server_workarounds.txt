@@ -1,0 +1,39 @@
+# Notes from debugging not a script
+
+## Disable IPv6
+
+cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
+echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+sudo reboot
+
+## Network Connectivity Testing
+
+sudo netstat -tulnp | grep python
+
+sudo ufw status
+
+sudo ufw allow 9091/tcp
+sudo ufw allow 9092/tcp
+sudo ufw allow 9093/tcp
+sudo ufw reload
+
+sudo systemctl restart fl_server.service
+
+nc -zv 192.168.0.51 9091
+nc -zv 192.168.0.51 9092
+nc -zv 192.168.0.51 9093
+
+ping -c 4 192.168.0.51
+
+traceroute 192.168.0.51
+
+telnet 192.168.0.51 9091
+
+sudo iptables -L -n -v
+

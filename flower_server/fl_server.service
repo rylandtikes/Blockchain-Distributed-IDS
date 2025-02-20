@@ -1,0 +1,17 @@
+[Unit]
+Description=Flower FL Server
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'source /home/rtikes/anaconda3/bin/activate flower-env && /home/rtikes/Blockchain-Distributed-IDS/flower_server/start_flower_server.sh'
+WorkingDirectory=/home/rtikes/Blockchain-Distributed-IDS/flower_server
+Restart=always
+User=rtikes
+Environment="PATH=/home/rtikes/anaconda3/envs/flower-env/bin:/usr/local/cuda/bin:/usr/bin:/bin"
+Environment="CUDA_HOME=/usr/local/cuda"
+Environment="LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH"
+Environment="CUDA_VISIBLE_DEVICES=0"
+
+[Install]
+WantedBy=multi-user.target
+
