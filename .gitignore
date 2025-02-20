@@ -19,3 +19,6 @@ esp32/sensor-3/build/
 scripts/tmp/
 *.bak
 *.tmp
+data/
+raspberry_pi/node-alpha/data/
+raspberry_pi/node-beta/data
