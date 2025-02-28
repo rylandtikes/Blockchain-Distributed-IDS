@@ -17,11 +17,5 @@ export TF_DISABLE_MLIR_CUDA_ALLOWLIST=1
 export FORCE_PYTHON_IP_VERSION=4
 export GUNICORN_CMD_ARGS="--bind 0.0.0.0"
 
-python3 -c "import socket; print(socket.getaddrinfo('0.0.0.0', 9091))"
-
-flower-superlink --insecure \
-    --serverappio-api-address=0.0.0.0:9091 \
-    --fleet-api-address=0.0.0.0:9092 \
-    --exec-api-address=0.0.0.0:9093 \
-    --fleet-api-type=grpc-rere
+python3 /home/rtikes/Blockchain-Distributed-IDS/flower_server/flower_server.py
 
