@@ -3,8 +3,7 @@
   "server_address": "192.168.0.51:9091",
   "batch_size": 64,
   "learning_rate": 0.0005,
-  "use_gpu": true,
-  "dataset_path": "../data/CICIDS2017_beta.csv",
-  "model_type": "rf" 
+  "use_gpu": false,
+  "dataset_path": "../data/CICIDS2017_beta.csv"
 }
 
