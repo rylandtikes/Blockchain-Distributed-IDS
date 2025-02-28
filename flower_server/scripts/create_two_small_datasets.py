@@ -8,6 +8,7 @@ df.columns = df.columns.str.strip()
 
 benign_alpha = df[df["Label"] == "BENIGN"].sample(n=50000, random_state=42)
 benign_beta = df[df["Label"] == "BENIGN"].drop(benign_alpha.index).sample(n=50000, random_state=42)
+benign_alpha = df[df["Label"] == "BENIGN"].sample(n=50000, random_state=42)
 
 attacks_alpha = df[df["Label"] != "BENIGN"].sample(n=50000, random_state=42)
 attacks_beta = df[df["Label"] != "BENIGN"].drop(attacks_alpha.index).sample(n=50000, random_state=42)
