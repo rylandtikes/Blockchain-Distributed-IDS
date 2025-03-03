@@ -1,0 +1,273 @@
+(flower-env) rtikes@fl-server:~/Blockchain-Distributed-IDS/flower_server$ FLWR_LOG_LEVEL=DEBUG python flower_server.py
+WARNING :   DEBUG logs enabled. Do not use this in production, as it may expose sensitive details.
+2025-03-02 22:24:09.063945: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1740979449.074591    3650 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1740979449.077854    3650 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-03-02 22:24:09.089677: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-02 22:24:10,387 - INFO - load existing ANN model for server.
+2025-03-02 22:24:10,387 - INFO - Starting Flower Server...
+WARNING 2025-03-02 22:24:10,387:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+        Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+                $ flower-superlink --insecure
+
+        To view usage and all available options, run:
+
+                $ flower-superlink --help
+
+        Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-02 22:24:10,387 - WARNING - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+        Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+                $ flower-superlink --insecure
+
+        To view usage and all available options, run:
+
+                $ flower-superlink --help
+
+        Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO 2025-03-02 22:24:10,387:      Starting Flower server, config: num_rounds=1000, round_timeout=300s
+2025-03-02 22:24:10,387 - INFO - Starting Flower server, config: num_rounds=1000, round_timeout=300s
+INFO 2025-03-02 22:24:10,392:      Flower ECE: gRPC server running (1000 rounds), SSL is disabled
+2025-03-02 22:24:10,392 - INFO - Flower ECE: gRPC server running (1000 rounds), SSL is disabled
+INFO 2025-03-02 22:24:10,392:      [INIT]
+2025-03-02 22:24:10,392 - INFO - [INIT]
+INFO 2025-03-02 22:24:10,392:      Requesting initial parameters from one random client
+2025-03-02 22:24:10,392 - INFO - Requesting initial parameters from one random client
+INFO 2025-03-02 22:26:30,913:      Received initial parameters from one random client
+2025-03-02 22:26:30,913 - INFO - Received initial parameters from one random client
+INFO 2025-03-02 22:26:30,913:      Starting evaluation of initial global parameters
+2025-03-02 22:26:30,913 - INFO - Starting evaluation of initial global parameters
+INFO 2025-03-02 22:26:30,913:      Evaluation returned no results (`None`)
+2025-03-02 22:26:30,913 - INFO - Evaluation returned no results (`None`)
+INFO 2025-03-02 22:26:30,913:      
+2025-03-02 22:26:30,913 - INFO - 
+INFO 2025-03-02 22:26:30,913:      [ROUND 1]
+2025-03-02 22:26:30,913 - INFO - [ROUND 1]
+2025-03-02 22:26:30,913 - INFO - 1 clients available. Selecting for training.
+2025-03-02 22:26:30,913 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:26:30,913:      configure_fit: strategy sampled 1 clients (out of 1)
+2025-03-02 22:26:30,913 - INFO - configure_fit: strategy sampled 1 clients (out of 1)
+INFO 2025-03-02 22:27:21,089:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:27:21,089 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:27:21,090 - INFO - aggregating results for round 1
+/home/rtikes/anaconda3/envs/flower-env/lib/python3.11/site-packages/keras/src/backend/tensorflow/core.py:155: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  return np.array(x)
+2025-03-02 22:27:21,148 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:27:21,148:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:27:21,148 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:27:27,116:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:27:27,116 - INFO - aggregate_evaluate: received 2 results and 0 failures
+WARNING 2025-03-02 22:27:27,116:   No evaluate_metrics_aggregation_fn provided
+2025-03-02 22:27:27,116 - WARNING - No evaluate_metrics_aggregation_fn provided
+INFO 2025-03-02 22:27:27,116:      
+2025-03-02 22:27:27,116 - INFO - 
+INFO 2025-03-02 22:27:27,116:      [ROUND 2]
+2025-03-02 22:27:27,116 - INFO - [ROUND 2]
+2025-03-02 22:27:27,116 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:27:27,116 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:27:27,116:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:27:27,116 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:28:29,323:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:28:29,323 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:28:29,323 - INFO - aggregating results for round 2
+2025-03-02 22:28:29,335 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:28:29,335:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:28:29,335 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:28:32,396:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:28:32,396 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:28:32,396:      
+2025-03-02 22:28:32,396 - INFO - 
+INFO 2025-03-02 22:28:32,396:      [ROUND 3]
+2025-03-02 22:28:32,396 - INFO - [ROUND 3]
+2025-03-02 22:28:32,396 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:28:32,396 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:28:32,396:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:28:32,396 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:29:19,196:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:29:19,196 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:29:19,197 - INFO - aggregating results for round 3
+2025-03-02 22:29:19,208 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:29:19,208:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:29:19,208 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:29:22,318:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:29:22,318 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:29:22,318:      
+2025-03-02 22:29:22,318 - INFO - 
+INFO 2025-03-02 22:29:22,318:      [ROUND 4]
+2025-03-02 22:29:22,318 - INFO - [ROUND 4]
+2025-03-02 22:29:22,318 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:29:22,318 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:29:22,318:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:29:22,318 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:30:19,280:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:30:19,280 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:30:19,280 - INFO - aggregating results for round 4
+2025-03-02 22:30:19,292 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:30:19,292:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:30:19,292 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:30:22,424:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:30:22,424 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:30:22,424:      
+2025-03-02 22:30:22,424 - INFO - 
+INFO 2025-03-02 22:30:22,424:      [ROUND 5]
+2025-03-02 22:30:22,424 - INFO - [ROUND 5]
+2025-03-02 22:30:22,424 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:30:22,424 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:30:22,424:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:30:22,424 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:31:19,971:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:31:19,971 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:31:19,972 - INFO - aggregating results for round 5
+2025-03-02 22:31:19,983 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:31:19,983:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:31:19,983 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:31:23,122:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:31:23,122 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:31:23,122:      
+2025-03-02 22:31:23,122 - INFO - 
+INFO 2025-03-02 22:31:23,122:      [ROUND 6]
+2025-03-02 22:31:23,122 - INFO - [ROUND 6]
+2025-03-02 22:31:23,122 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:31:23,122 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:31:23,122:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:31:23,122 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:32:20,585:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:32:20,585 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:32:20,585 - INFO - aggregating results for round 6
+2025-03-02 22:32:20,596 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:32:20,596:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:32:20,596 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:32:23,745:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:32:23,745 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:32:23,745:      
+2025-03-02 22:32:23,745 - INFO - 
+INFO 2025-03-02 22:32:23,745:      [ROUND 7]
+2025-03-02 22:32:23,745 - INFO - [ROUND 7]
+2025-03-02 22:32:23,745 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:32:23,745 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:32:23,745:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:32:23,745 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:33:10,632:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:33:10,632 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:33:10,632 - INFO - aggregating results for round 7
+2025-03-02 22:33:10,644 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:33:10,644:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:33:10,644 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:33:13,745:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:33:13,745 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:33:13,745:      
+2025-03-02 22:33:13,745 - INFO - 
+INFO 2025-03-02 22:33:13,745:      [ROUND 8]
+2025-03-02 22:33:13,745 - INFO - [ROUND 8]
+2025-03-02 22:33:13,745 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:33:13,745 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:33:13,746:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:33:13,746 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:34:12,289:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:34:12,289 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:34:12,289 - INFO - aggregating results for round 8
+2025-03-02 22:34:12,300 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:34:12,300:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:34:12,300 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:34:15,409:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:34:15,409 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:34:15,409:      
+2025-03-02 22:34:15,409 - INFO - 
+INFO 2025-03-02 22:34:15,409:      [ROUND 9]
+2025-03-02 22:34:15,409 - INFO - [ROUND 9]
+2025-03-02 22:34:15,409 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:34:15,409 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:34:15,409:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:34:15,409 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:35:02,234:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:35:02,234 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:35:02,234 - INFO - aggregating results for round 9
+2025-03-02 22:35:02,246 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:35:02,246:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:35:02,246 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:35:05,393:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:35:05,393 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:35:05,393:      
+2025-03-02 22:35:05,393 - INFO - 
+INFO 2025-03-02 22:35:05,393:      [ROUND 10]
+2025-03-02 22:35:05,393 - INFO - [ROUND 10]
+2025-03-02 22:35:05,393 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:35:05,393 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:35:05,393:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:35:05,393 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:35:52,215:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:35:52,215 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:35:52,215 - INFO - aggregating results for round 10
+2025-03-02 22:35:52,226 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:35:52,227:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:35:52,227 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:35:55,356:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:35:55,356 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:35:55,356:      
+2025-03-02 22:35:55,356 - INFO - 
+INFO 2025-03-02 22:35:55,357:      [ROUND 11]
+2025-03-02 22:35:55,357 - INFO - [ROUND 11]
+2025-03-02 22:35:55,357 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:35:55,357 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:35:55,357:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:35:55,357 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:36:42,310:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:36:42,310 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:36:42,310 - INFO - aggregating results for round 11
+2025-03-02 22:36:42,322 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:36:42,322:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:36:42,322 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:36:45,433:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:36:45,433 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:36:45,433:      
+2025-03-02 22:36:45,433 - INFO - 
+INFO 2025-03-02 22:36:45,433:      [ROUND 12]
+2025-03-02 22:36:45,433 - INFO - [ROUND 12]
+2025-03-02 22:36:45,433 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:36:45,433 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:36:45,433:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:36:45,433 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:37:42,792:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:37:42,792 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:37:42,792 - INFO - aggregating results for round 12
+2025-03-02 22:37:42,803 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:37:42,803:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:37:42,803 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:37:45,939:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:37:45,939 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:37:45,939:      
+2025-03-02 22:37:45,939 - INFO - 
+INFO 2025-03-02 22:37:45,939:      [ROUND 13]
+2025-03-02 22:37:45,939 - INFO - [ROUND 13]
+2025-03-02 22:37:45,939 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:37:45,939 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:37:45,939:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:37:45,939 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+INFO 2025-03-02 22:38:43,482:      aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:38:43,482 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-03-02 22:38:43,482 - INFO - aggregating results for round 13
+2025-03-02 22:38:43,493 - INFO - model aggregated and saved.
+INFO 2025-03-02 22:38:43,493:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-03-02 22:38:43,493 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+INFO 2025-03-02 22:38:46,629:      aggregate_evaluate: received 2 results and 0 failures
+2025-03-02 22:38:46,629 - INFO - aggregate_evaluate: received 2 results and 0 failures
+INFO 2025-03-02 22:38:46,629:      
+2025-03-02 22:38:46,629 - INFO - 
+INFO 2025-03-02 22:38:46,629:      [ROUND 14]
+2025-03-02 22:38:46,629 - INFO - [ROUND 14]
+2025-03-02 22:38:46,629 - INFO - 2 clients available. Selecting for training.
+2025-03-02 22:38:46,629 - INFO - requesting training from 1 clients.
+INFO 2025-03-02 22:38:46,629:      configure_fit: strategy sampled 1 clients (out of 2)
+2025-03-02 22:38:46,629 - INFO - configure_fit: strategy sampled 1 clients (out of 2)
+^CINFO 2025-03-02 22:38:57,904:      Flower server terminated gracefully.

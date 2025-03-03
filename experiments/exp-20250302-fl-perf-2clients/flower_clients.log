@@ -1,0 +1,649 @@
+(venv) rtikes@node-beta:~/Blockchain-Distributed-IDS/raspberry_pi/node-beta/scripts $ python flower_client.py 
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20727, 'PortScan': 14163, 'DDoS': 11489, 'DoS GoldenEye': 956, 'FTP-Patator': 745, 'SSH-Patator': 534, 'DoS Slowhttptest': 511, 'DoS slowloris': 508, 'Bot': 163, 'Web Attack � Brute Force': 138, 'Web Attack � XSS': 60, 'Infiltration': 4, 'Web Attack � Sql Injection': 2})
+After oversampling: Counter({1: 50000, 0: 50000})
+INFO:__main__:initializing model
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__: starting flower Client node-beta. connecting to server at 192.168.0.51:9091...
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 409c19db-dc18-4db3-ab81-5c555a08f50f
+INFO:flwr:Received: evaluate message 409c19db-dc18-4db3-ab81-5c555a08f50f
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 6s 5ms/step - AUC: 0.9964 - Precision: 0.9672 - Recall: 0.9854 - accuracy: 0.9760 - loss: 0.0805  
+INFO:__main__:Evaluation completed. Loss: 0.0750049352645874, Accuracy: 0.9770500063896179, Precision: 0.9674669504165649, Recall: 0.9872999787330627, AUC: 0.9962758421897888
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message d072c332-345f-4bf8-ace3-f9c24da71c8d
+INFO:flwr:Received: train message d072c332-345f-4bf8-ace3-f9c24da71c8d
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 13s - 11ms/step - AUC: 0.9951 - Precision: 0.9632 - Recall: 0.9852 - accuracy: 0.9738 - loss: 0.0832 - val_AUC: 0.9973 - val_Precision: 0.9698 - val_Recall: 0.9902 - val_accuracy: 0.9797 - val_loss: 0.0601
+Epoch 2/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9956 - Precision: 0.9642 - Recall: 0.9859 - accuracy: 0.9747 - loss: 0.0757 - val_AUC: 0.9976 - val_Precision: 0.9688 - val_Recall: 0.9941 - val_accuracy: 0.9811 - val_loss: 0.0579
+Epoch 3/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9961 - Precision: 0.9646 - Recall: 0.9876 - accuracy: 0.9757 - loss: 0.0713 - val_AUC: 0.9978 - val_Precision: 0.9689 - val_Recall: 0.9924 - val_accuracy: 0.9803 - val_loss: 0.0556
+Epoch 4/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9964 - Precision: 0.9656 - Recall: 0.9887 - accuracy: 0.9767 - loss: 0.0683 - val_AUC: 0.9979 - val_Precision: 0.9705 - val_Recall: 0.9924 - val_accuracy: 0.9811 - val_loss: 0.0542
+Epoch 5/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9965 - Precision: 0.9665 - Recall: 0.9883 - accuracy: 0.9770 - loss: 0.0669 - val_AUC: 0.9979 - val_Precision: 0.9716 - val_Recall: 0.9933 - val_accuracy: 0.9822 - val_loss: 0.0531
+Epoch 6/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9969 - Precision: 0.9667 - Recall: 0.9889 - accuracy: 0.9774 - loss: 0.0635 - val_AUC: 0.9984 - val_Precision: 0.9718 - val_Recall: 0.9940 - val_accuracy: 0.9826 - val_loss: 0.0511
+Epoch 7/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9970 - Precision: 0.9671 - Recall: 0.9893 - accuracy: 0.9778 - loss: 0.0627 - val_AUC: 0.9985 - val_Precision: 0.9712 - val_Recall: 0.9961 - val_accuracy: 0.9833 - val_loss: 0.0494
+INFO:__main__:Training completed. Final Loss: 0.06265954673290253
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 640725f3-e9f7-45c1-af78-f1b351c982c6
+INFO:flwr:Received: evaluate message 640725f3-e9f7-45c1-af78-f1b351c982c6
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9985 - Precision: 0.9721 - Recall: 0.9950 - accuracy: 0.9832 - loss: 0.0499  
+INFO:__main__:Evaluation completed. Loss: 0.0494479238986969, Accuracy: 0.983299970626831, Precision: 0.9712363481521606, Recall: 0.9961000084877014, AUC: 0.9984859824180603
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 13efbd60-7686-41de-806d-b013510933d4
+INFO:flwr:Received: evaluate message 13efbd60-7686-41de-806d-b013510933d4
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9955 - Precision: 0.9807 - Recall: 0.9534 - accuracy: 0.9673 - loss: 0.1142  
+INFO:__main__:Evaluation completed. Loss: 0.1126457005739212, Accuracy: 0.9659500122070312, Precision: 0.9783389568328857, Recall: 0.953000009059906, AUC: 0.9953713417053223
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 79bc2ba5-27d3-4a06-a951-87d371897533
+INFO:flwr:Received: train message 79bc2ba5-27d3-4a06-a951-87d371897533
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9972 - Precision: 0.9682 - Recall: 0.9898 - accuracy: 0.9786 - loss: 0.0607 - val_AUC: 0.9985 - val_Precision: 0.9725 - val_Recall: 0.9951 - val_accuracy: 0.9835 - val_loss: 0.0451
+Epoch 2/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9976 - Precision: 0.9687 - Recall: 0.9908 - accuracy: 0.9794 - loss: 0.0551 - val_AUC: 0.9988 - val_Precision: 0.9717 - val_Recall: 0.9956 - val_accuracy: 0.9833 - val_loss: 0.0424
+Epoch 3/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9979 - Precision: 0.9695 - Recall: 0.9904 - accuracy: 0.9796 - loss: 0.0532 - val_AUC: 0.9988 - val_Precision: 0.9722 - val_Recall: 0.9957 - val_accuracy: 0.9836 - val_loss: 0.0409
+Epoch 4/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9980 - Precision: 0.9694 - Recall: 0.9902 - accuracy: 0.9795 - loss: 0.0517 - val_AUC: 0.9988 - val_Precision: 0.9723 - val_Recall: 0.9960 - val_accuracy: 0.9838 - val_loss: 0.0408
+Epoch 5/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9983 - Precision: 0.9707 - Recall: 0.9913 - accuracy: 0.9807 - loss: 0.0487 - val_AUC: 0.9991 - val_Precision: 0.9784 - val_Recall: 0.9953 - val_accuracy: 0.9866 - val_loss: 0.0394
+Epoch 6/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9984 - Precision: 0.9720 - Recall: 0.9908 - accuracy: 0.9812 - loss: 0.0469 - val_AUC: 0.9990 - val_Precision: 0.9752 - val_Recall: 0.9969 - val_accuracy: 0.9858 - val_loss: 0.0390
+Epoch 7/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9986 - Precision: 0.9742 - Recall: 0.9920 - accuracy: 0.9829 - loss: 0.0446 - val_AUC: 0.9992 - val_Precision: 0.9786 - val_Recall: 0.9959 - val_accuracy: 0.9870 - val_loss: 0.0345
+INFO:__main__:Training completed. Final Loss: 0.04463764280080795
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 81c7de1c-5c50-4885-aed9-fac64aa1dc34
+INFO:flwr:Received: evaluate message 81c7de1c-5c50-4885-aed9-fac64aa1dc34
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9992 - Precision: 0.9787 - Recall: 0.9955 - accuracy: 0.9869 - loss: 0.0350  
+INFO:__main__:Evaluation completed. Loss: 0.0344831645488739, Accuracy: 0.9870499968528748, Precision: 0.9785791635513306, Recall: 0.9958999752998352, AUC: 0.9992087483406067
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 0df3a231-c63b-4a6d-9074-79b179be0c81
+INFO:flwr:Received: train message 0df3a231-c63b-4a6d-9074-79b179be0c81
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9987 - Precision: 0.9770 - Recall: 0.9914 - accuracy: 0.9840 - loss: 0.0429 - val_AUC: 0.9994 - val_Precision: 0.9826 - val_Recall: 0.9943 - val_accuracy: 0.9883 - val_loss: 0.0315
+Epoch 2/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9988 - Precision: 0.9807 - Recall: 0.9912 - accuracy: 0.9858 - loss: 0.0401 - val_AUC: 0.9994 - val_Precision: 0.9819 - val_Recall: 0.9972 - val_accuracy: 0.9894 - val_loss: 0.0299
+Epoch 3/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9987 - Precision: 0.9811 - Recall: 0.9911 - accuracy: 0.9860 - loss: 0.0391 - val_AUC: 0.9995 - val_Precision: 0.9841 - val_Recall: 0.9953 - val_accuracy: 0.9896 - val_loss: 0.0275
+Epoch 4/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9989 - Precision: 0.9827 - Recall: 0.9917 - accuracy: 0.9872 - loss: 0.0369 - val_AUC: 0.9994 - val_Precision: 0.9830 - val_Recall: 0.9970 - val_accuracy: 0.9899 - val_loss: 0.0264
+Epoch 5/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9989 - Precision: 0.9834 - Recall: 0.9919 - accuracy: 0.9876 - loss: 0.0354 - val_AUC: 0.9995 - val_Precision: 0.9843 - val_Recall: 0.9961 - val_accuracy: 0.9901 - val_loss: 0.0257
+Epoch 6/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9834 - Recall: 0.9925 - accuracy: 0.9879 - loss: 0.0344 - val_AUC: 0.9995 - val_Precision: 0.9854 - val_Recall: 0.9969 - val_accuracy: 0.9911 - val_loss: 0.0249
+Epoch 7/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9844 - Recall: 0.9924 - accuracy: 0.9883 - loss: 0.0338 - val_AUC: 0.9995 - val_Precision: 0.9872 - val_Recall: 0.9939 - val_accuracy: 0.9905 - val_loss: 0.0242
+INFO:__main__:Training completed. Final Loss: 0.033802278339862823
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 0bbcafbf-4b9e-4ebf-a56f-7b048c725a64
+INFO:flwr:Received: evaluate message 0bbcafbf-4b9e-4ebf-a56f-7b048c725a64
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9996 - Precision: 0.9863 - Recall: 0.9930 - accuracy: 0.9896 - loss: 0.0248  
+INFO:__main__:Evaluation completed. Loss: 0.024236995726823807, Accuracy: 0.9904999732971191, Precision: 0.9871871471405029, Recall: 0.9939000010490417, AUC: 0.9995121955871582
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 19cc25fa-2b35-42ba-b20b-75d9b6b77eab
+INFO:flwr:Received: train message 19cc25fa-2b35-42ba-b20b-75d9b6b77eab
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9989 - Precision: 0.9837 - Recall: 0.9920 - accuracy: 0.9878 - loss: 0.0345 - val_AUC: 0.9994 - val_Precision: 0.9850 - val_Recall: 0.9962 - val_accuracy: 0.9905 - val_loss: 0.0245
+Epoch 2/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9989 - Precision: 0.9845 - Recall: 0.9920 - accuracy: 0.9882 - loss: 0.0329 - val_AUC: 0.9995 - val_Precision: 0.9846 - val_Recall: 0.9963 - val_accuracy: 0.9904 - val_loss: 0.0242
+Epoch 3/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9845 - Recall: 0.9928 - accuracy: 0.9886 - loss: 0.0320 - val_AUC: 0.9995 - val_Precision: 0.9842 - val_Recall: 0.9977 - val_accuracy: 0.9908 - val_loss: 0.0238
+Epoch 4/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9989 - Precision: 0.9841 - Recall: 0.9923 - accuracy: 0.9881 - loss: 0.0332 - val_AUC: 0.9995 - val_Precision: 0.9840 - val_Recall: 0.9966 - val_accuracy: 0.9902 - val_loss: 0.0249
+Epoch 5/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9841 - Recall: 0.9926 - accuracy: 0.9883 - loss: 0.0320 - val_AUC: 0.9994 - val_Precision: 0.9850 - val_Recall: 0.9975 - val_accuracy: 0.9912 - val_loss: 0.0243
+Epoch 6/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9843 - Recall: 0.9929 - accuracy: 0.9885 - loss: 0.0317 - val_AUC: 0.9994 - val_Precision: 0.9854 - val_Recall: 0.9971 - val_accuracy: 0.9912 - val_loss: 0.0247
+Epoch 7/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9846 - Recall: 0.9924 - accuracy: 0.9884 - loss: 0.0314 - val_AUC: 0.9994 - val_Precision: 0.9864 - val_Recall: 0.9961 - val_accuracy: 0.9912 - val_loss: 0.0244
+INFO:__main__:Training completed. Final Loss: 0.031358275562524796
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 6b55840a-60b7-44dc-bf6a-982f1870dab1
+INFO:flwr:Received: evaluate message 6b55840a-60b7-44dc-bf6a-982f1870dab1
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9992 - Precision: 0.9857 - Recall: 0.9959 - accuracy: 0.9907 - loss: 0.0254  
+INFO:__main__:Evaluation completed. Loss: 0.02439207397401333, Accuracy: 0.9911999702453613, Precision: 0.9864329695701599, Recall: 0.9961000084877014, AUC: 0.9993647933006287
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 826dec5c-3b06-4728-a604-31e1edc12886
+INFO:flwr:Received: evaluate message 826dec5c-3b06-4728-a604-31e1edc12886
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9966 - Precision: 0.9859 - Recall: 0.9524 - accuracy: 0.9694 - loss: 0.1077  
+INFO:__main__:Evaluation completed. Loss: 0.10922504961490631, Accuracy: 0.9684500098228455, Precision: 0.984186053276062, Recall: 0.9521999955177307, AUC: 0.9963043332099915
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message cfe29034-d692-4138-bb3c-86ba7f9e6bfd
+INFO:flwr:Received: train message cfe29034-d692-4138-bb3c-86ba7f9e6bfd
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9989 - Precision: 0.9825 - Recall: 0.9912 - accuracy: 0.9868 - loss: 0.0366 - val_AUC: 0.9995 - val_Precision: 0.9831 - val_Recall: 0.9976 - val_accuracy: 0.9902 - val_loss: 0.0258
+Epoch 2/7
+1250/1250 - 9s - 7ms/step - AUC: 0.9990 - Precision: 0.9841 - Recall: 0.9927 - accuracy: 0.9884 - loss: 0.0324 - val_AUC: 0.9994 - val_Precision: 0.9856 - val_Recall: 0.9970 - val_accuracy: 0.9912 - val_loss: 0.0250
+Epoch 3/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9991 - Precision: 0.9846 - Recall: 0.9928 - accuracy: 0.9887 - loss: 0.0312 - val_AUC: 0.9995 - val_Precision: 0.9840 - val_Recall: 0.9978 - val_accuracy: 0.9908 - val_loss: 0.0233
+Epoch 4/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9855 - Recall: 0.9930 - accuracy: 0.9892 - loss: 0.0298 - val_AUC: 0.9995 - val_Precision: 0.9845 - val_Recall: 0.9964 - val_accuracy: 0.9904 - val_loss: 0.0235
+Epoch 5/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9991 - Precision: 0.9855 - Recall: 0.9929 - accuracy: 0.9891 - loss: 0.0314 - val_AUC: 0.9995 - val_Precision: 0.9859 - val_Recall: 0.9975 - val_accuracy: 0.9916 - val_loss: 0.0216
+Epoch 6/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9853 - Recall: 0.9929 - accuracy: 0.9890 - loss: 0.0304 - val_AUC: 0.9995 - val_Precision: 0.9842 - val_Recall: 0.9970 - val_accuracy: 0.9905 - val_loss: 0.0251
+Epoch 7/7
+1250/1250 - 8s - 6ms/step - AUC: 0.9992 - Precision: 0.9855 - Recall: 0.9932 - accuracy: 0.9893 - loss: 0.0294 - val_AUC: 0.9994 - val_Precision: 0.9835 - val_Recall: 0.9972 - val_accuracy: 0.9902 - val_loss: 0.0276
+INFO:__main__:Training completed. Final Loss: 0.029352344572544098
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message a903489d-ca6c-4e3f-bc4f-113018b51f69
+INFO:flwr:Received: evaluate message a903489d-ca6c-4e3f-bc4f-113018b51f69
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9995 - Precision: 0.9834 - Recall: 0.9967 - accuracy: 0.9899 - loss: 0.0285  
+INFO:__main__:Evaluation completed. Loss: 0.027641525492072105, Accuracy: 0.9902499914169312, Precision: 0.9835289716720581, Recall: 0.9972000122070312, AUC: 0.9993940591812134
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 3db5f92d-4ecc-468e-9629-7c43a691b80c
+INFO:flwr:Received: evaluate message 3db5f92d-4ecc-468e-9629-7c43a691b80c
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9834 - Precision: 0.9859 - Recall: 0.9485 - accuracy: 0.9675 - loss: 0.1516  
+INFO:__main__:Evaluation completed. Loss: 0.15305574238300323, Accuracy: 0.9660999774932861, Precision: 0.9843100309371948, Recall: 0.9473000168800354, AUC: 0.9831048846244812
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 4003c301-8f46-4902-aa06-ab74ea8b6041
+INFO:flwr:Received: evaluate message 4003c301-8f46-4902-aa06-ab74ea8b6041
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9775 - Precision: 0.9864 - Recall: 0.8856 - accuracy: 0.9366 - loss: 0.2758  
+INFO:__main__:Evaluation completed. Loss: 0.27623143792152405, Accuracy: 0.937749981880188, Precision: 0.9848266839981079, Recall: 0.88919997215271, AUC: 0.9768903851509094
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 28cb8121-4e46-4e7d-96d4-86c6b56f4572
+INFO:flwr:Received: evaluate message 28cb8121-4e46-4e7d-96d4-86c6b56f4572
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9760 - Precision: 0.9862 - Recall: 0.8890 - accuracy: 0.9382 - loss: 0.3131  
+INFO:__main__:Evaluation completed. Loss: 0.31320464611053467, Accuracy: 0.9392499923706055, Precision: 0.9845559597015381, Recall: 0.8924999833106995, AUC: 0.9751808643341064
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 3a907ad2-a37f-4183-a5be-cc8308713121
+INFO:flwr:Received: train message 3a907ad2-a37f-4183-a5be-cc8308713121
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9986 - Precision: 0.9805 - Recall: 0.9901 - accuracy: 0.9852 - loss: 0.0446 - val_AUC: 0.9996 - val_Precision: 0.9846 - val_Recall: 0.9938 - val_accuracy: 0.9891 - val_loss: 0.0261
+Epoch 2/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9840 - Recall: 0.9924 - accuracy: 0.9881 - loss: 0.0351 - val_AUC: 0.9995 - val_Precision: 0.9927 - val_Recall: 0.9946 - val_accuracy: 0.9937 - val_loss: 0.0222
+Epoch 3/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9853 - Recall: 0.9926 - accuracy: 0.9889 - loss: 0.0339 - val_AUC: 0.9994 - val_Precision: 0.9855 - val_Recall: 0.9970 - val_accuracy: 0.9912 - val_loss: 0.0220
+Epoch 4/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9855 - Recall: 0.9927 - accuracy: 0.9891 - loss: 0.0305 - val_AUC: 0.9994 - val_Precision: 0.9888 - val_Recall: 0.9950 - val_accuracy: 0.9919 - val_loss: 0.0231
+Epoch 5/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9990 - Precision: 0.9851 - Recall: 0.9933 - accuracy: 0.9891 - loss: 0.0306 - val_AUC: 0.9995 - val_Precision: 0.9847 - val_Recall: 0.9977 - val_accuracy: 0.9911 - val_loss: 0.0240
+Epoch 6/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9992 - Precision: 0.9851 - Recall: 0.9938 - accuracy: 0.9894 - loss: 0.0288 - val_AUC: 0.9994 - val_Precision: 0.9882 - val_Recall: 0.9935 - val_accuracy: 0.9908 - val_loss: 0.0237
+Epoch 7/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9850 - Recall: 0.9934 - accuracy: 0.9891 - loss: 0.0294 - val_AUC: 0.9995 - val_Precision: 0.9872 - val_Recall: 0.9943 - val_accuracy: 0.9907 - val_loss: 0.0236
+INFO:__main__:Training completed. Final Loss: 0.02938220463693142
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 0d694d3d-e2b7-46bc-af03-ed131146ea92
+INFO:flwr:Received: evaluate message 0d694d3d-e2b7-46bc-af03-ed131146ea92
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 3s 5ms/step - AUC: 0.9996 - Precision: 0.9865 - Recall: 0.9934 - accuracy: 0.9899 - loss: 0.0237  
+INFO:__main__:Evaluation completed. Loss: 0.02359938435256481, Accuracy: 0.9907000064849854, Precision: 0.9871922135353088, Recall: 0.9943000078201294, AUC: 0.9994574785232544
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 3e58093a-f75d-46cc-8586-848304041c91
+INFO:flwr:Received: train message 3e58093a-f75d-46cc-8586-848304041c91
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9851 - Recall: 0.9930 - accuracy: 0.9890 - loss: 0.0299 - val_AUC: 0.9995 - val_Precision: 0.9877 - val_Recall: 0.9974 - val_accuracy: 0.9925 - val_loss: 0.0224
+Epoch 2/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9855 - Recall: 0.9937 - accuracy: 0.9896 - loss: 0.0287 - val_AUC: 0.9996 - val_Precision: 0.9872 - val_Recall: 0.9972 - val_accuracy: 0.9922 - val_loss: 0.0208
+Epoch 3/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9992 - Precision: 0.9852 - Recall: 0.9936 - accuracy: 0.9893 - loss: 0.0288 - val_AUC: 0.9996 - val_Precision: 0.9841 - val_Recall: 0.9981 - val_accuracy: 0.9910 - val_loss: 0.0226
+Epoch 4/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9992 - Precision: 0.9859 - Recall: 0.9934 - accuracy: 0.9896 - loss: 0.0282 - val_AUC: 0.9996 - val_Precision: 0.9891 - val_Recall: 0.9973 - val_accuracy: 0.9931 - val_loss: 0.0209
+Epoch 5/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9992 - Precision: 0.9853 - Recall: 0.9935 - accuracy: 0.9893 - loss: 0.0277 - val_AUC: 0.9995 - val_Precision: 0.9849 - val_Recall: 0.9975 - val_accuracy: 0.9911 - val_loss: 0.0235
+Epoch 6/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9991 - Precision: 0.9857 - Recall: 0.9940 - accuracy: 0.9898 - loss: 0.0285 - val_AUC: 0.9994 - val_Precision: 0.9854 - val_Recall: 0.9978 - val_accuracy: 0.9915 - val_loss: 0.0262
+Epoch 7/7
+1250/1250 - 8s - 7ms/step - AUC: 0.9992 - Precision: 0.9858 - Recall: 0.9937 - accuracy: 0.9897 - loss: 0.0276 - val_AUC: 0.9994 - val_Precision: 0.9881 - val_Recall: 0.9942 - val_accuracy: 0.9911 - val_loss: 0.0268
+INFO:__main__:Training completed. Final Loss: 0.02763187326490879
+
+
+----------------------------------------------------------------------------------------------------------
+
+(venv) rtikes@node-alpha:~/Blockchain-Distributed-IDS/raspberry_pi/node-alpha/scripts $ python flower_client.py 
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20685, 'PortScan': 14368, 'DDoS': 11450, 'DoS GoldenEye': 920, 'FTP-Patator': 702, 'SSH-Patator': 516, 'DoS slowloris': 510, 'DoS Slowhttptest': 482, 'Bot': 162, 'Web Attack � Brute Force': 146, 'Web Attack � XSS': 51, 'Infiltration': 4, 'Heartbleed': 2, 'Web Attack � Sql Injection': 2})
+After oversampling: Counter({1: 50000, 0: 50000})
+INFO:__main__:initializing model
+INFO:__main__: starting flower Client node-alpha. connecting to server at 192.168.0.51:9091...
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: get_parameters message 047410d2-9b2a-4871-ba8a-f2237e519e7d
+INFO:flwr:Received: get_parameters message 047410d2-9b2a-4871-ba8a-f2237e519e7d
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 8d7c3dd2-f76b-45d2-83cd-bd5c3af4c981
+INFO:flwr:Received: train message 8d7c3dd2-f76b-45d2-83cd-bd5c3af4c981
+INFO:__main__:received training request from server start training
+2025-03-02 22:26:31.017700: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 24960000 exceeds 10% of free system memory.
+Epoch 1/7
+1250/1250 - 10s - loss: 0.1860 - accuracy: 0.9323 - precision: 0.9266 - recall: 0.9390 - auc: 0.9813 - val_loss: 0.1186 - val_accuracy: 0.9540 - val_precision: 0.9360 - val_recall: 0.9746 - val_auc: 0.9905 - 10s/epoch - 8ms/step
+Epoch 2/7
+1250/1250 - 7s - loss: 0.1149 - accuracy: 0.9577 - precision: 0.9459 - recall: 0.9708 - auc: 0.9911 - val_loss: 0.1000 - val_accuracy: 0.9601 - val_precision: 0.9349 - val_recall: 0.9891 - val_auc: 0.9928 - 7s/epoch - 5ms/step
+Epoch 3/7
+1250/1250 - 7s - loss: 0.1018 - accuracy: 0.9642 - precision: 0.9528 - recall: 0.9769 - auc: 0.9926 - val_loss: 0.0987 - val_accuracy: 0.9629 - val_precision: 0.9417 - val_recall: 0.9869 - val_auc: 0.9935 - 7s/epoch - 5ms/step
+Epoch 4/7
+1250/1250 - 7s - loss: 0.0946 - accuracy: 0.9665 - precision: 0.9559 - recall: 0.9781 - auc: 0.9935 - val_loss: 0.0972 - val_accuracy: 0.9698 - val_precision: 0.9566 - val_recall: 0.9842 - val_auc: 0.9945 - 7s/epoch - 5ms/step
+Epoch 5/7
+1250/1250 - 7s - loss: 0.0894 - accuracy: 0.9690 - precision: 0.9581 - recall: 0.9808 - auc: 0.9941 - val_loss: 0.0900 - val_accuracy: 0.9738 - val_precision: 0.9636 - val_recall: 0.9848 - val_auc: 0.9950 - 7s/epoch - 5ms/step
+Epoch 6/7
+1250/1250 - 7s - loss: 0.0843 - accuracy: 0.9717 - precision: 0.9616 - recall: 0.9826 - auc: 0.9945 - val_loss: 0.0991 - val_accuracy: 0.9646 - val_precision: 0.9379 - val_recall: 0.9950 - val_auc: 0.9956 - 7s/epoch - 5ms/step
+Epoch 7/7
+1250/1250 - 7s - loss: 0.0802 - accuracy: 0.9722 - precision: 0.9621 - recall: 0.9832 - auc: 0.9951 - val_loss: 0.0924 - val_accuracy: 0.9754 - val_precision: 0.9621 - val_recall: 0.9899 - val_auc: 0.9960 - 7s/epoch - 5ms/step
+INFO:__main__:Training completed. Final Loss: 0.08023376762866974
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 1564852e-30fe-42fc-9696-9c24bfeb756a
+INFO:flwr:Received: evaluate message 1564852e-30fe-42fc-9696-9c24bfeb756a
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0924 - accuracy: 0.9754 - precision: 0.9621 - recall: 0.9899 - auc: 0.9960
+INFO:__main__:Evaluation completed. Loss: 0.09238196164369583, Accuracy: 0.9754499793052673, Precision: 0.9620954394340515, Recall: 0.9898999929428101, AUC: 0.9959993362426758
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message c180f318-c2a8-4f85-81bd-a0dd05e10f4b
+INFO:flwr:Received: evaluate message c180f318-c2a8-4f85-81bd-a0dd05e10f4b
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0718 - accuracy: 0.9755 - precision: 0.9580 - recall: 0.9947 - auc: 0.9960
+INFO:__main__:Evaluation completed. Loss: 0.07182091474533081, Accuracy: 0.9755499958992004, Precision: 0.9580082893371582, Recall: 0.994700014591217, AUC: 0.9959845542907715
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 24bdfc50-92a5-4edf-ac42-eff40620f6b6
+INFO:flwr:Received: train message 24bdfc50-92a5-4edf-ac42-eff40620f6b6
+INFO:__main__:received training request from server start training
+2025-03-02 22:28:32.495750: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 24960000 exceeds 10% of free system memory.
+Epoch 1/7
+1250/1250 - 7s - loss: 0.0689 - accuracy: 0.9760 - precision: 0.9653 - recall: 0.9874 - auc: 0.9964 - val_loss: 0.0617 - val_accuracy: 0.9773 - val_precision: 0.9678 - val_recall: 0.9876 - val_auc: 0.9973 - 7s/epoch - 5ms/step
+Epoch 2/7
+1250/1250 - 7s - loss: 0.0653 - accuracy: 0.9775 - precision: 0.9672 - recall: 0.9885 - auc: 0.9967 - val_loss: 0.0606 - val_accuracy: 0.9789 - val_precision: 0.9641 - val_recall: 0.9948 - val_auc: 0.9975 - 7s/epoch - 5ms/step
+Epoch 3/7
+1250/1250 - 7s - loss: 0.0623 - accuracy: 0.9780 - precision: 0.9679 - recall: 0.9888 - auc: 0.9970 - val_loss: 0.0587 - val_accuracy: 0.9785 - val_precision: 0.9644 - val_recall: 0.9936 - val_auc: 0.9976 - 7s/epoch - 5ms/step
+Epoch 4/7
+1250/1250 - 7s - loss: 0.0619 - accuracy: 0.9778 - precision: 0.9675 - recall: 0.9889 - auc: 0.9971 - val_loss: 0.0596 - val_accuracy: 0.9764 - val_precision: 0.9624 - val_recall: 0.9915 - val_auc: 0.9976 - 7s/epoch - 5ms/step
+Epoch 5/7
+1250/1250 - 7s - loss: 0.0606 - accuracy: 0.9783 - precision: 0.9683 - recall: 0.9889 - auc: 0.9971 - val_loss: 0.0555 - val_accuracy: 0.9809 - val_precision: 0.9690 - val_recall: 0.9936 - val_auc: 0.9977 - 7s/epoch - 5ms/step
+Epoch 6/7
+1250/1250 - 7s - loss: 0.0595 - accuracy: 0.9790 - precision: 0.9695 - recall: 0.9890 - auc: 0.9972 - val_loss: 0.0633 - val_accuracy: 0.9789 - val_precision: 0.9631 - val_recall: 0.9958 - val_auc: 0.9975 - 7s/epoch - 5ms/step
+Epoch 7/7
+1250/1250 - 7s - loss: 0.0591 - accuracy: 0.9787 - precision: 0.9690 - recall: 0.9890 - auc: 0.9973 - val_loss: 0.0570 - val_accuracy: 0.9776 - val_precision: 0.9645 - val_recall: 0.9916 - val_auc: 0.9976 - 7s/epoch - 5ms/step
+INFO:__main__:Training completed. Final Loss: 0.05910347402095795
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 5f877cbb-f0ca-463f-83fd-c4cb060f89a2
+INFO:flwr:Received: evaluate message 5f877cbb-f0ca-463f-83fd-c4cb060f89a2
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0570 - accuracy: 0.9776 - precision: 0.9645 - recall: 0.9916 - auc: 0.9976
+INFO:__main__:Evaluation completed. Loss: 0.05702688544988632, Accuracy: 0.9775500297546387, Precision: 0.9644976258277893, Recall: 0.991599977016449, AUC: 0.9975898861885071
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 3840176b-d68d-462c-91fb-3870a1b2a631
+INFO:flwr:Received: evaluate message 3840176b-d68d-462c-91fb-3870a1b2a631
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.1123 - accuracy: 0.9312 - precision: 0.9760 - recall: 0.8841 - auc: 0.9948
+INFO:__main__:Evaluation completed. Loss: 0.11233176290988922, Accuracy: 0.9312000274658203, Precision: 0.9760432839393616, Recall: 0.8841000199317932, AUC: 0.9948157668113708
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 7a0c2df0-06e2-4434-a8c4-bdbc290797ad
+INFO:flwr:Received: evaluate message 7a0c2df0-06e2-4434-a8c4-bdbc290797ad
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.2267 - accuracy: 0.9162 - precision: 0.9749 - recall: 0.8544 - auc: 0.9906
+INFO:__main__:Evaluation completed. Loss: 0.22668243944644928, Accuracy: 0.9161999821662903, Precision: 0.9748973250389099, Recall: 0.8543999791145325, AUC: 0.9905688762664795
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message b3498eb4-7cf9-4846-bd09-91841e3da4cf
+INFO:flwr:Received: evaluate message b3498eb4-7cf9-4846-bd09-91841e3da4cf
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.2676 - accuracy: 0.9174 - precision: 0.9745 - recall: 0.8572 - auc: 0.9882
+INFO:__main__:Evaluation completed. Loss: 0.2675980031490326, Accuracy: 0.9174000024795532, Precision: 0.9745338559150696, Recall: 0.857200026512146, AUC: 0.9882012009620667
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 3f941c6b-61d5-49e8-a51b-c771a8b04dd2
+INFO:flwr:Received: train message 3f941c6b-61d5-49e8-a51b-c771a8b04dd2
+INFO:__main__:received training request from server start training
+2025-03-02 22:32:23.845211: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 24960000 exceeds 10% of free system memory.
+Epoch 1/7
+1250/1250 - 7s - loss: 0.0610 - accuracy: 0.9786 - precision: 0.9684 - recall: 0.9895 - auc: 0.9971 - val_loss: 0.0534 - val_accuracy: 0.9810 - val_precision: 0.9673 - val_recall: 0.9957 - val_auc: 0.9975 - 7s/epoch - 5ms/step
+Epoch 2/7
+1250/1250 - 7s - loss: 0.0558 - accuracy: 0.9802 - precision: 0.9694 - recall: 0.9918 - auc: 0.9975 - val_loss: 0.0563 - val_accuracy: 0.9789 - val_precision: 0.9627 - val_recall: 0.9963 - val_auc: 0.9978 - 7s/epoch - 5ms/step
+Epoch 3/7
+1250/1250 - 7s - loss: 0.0550 - accuracy: 0.9804 - precision: 0.9705 - recall: 0.9909 - auc: 0.9975 - val_loss: 0.0600 - val_accuracy: 0.9801 - val_precision: 0.9689 - val_recall: 0.9919 - val_auc: 0.9976 - 7s/epoch - 5ms/step
+Epoch 4/7
+1250/1250 - 7s - loss: 0.0541 - accuracy: 0.9809 - precision: 0.9703 - recall: 0.9922 - auc: 0.9976 - val_loss: 0.0658 - val_accuracy: 0.9818 - val_precision: 0.9706 - val_recall: 0.9936 - val_auc: 0.9979 - 7s/epoch - 5ms/step
+Epoch 5/7
+1250/1250 - 7s - loss: 0.0525 - accuracy: 0.9812 - precision: 0.9709 - recall: 0.9921 - auc: 0.9977 - val_loss: 0.0510 - val_accuracy: 0.9808 - val_precision: 0.9703 - val_recall: 0.9919 - val_auc: 0.9980 - 7s/epoch - 5ms/step
+Epoch 6/7
+1250/1250 - 7s - loss: 0.0547 - accuracy: 0.9809 - precision: 0.9706 - recall: 0.9918 - auc: 0.9976 - val_loss: 0.0484 - val_accuracy: 0.9820 - val_precision: 0.9676 - val_recall: 0.9974 - val_auc: 0.9983 - 7s/epoch - 5ms/step
+Epoch 7/7
+1250/1250 - 7s - loss: 0.0525 - accuracy: 0.9815 - precision: 0.9713 - recall: 0.9923 - auc: 0.9977 - val_loss: 0.0500 - val_accuracy: 0.9807 - val_precision: 0.9692 - val_recall: 0.9930 - val_auc: 0.9981 - 7s/epoch - 5ms/step
+INFO:__main__:Training completed. Final Loss: 0.052520204335451126
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message c28b2f93-d2c6-43fa-969a-05c191e2ff46
+INFO:flwr:Received: evaluate message c28b2f93-d2c6-43fa-969a-05c191e2ff46
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0500 - accuracy: 0.9807 - precision: 0.9692 - recall: 0.9930 - auc: 0.9981
+INFO:__main__:Evaluation completed. Loss: 0.04999949783086777, Accuracy: 0.9807000160217285, Precision: 0.9691587090492249, Recall: 0.9929999709129333, AUC: 0.9980738162994385
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 4066cd41-615a-4c6f-b8dc-131882550703
+INFO:flwr:Received: evaluate message 4066cd41-615a-4c6f-b8dc-131882550703
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.3259 - accuracy: 0.9112 - precision: 0.9594 - recall: 0.8588 - auc: 0.9839
+INFO:__main__:Evaluation completed. Loss: 0.32589417695999146, Accuracy: 0.9112499952316284, Precision: 0.9594458937644958, Recall: 0.8587999939918518, AUC: 0.9839243292808533
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 1f9c6351-9588-433f-8b6f-f818d547cd60
+INFO:flwr:Received: train message 1f9c6351-9588-433f-8b6f-f818d547cd60
+INFO:__main__:received training request from server start training
+2025-03-02 22:34:15.484864: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 24960000 exceeds 10% of free system memory.
+Epoch 1/7
+1250/1250 - 7s - loss: 0.0577 - accuracy: 0.9796 - precision: 0.9699 - recall: 0.9900 - auc: 0.9973 - val_loss: 0.0538 - val_accuracy: 0.9821 - val_precision: 0.9733 - val_recall: 0.9913 - val_auc: 0.9977 - 7s/epoch - 5ms/step
+Epoch 2/7
+1250/1250 - 7s - loss: 0.0517 - accuracy: 0.9816 - precision: 0.9716 - recall: 0.9923 - auc: 0.9978 - val_loss: 0.0501 - val_accuracy: 0.9813 - val_precision: 0.9666 - val_recall: 0.9971 - val_auc: 0.9981 - 7s/epoch - 5ms/step
+Epoch 3/7
+1250/1250 - 7s - loss: 0.0505 - accuracy: 0.9822 - precision: 0.9719 - recall: 0.9932 - auc: 0.9978 - val_loss: 0.0473 - val_accuracy: 0.9845 - val_precision: 0.9729 - val_recall: 0.9968 - val_auc: 0.9981 - 7s/epoch - 5ms/step
+Epoch 4/7
+1250/1250 - 7s - loss: 0.0513 - accuracy: 0.9825 - precision: 0.9725 - recall: 0.9931 - auc: 0.9978 - val_loss: 0.0510 - val_accuracy: 0.9816 - val_precision: 0.9666 - val_recall: 0.9977 - val_auc: 0.9981 - 7s/epoch - 5ms/step
+Epoch 5/7
+1250/1250 - 7s - loss: 0.0499 - accuracy: 0.9822 - precision: 0.9723 - recall: 0.9927 - auc: 0.9980 - val_loss: 0.0474 - val_accuracy: 0.9820 - val_precision: 0.9695 - val_recall: 0.9953 - val_auc: 0.9980 - 7s/epoch - 5ms/step
+Epoch 6/7
+1250/1250 - 7s - loss: 0.0525 - accuracy: 0.9826 - precision: 0.9729 - recall: 0.9929 - auc: 0.9979 - val_loss: 0.0493 - val_accuracy: 0.9825 - val_precision: 0.9692 - val_recall: 0.9967 - val_auc: 0.9980 - 7s/epoch - 5ms/step
+Epoch 7/7
+1250/1250 - 7s - loss: 0.0501 - accuracy: 0.9819 - precision: 0.9718 - recall: 0.9927 - auc: 0.9980 - val_loss: 0.0487 - val_accuracy: 0.9823 - val_precision: 0.9681 - val_recall: 0.9975 - val_auc: 0.9983 - 7s/epoch - 5ms/step
+INFO:__main__:Training completed. Final Loss: 0.050073444843292236
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message fad7eedc-7d82-45a0-9353-c76dbda67e45
+INFO:flwr:Received: evaluate message fad7eedc-7d82-45a0-9353-c76dbda67e45
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0487 - accuracy: 0.9823 - precision: 0.9681 - recall: 0.9975 - auc: 0.9983
+INFO:__main__:Evaluation completed. Loss: 0.048681266605854034, Accuracy: 0.9822999835014343, Precision: 0.9680706262588501, Recall: 0.9975000023841858, AUC: 0.9982696771621704
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message a5de41b7-7361-40b5-87e7-c2606797a3b2
+INFO:flwr:Received: train message a5de41b7-7361-40b5-87e7-c2606797a3b2
+INFO:__main__:received training request from server start training
+2025-03-02 22:35:05.483381: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 24960000 exceeds 10% of free system memory.
+Epoch 1/7
+1250/1250 - 7s - loss: 0.0494 - accuracy: 0.9827 - precision: 0.9725 - recall: 0.9935 - auc: 0.9979 - val_loss: 0.0492 - val_accuracy: 0.9819 - val_precision: 0.9674 - val_recall: 0.9974 - val_auc: 0.9981 - 7s/epoch - 5ms/step
+Epoch 2/7
+1250/1250 - 7s - loss: 0.0497 - accuracy: 0.9819 - precision: 0.9717 - recall: 0.9926 - auc: 0.9979 - val_loss: 0.0471 - val_accuracy: 0.9826 - val_precision: 0.9690 - val_recall: 0.9972 - val_auc: 0.9982 - 7s/epoch - 5ms/step
+Epoch 3/7
+1250/1250 - 7s - loss: 0.0494 - accuracy: 0.9822 - precision: 0.9722 - recall: 0.9929 - auc: 0.9979 - val_loss: 0.0454 - val_accuracy: 0.9823 - val_precision: 0.9696 - val_recall: 0.9958 - val_auc: 0.9984 - 7s/epoch - 5ms/step
+Epoch 4/7
+1250/1250 - 7s - loss: 0.0480 - accuracy: 0.9828 - precision: 0.9733 - recall: 0.9928 - auc: 0.9981 - val_loss: 0.0456 - val_accuracy: 0.9829 - val_precision: 0.9693 - val_recall: 0.9975 - val_auc: 0.9983 - 7s/epoch - 5ms/step
+Epoch 5/7
+1250/1250 - 7s - loss: 0.0483 - accuracy: 0.9828 - precision: 0.9726 - recall: 0.9936 - auc: 0.9980 - val_loss: 0.0466 - val_accuracy: 0.9815 - val_precision: 0.9710 - val_recall: 0.9928 - val_auc: 0.9984 - 7s/epoch - 5ms/step
+Epoch 6/7
+1250/1250 - 7s - loss: 0.0498 - accuracy: 0.9824 - precision: 0.9722 - recall: 0.9931 - auc: 0.9980 - val_loss: 0.0468 - val_accuracy: 0.9829 - val_precision: 0.9696 - val_recall: 0.9972 - val_auc: 0.9982 - 7s/epoch - 5ms/step
+Epoch 7/7
+1250/1250 - 7s - loss: 0.0494 - accuracy: 0.9823 - precision: 0.9719 - recall: 0.9935 - auc: 0.9980 - val_loss: 0.0459 - val_accuracy: 0.9833 - val_precision: 0.9700 - val_recall: 0.9974 - val_auc: 0.9983 - 7s/epoch - 5ms/step
+INFO:__main__:Training completed. Final Loss: 0.04938405752182007
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 71efc012-01a9-4703-99a3-1fa9ff26d264
+INFO:flwr:Received: evaluate message 71efc012-01a9-4703-99a3-1fa9ff26d264
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0459 - accuracy: 0.9833 - precision: 0.9700 - recall: 0.9974 - auc: 0.9983
+INFO:__main__:Evaluation completed. Loss: 0.04590049386024475, Accuracy: 0.9832500219345093, Precision: 0.9699503779411316, Recall: 0.9973999857902527, AUC: 0.9983158111572266
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 1e058876-55e1-4820-85de-60f436b10f0f
+INFO:flwr:Received: train message 1e058876-55e1-4820-85de-60f436b10f0f
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 7s - loss: 0.0476 - accuracy: 0.9826 - precision: 0.9723 - recall: 0.9936 - auc: 0.9981 - val_loss: 0.0459 - val_accuracy: 0.9828 - val_precision: 0.9695 - val_recall: 0.9970 - val_auc: 0.9983 - 7s/epoch - 5ms/step
+Epoch 2/7
+1250/1250 - 7s - loss: 0.0483 - accuracy: 0.9822 - precision: 0.9720 - recall: 0.9930 - auc: 0.9981 - val_loss: 0.0472 - val_accuracy: 0.9816 - val_precision: 0.9667 - val_recall: 0.9976 - val_auc: 0.9983 - 7s/epoch - 5ms/step
+Epoch 3/7
+1250/1250 - 7s - loss: 0.0472 - accuracy: 0.9828 - precision: 0.9725 - recall: 0.9937 - auc: 0.9982 - val_loss: 0.0437 - val_accuracy: 0.9834 - val_precision: 0.9702 - val_recall: 0.9975 - val_auc: 0.9985 - 7s/epoch - 5ms/step
+Epoch 4/7
+1250/1250 - 7s - loss: 0.0480 - accuracy: 0.9823 - precision: 0.9721 - recall: 0.9931 - auc: 0.9981 - val_loss: 0.0468 - val_accuracy: 0.9833 - val_precision: 0.9700 - val_recall: 0.9973 - val_auc: 0.9984 - 7s/epoch - 5ms/step
+Epoch 5/7
+1250/1250 - 7s - loss: 0.0477 - accuracy: 0.9824 - precision: 0.9722 - recall: 0.9932 - auc: 0.9981 - val_loss: 0.0501 - val_accuracy: 0.9822 - val_precision: 0.9678 - val_recall: 0.9977 - val_auc: 0.9978 - 7s/epoch - 5ms/step
+Epoch 6/7
+1250/1250 - 7s - loss: 0.0467 - accuracy: 0.9831 - precision: 0.9728 - recall: 0.9939 - auc: 0.9982 - val_loss: 0.0471 - val_accuracy: 0.9819 - val_precision: 0.9670 - val_recall: 0.9978 - val_auc: 0.9984 - 7s/epoch - 5ms/step
+Epoch 7/7
+1250/1250 - 7s - loss: 0.0463 - accuracy: 0.9829 - precision: 0.9731 - recall: 0.9933 - auc: 0.9982 - val_loss: 0.0451 - val_accuracy: 0.9825 - val_precision: 0.9683 - val_recall: 0.9977 - val_auc: 0.9985 - 7s/epoch - 5ms/step
+INFO:__main__:Training completed. Final Loss: 0.046296171844005585
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 9688594b-17c2-4710-8dba-a5859ce9ce59
+INFO:flwr:Received: evaluate message 9688594b-17c2-4710-8dba-a5859ce9ce59
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.0451 - accuracy: 0.9825 - precision: 0.9683 - recall: 0.9977 - auc: 0.9985
+INFO:__main__:Evaluation completed. Loss: 0.04509803280234337, Accuracy: 0.9825000166893005, Precision: 0.9682647585868835, Recall: 0.9976999759674072, AUC: 0.9985447525978088
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message ce60a839-45e8-4098-96cc-940734c2bd0d
+INFO:flwr:Received: evaluate message ce60a839-45e8-4098-96cc-940734c2bd0d
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.3283 - accuracy: 0.9152 - precision: 0.9722 - recall: 0.8548 - auc: 0.9839
+INFO:__main__:Evaluation completed. Loss: 0.32834815979003906, Accuracy: 0.9151999950408936, Precision: 0.9722474813461304, Recall: 0.8547999858856201, AUC: 0.9838942289352417
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 8b0dfa6b-91a0-4c90-be1e-b332ec60a2b0
+INFO:flwr:Received: evaluate message 8b0dfa6b-91a0-4c90-be1e-b332ec60a2b0
+INFO:__main__:evaluating model
+625/625 [==============================] - 2s 4ms/step - loss: 0.4775 - accuracy: 0.9076 - precision: 0.9627 - recall: 0.8482 - auc: 0.9309
+INFO:__main__:Evaluation completed. Loss: 0.4774748980998993, Accuracy: 0.9076499938964844, Precision: 0.9626603126525879, Recall: 0.8482000231742859, AUC: 0.930933952331543
+INFO :      Sent reply
+INFO:flwr:Sent reply
+

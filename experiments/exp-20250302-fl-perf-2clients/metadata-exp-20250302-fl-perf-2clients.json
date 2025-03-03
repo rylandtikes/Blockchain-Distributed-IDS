@@ -1,0 +1,12 @@
+{
+  "experiment": "exp-20250302-fl-perf-2clients",
+  "date": "2025-03-02",
+  "component": "Federated Learning",
+  "test_type": "Performance",
+  "clients": 2,
+  "aggregation": "FedAvg",
+  "dataset": "Portion of CICIDS dataset (Node A and B have different data)",
+  "hardware": "Raspberry Pi 4",
+  "notes": "Testing FL with different portions of CICIDS dataset on Node A and B."
+}
+
