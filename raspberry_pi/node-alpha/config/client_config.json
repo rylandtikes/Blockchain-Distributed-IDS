@@ -1,8 +1,9 @@
 {
   "client_id": "node-alpha",
   "server_address": "192.168.0.51:9091",
-  "batch_size": 32,
-  "learning_rate": 0.001,
-  "use_gpu": false
+  "batch_size": 64,
+  "learning_rate": 0.0005,
+  "use_gpu": false,
+  "dataset_path": "../data/CICIDS2017_alpha.csv"
 }
 
