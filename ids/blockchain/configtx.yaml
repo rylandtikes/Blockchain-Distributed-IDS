@@ -1,0 +1,125 @@
+Organizations:
+  - &OrdererOrg
+    Name: OrdererOrg
+    ID: OrdererMSP
+    MSPDir: artifacts/crypto-config/ordererOrganizations/idsnet.local/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('OrdererMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('OrdererMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('OrdererMSP.admin')"
+
+  - &NodeAlphaOrg
+    Name: NodeAlphaOrgMSP
+    ID: NodeAlphaOrgMSP
+    MSPDir: artifacts/crypto-config/peerOrganizations/node-alpha.idsnet.local/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('NodeAlphaOrgMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('NodeAlphaOrgMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('NodeAlphaOrgMSP.admin')"
+    AnchorPeers:
+      - Host: peer0.node-alpha.idsnet.local
+        Port: 7051
+
+  - &NodeBetaOrg
+    Name: NodeBetaOrgMSP
+    ID: NodeBetaOrgMSP
+    MSPDir: artifacts/crypto-config/peerOrganizations/node-beta.idsnet.local/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('NodeBetaOrgMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('NodeBetaOrgMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('NodeBetaOrgMSP.admin')"
+    AnchorPeers:
+      - Host: peer0.node-beta.idsnet.local
+        Port: 8051
+
+Orderer: &OrdererDefaults
+  OrdererType: solo
+  Addresses:
+    - orderer.idsnet.local:7050
+  BatchTimeout: 2s
+  BatchSize:
+    MaxMessageCount: 10
+    AbsoluteMaxBytes: 99 MB
+    PreferredMaxBytes: 512 KB
+  Policies:
+    Readers:
+      Type: Signature
+      Rule: "OR('OrdererMSP.member')"
+    Writers:
+      Type: Signature
+      Rule: "OR('OrdererMSP.member')"
+    Admins:
+      Type: Signature
+      Rule: "OR('OrdererMSP.admin')"
+    BlockValidation:
+      Type: Signature
+      Rule: "OR('OrdererMSP.member')"
+  Organizations:
+
+Application: &ApplicationDefaults
+  Policies:
+    Readers:
+      Type: Signature
+      Rule: "OR('NodeAlphaOrgMSP.member', 'NodeBetaOrgMSP.member')"
+    Writers:
+      Type: Signature
+      Rule: "OR('NodeAlphaOrgMSP.member', 'NodeBetaOrgMSP.member')"
+    Admins:
+      Type: Signature
+      Rule: "OR('NodeAlphaOrgMSP.admin', 'NodeBetaOrgMSP.admin')"
+  Organizations:
+
+Channel: &ChannelDefaults
+  Policies:
+    Readers:
+      Type: Signature
+      Rule: "OR('OrdererMSP.member', 'NodeAlphaOrgMSP.member', 'NodeBetaOrgMSP.member')"
+    Writers:
+      Type: Signature
+      Rule: "OR('OrdererMSP.member', 'NodeAlphaOrgMSP.member', 'NodeBetaOrgMSP.member')"
+    Admins:
+      Type: Signature
+      Rule: "OR('OrdererMSP.admin', 'NodeAlphaOrgMSP.admin', 'NodeBetaOrgMSP.admin')"
+  Consortium: IDSConsortium
+
+Profiles:
+
+  IDSGenesis:
+    <<: *ChannelDefaults
+    Orderer:
+      <<: *OrdererDefaults
+      Organizations:
+        - *OrdererOrg
+    Consortiums:
+      IDSConsortium:
+        Organizations:
+          - *NodeAlphaOrg
+          - *NodeBetaOrg
+
+  IDSChannel:
+    <<: *ChannelDefaults
+    Consortium: IDSConsortium
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - *NodeAlphaOrg
+        - *NodeBetaOrg
+
