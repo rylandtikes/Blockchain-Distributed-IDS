@@ -7,6 +7,7 @@ __pycache__/
 venv/
 .venv/
 .vscode/
+.DS_Store
 ids/ml_models/*.h5
 ids/ml_models/*.pkl
 ids/ml_models/*.pb
@@ -21,3 +22,11 @@ scripts/tmp/
 data/
 raspberry_pi/node-alpha/data/
 raspberry_pi/node-beta/data
+ids/blockchain/ledgers/
+ids/blockchain/artifacts/
+**/crypto-config/
+**/msp/keystore/
+**/tls/server.key
+**/tls/client.key
+**/priv_sk
+
