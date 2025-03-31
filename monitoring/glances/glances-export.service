@@ -1,0 +1,16 @@
+[Unit]
+Description=Glances CSV Export
+After=network.target
+
+[Service]
+ExecStart=/home/rtikes/Blockchain-Distributed-IDS/venv/bin/glances \
+  --export csv \
+  --export-csv-file /home/rtikes/ml-data/glances_logs/glances.csv \
+  -t 5
+WorkingDirectory=/home/rtikes/Blockchain-Distributed-IDS/
+Restart=always
+User=rtikes
+
+[Install]
+WantedBy=multi-user.target
+
