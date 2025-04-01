@@ -4,6 +4,6 @@
   "batch_size": 64,
   "learning_rate": 0.0005,
   "use_gpu": false,
-  "dataset_path": "../data/CICIDS2017_beta.csv"
+  "dataset_path": "/home/rtikes/ml-data/flower/data/CICIDS2017_beta.csv"
 }
 

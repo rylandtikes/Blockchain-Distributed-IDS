@@ -177,7 +177,7 @@ General:
 FileLedger:
 
     # Location: The directory to store the blocks in.
-    Location: /home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/ledgers/orderer
+    Location: /home/rtikes/ml-data/blockchain_ledgers/orderer
 
 ################################################################################
 #
