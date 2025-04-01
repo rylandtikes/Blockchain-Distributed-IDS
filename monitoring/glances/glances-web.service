@@ -1,0 +1,14 @@
+[Unit]
+Description=Glances Web Server
+After=network.target
+
+[Service]
+ExecStart=/home/rtikes/Blockchain-Distributed-IDS/venv/bin/glances --webserver -C /home/rtikes/Blockchain-Distributed-IDS/monitoring/glances/glances.conf -t 5
+WorkingDirectory=/home/rtikes/Blockchain-Distributed-IDS
+Restart=always
+User=rtikes
+Environment="PATH=/home/rtikes/Blockchain-Distributed-IDS/venv/bin:/usr/bin"
+
+[Install]
+WantedBy=multi-user.target
+

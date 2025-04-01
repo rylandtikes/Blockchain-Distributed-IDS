@@ -1,0 +1,10 @@
+/home/rtikes/ml-data/glances_logs/glances.csv {
+    daily
+    rotate 14
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+}
+
