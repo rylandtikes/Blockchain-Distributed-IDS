@@ -18,10 +18,13 @@
 
 import json
 import logging
+import hashlib
+import os
 import numpy as np
 import pandas as pd
 import flwr as fl
 import tensorflow as tf
+from datetime import datetime
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
@@ -100,6 +103,12 @@ def build_model():
     
     return model
 
+def hash_model_weights(weights) -> str:
+    hasher = hashlib.sha256()
+    for weight in weights:
+        hasher.update(weight.tobytes())
+    return hasher.hexdigest()
+
 logger.info("initializing model")
 model = build_model()
 
@@ -110,12 +119,35 @@ class FlowerClient(fl.client.NumPyClient):
     def set_parameters(self, parameters):
         model.set_weights(parameters)
 
+
     def fit(self, parameters, config):
         logger.info("received training request from server start training")
         self.set_parameters(parameters)
-        history = model.fit(X_train, y_train, batch_size=BATCH_SIZE, epochs=7, verbose=2, validation_data=(X_val, y_val))
+
+        history = model.fit(
+            X_train, y_train,
+            batch_size=BATCH_SIZE,
+            epochs=7,
+            verbose=2,
+            validation_data=(X_val, y_val)
+        )
+
         logger.info(f"Training completed. Final Loss: {history.history['loss'][-1]}")
-        return self.get_parameters(config), len(X_train), {}
+
+        # Hash weights
+        current_weights = self.get_parameters(config)
+        model_hash = hash_model_weights(current_weights)
+
+        # Save to SSD
+        ssd_path = "/home/rtikes/ml-data/flower/model_hashes.log"
+        timestamp = datetime.utcnow().isoformat() + 'Z'
+        os.makedirs(os.path.dirname(ssd_path), exist_ok=True)
+        with open(ssd_path, "a") as f:
+            f.write(f"{CLIENT_ID},{timestamp},{model_hash}\n")
+        
+        logger.info(f"Model hash: {model_hash} (saved to {ssd_path})")
+
+        return current_weights, len(X_train), {}
 
     def evaluate(self, parameters, config):
         logger.info("evaluating model")
