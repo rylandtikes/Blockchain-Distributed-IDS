@@ -1,0 +1,19 @@
+[Unit]
+Description=Hyperledger Fabric Peer Node
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+User=rtikes
+WorkingDirectory=/home/rtikes/Blockchain-Distributed-IDS/ids/blockchain
+ExecStart=/home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/scripts/start_peer.sh
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=fabric-peer
+Environment=FABRIC_CFG_PATH=/home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/config
+
+[Install]
+WantedBy=multi-user.target
+
