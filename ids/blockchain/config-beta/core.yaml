@@ -1,0 +1,27 @@
+logging:
+  level: info
+
+peer:
+  id: peer0.node-beta.idsnet.local
+  address: peer0.node-beta.idsnet.local:8051
+  listenAddress: 0.0.0.0:8051
+  localMspId: NodeBetaOrgMSP
+  mspConfigPath: /home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/artifacts/crypto-config/peerOrganizations/node-beta.idsnet.local/peers/peer0.node-beta.idsnet.local/msp
+  fileSystemPath: /home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/ledgers/peer
+  tls:
+    enabled: false
+
+chaincode:
+  address: peer0.node-beta.idsnet.local:7052
+  listenAddress: 0.0.0.0:7052
+  builder: $(DOCKER_NS)/fabric-ccenv:latest
+  logging:
+    level: info
+
+bccsp:
+  default: SW
+  sw:
+    Hash: SHA2
+    Security: 256
+    FileKeyStore:
+      KeyStorePath: /home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/artifacts/crypto-config/peerOrganizations/node-beta.idsnet.local/peers/peer0.node-beta.idsnet.local/msp/keystore
