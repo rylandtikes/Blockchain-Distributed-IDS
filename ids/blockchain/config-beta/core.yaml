@@ -25,4 +25,3 @@ bccsp:
     Security: 256
     FileKeyStore:
       KeyStorePath: /home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/artifacts/crypto-config/peerOrganizations/node-beta.idsnet.local/peers/peer0.node-beta.idsnet.local/msp/keystore
-
