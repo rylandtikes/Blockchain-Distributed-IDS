@@ -13,6 +13,7 @@ StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=fabric-peer
 Environment=FABRIC_CFG_PATH=/home/rtikes/Blockchain-Distributed-IDS/ids/blockchain/config-beta/
+Environment=CORE_VM_ENDPOINT=unix:///var/run/docker.sock
 
 [Install]
 WantedBy=multi-user.target

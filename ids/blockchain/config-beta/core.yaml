@@ -14,9 +14,12 @@ peer:
 chaincode:
   address: peer0.node-beta.idsnet.local:7052
   listenAddress: 0.0.0.0:7052
-  builder: $(DOCKER_NS)/fabric-ccenv:latest
+  builder: hyperledger/fabric-ccenv:latest
   logging:
     level: info
+  system:
+    _lifecycle: enable
+
 
 bccsp:
   default: SW
