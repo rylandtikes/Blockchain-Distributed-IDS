@@ -1,0 +1,18 @@
+[Unit]
+Description=Fabric IDS Network (managed via Docker Compose)
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/rtikes/Blockchain-Distributed-IDS/ids/fabric-ids/fabric-ids-network
+ExecStart=/usr/bin/docker-compose -f compose/compose-ca.yaml -f compose/compose-test-net.yaml up -d
+ExecStop=/usr/bin/docker-compose -f compose/compose-ca.yaml -f compose/compose-test-net.yaml stop
+RemainAfterExit=yes
+User=rtikes
+Group=rtikes
+Environment=COMPOSE_PROJECT_NAME=fabricids
+
+[Install]
+WantedBy=multi-user.target
+
