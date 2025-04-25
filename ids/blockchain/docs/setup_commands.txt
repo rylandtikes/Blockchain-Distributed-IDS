@@ -1,6 +1,0 @@
-# commands I ran from the shell that where not scripted
-
-cryptogen generate --config=./crypto-config.yaml --output=./artifacts/crypto-config
-export FABRIC_CFG_PATH=$PWD
-configtxgen -profile IDSGenesis -channelID system-channel -outputBlock ./artifacts/genesis.block
-configtxgen -profile IDSChannel -outputCreateChannelTx ./artifacts/idschannel.tx -channelID idschannel
