@@ -1,0 +1,12 @@
+{
+  "experiment": "exp-20250427-fl-integrity-4clients",
+  "date": "2025-04-27",
+  "component": "Federated Learning + Blockchain",
+  "test_type": "Integrity and Performance",
+  "clients": 4,
+  "aggregation": "FedAvg",
+  "dataset": "Portion of CICIDS2017 dataset (Nodes Alpha, Beta, Epsilon, and Zeta with distinct data splits)",
+  "hardware": "Raspberry Pi 4B (Alpha, Beta) and Raspberry Pi 5 (Epsilon, Zeta)",
+  "notes": "Evaluating federated anomaly detection model convergence with blockchain-based model update logging across heterogeneous IoT devices. Each client uses a balanced dataset of 50,000 benign and 50,000 attack samples from CICIDS2017. Blockchain integrity is verified after each local training round."
+}
+
