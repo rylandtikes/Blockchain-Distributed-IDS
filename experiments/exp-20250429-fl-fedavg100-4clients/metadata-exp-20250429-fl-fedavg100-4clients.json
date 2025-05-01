@@ -1,0 +1,14 @@
+{
+  "experiment": "exp-20250429-fl-fedavg100-4clients",
+  "date": "2025-04-29",
+  "component": "Federated Learning",
+  "strategy": "FedAvg",
+  "rounds": 100,
+  "clients": ["alpha", "beta", "epsilon", "zeta"],
+  "dataset": "Portion of CICIDS2017 (50k benign + 50k attack per client, no overlap)",
+  "blockchain": "Fabric running on node-beta; model hashes logged locally",
+  "objective": "Test model convergence over 100 rounds with full client participation",
+  "status": "Running",
+  "result_summary": "TBD"
+}
+
