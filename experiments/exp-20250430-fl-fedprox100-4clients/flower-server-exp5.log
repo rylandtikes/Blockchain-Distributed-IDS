@@ -1,0 +1,1865 @@
+2025-05-04 21:41:47.944116: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1746416507.954703    7705 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1746416507.958089    7705 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-05-04 21:41:47.969696: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+W0000 00:00:1746416509.051154    7705 gpu_device.cc:2433] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+/home/rtikes/anaconda3/lib/python3.10/site-packages/keras/src/saving/saving_lib.py:757: UserWarning: Skipping variable loading for optimizer 'adam', because it has 14 variables whereas the saved optimizer has 2 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+2025-05-04 21:41:49,101 - INFO - load existing ANN model for server.
+2025-05-04 21:41:49,101 - INFO - Starting Flower Server...
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-05-04 21:41:49,101 - WARNING - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=100, round_timeout=300s
+2025-05-04 21:41:49,101 - INFO - Starting Flower server, config: num_rounds=100, round_timeout=300s
+[92mINFO [0m:      Flower ECE: gRPC server running (100 rounds), SSL is disabled
+2025-05-04 21:41:49,106 - INFO - Flower ECE: gRPC server running (100 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+2025-05-04 21:41:49,106 - INFO - [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+2025-05-04 21:41:49,106 - INFO - Requesting initial parameters from one random client
+[92mINFO [0m:      Received initial parameters from one random client
+2025-05-04 21:42:07,875 - INFO - Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+2025-05-04 21:42:07,876 - INFO - Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+2025-05-04 21:42:07,876 - INFO - Evaluation returned no results (`None`)
+[92mINFO [0m:      
+2025-05-04 21:42:07,876 - INFO - 
+[92mINFO [0m:      [ROUND 1]
+2025-05-04 21:42:07,876 - INFO - [ROUND 1]
+2025-05-04 21:42:07,876 - INFO - 1 clients available. Selecting for training.
+2025-05-04 21:42:07,876 - INFO - requesting training from 1 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 1 clients (out of 1)
+2025-05-04 21:42:07,876 - INFO - configure_fit: strategy sampled 1 clients (out of 1)
+[92mINFO [0m:      aggregate_fit: received 1 results and 0 failures
+2025-05-04 21:42:30,449 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-05-04 21:42:30,449 - INFO - aggregating results for round 1
+2025-05-04 21:42:30,466 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:42:30,466 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:42:36,308 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+2025-05-04 21:42:36,308 - WARNING - No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+2025-05-04 21:42:36,308 - INFO - 
+[92mINFO [0m:      [ROUND 2]
+2025-05-04 21:42:36,308 - INFO - [ROUND 2]
+2025-05-04 21:42:36,308 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:42:36,308 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:42:36,308 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:43:40,497 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:43:40,497 - INFO - aggregating results for round 2
+2025-05-04 21:43:40,510 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:43:40,510 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:43:43,673 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:43:43,673 - INFO - 
+[92mINFO [0m:      [ROUND 3]
+2025-05-04 21:43:43,673 - INFO - [ROUND 3]
+2025-05-04 21:43:43,673 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:43:43,673 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:43:43,673 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:44:40,748 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:44:40,749 - INFO - aggregating results for round 3
+2025-05-04 21:44:40,761 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:44:40,761 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:44:43,893 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:44:43,894 - INFO - 
+[92mINFO [0m:      [ROUND 4]
+2025-05-04 21:44:43,894 - INFO - [ROUND 4]
+2025-05-04 21:44:43,894 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:44:43,894 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:44:43,894 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:45:41,222 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:45:41,222 - INFO - aggregating results for round 4
+2025-05-04 21:45:41,234 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:45:41,235 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:45:44,334 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:45:44,334 - INFO - 
+[92mINFO [0m:      [ROUND 5]
+2025-05-04 21:45:44,334 - INFO - [ROUND 5]
+2025-05-04 21:45:44,334 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:45:44,334 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:45:44,334 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:46:41,511 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:46:41,511 - INFO - aggregating results for round 5
+2025-05-04 21:46:41,524 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:46:41,524 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:46:44,669 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:46:44,669 - INFO - 
+[92mINFO [0m:      [ROUND 6]
+2025-05-04 21:46:44,669 - INFO - [ROUND 6]
+2025-05-04 21:46:44,669 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:46:44,669 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:46:44,669 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:47:41,931 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:47:41,931 - INFO - aggregating results for round 6
+2025-05-04 21:47:41,943 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:47:41,944 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:47:45,076 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:47:45,076 - INFO - 
+[92mINFO [0m:      [ROUND 7]
+2025-05-04 21:47:45,076 - INFO - [ROUND 7]
+2025-05-04 21:47:45,076 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:47:45,076 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:47:45,076 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:48:42,876 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:48:42,876 - INFO - aggregating results for round 7
+2025-05-04 21:48:42,888 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:48:42,889 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:48:46,018 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:48:46,019 - INFO - 
+[92mINFO [0m:      [ROUND 8]
+2025-05-04 21:48:46,019 - INFO - [ROUND 8]
+2025-05-04 21:48:46,019 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:48:46,019 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:48:46,019 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:49:45,383 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:49:45,384 - INFO - aggregating results for round 8
+2025-05-04 21:49:45,396 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:49:45,396 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:49:48,553 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:49:48,553 - INFO - 
+[92mINFO [0m:      [ROUND 9]
+2025-05-04 21:49:48,553 - INFO - [ROUND 9]
+2025-05-04 21:49:48,553 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:49:48,553 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:49:48,553 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:50:46,003 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:50:46,003 - INFO - aggregating results for round 9
+2025-05-04 21:50:46,016 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:50:46,016 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:50:49,168 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:50:49,168 - INFO - 
+[92mINFO [0m:      [ROUND 10]
+2025-05-04 21:50:49,168 - INFO - [ROUND 10]
+2025-05-04 21:50:49,168 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:50:49,168 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:50:49,168 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:51:46,493 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:51:46,493 - INFO - aggregating results for round 10
+2025-05-04 21:51:46,505 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:51:46,505 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:51:49,701 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:51:49,701 - INFO - 
+[92mINFO [0m:      [ROUND 11]
+2025-05-04 21:51:49,701 - INFO - [ROUND 11]
+2025-05-04 21:51:49,701 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:51:49,701 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:51:49,701 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:52:49,010 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:52:49,010 - INFO - aggregating results for round 11
+2025-05-04 21:52:49,022 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:52:49,022 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:52:52,235 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:52:52,235 - INFO - 
+[92mINFO [0m:      [ROUND 12]
+2025-05-04 21:52:52,235 - INFO - [ROUND 12]
+2025-05-04 21:52:52,235 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:52:52,235 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:52:52,235 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:53:49,657 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:53:49,657 - INFO - aggregating results for round 12
+2025-05-04 21:53:49,669 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:53:49,669 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:53:52,776 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:53:52,776 - INFO - 
+[92mINFO [0m:      [ROUND 13]
+2025-05-04 21:53:52,777 - INFO - [ROUND 13]
+2025-05-04 21:53:52,777 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:53:52,777 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:53:52,777 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:54:50,172 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:54:50,172 - INFO - aggregating results for round 13
+2025-05-04 21:54:50,184 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:54:50,185 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:54:53,340 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:54:53,341 - INFO - 
+[92mINFO [0m:      [ROUND 14]
+2025-05-04 21:54:53,341 - INFO - [ROUND 14]
+2025-05-04 21:54:53,341 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:54:53,341 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:54:53,341 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:55:50,778 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:55:50,778 - INFO - aggregating results for round 14
+2025-05-04 21:55:50,790 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:55:50,791 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:55:53,928 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:55:53,928 - INFO - 
+[92mINFO [0m:      [ROUND 15]
+2025-05-04 21:55:53,928 - INFO - [ROUND 15]
+2025-05-04 21:55:53,928 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:55:53,928 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:55:53,928 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:56:51,199 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:56:51,199 - INFO - aggregating results for round 15
+2025-05-04 21:56:51,211 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:56:51,211 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:56:54,418 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:56:54,418 - INFO - 
+[92mINFO [0m:      [ROUND 16]
+2025-05-04 21:56:54,418 - INFO - [ROUND 16]
+2025-05-04 21:56:54,418 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:56:54,418 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:56:54,418 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:57:51,769 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:57:51,769 - INFO - aggregating results for round 16
+2025-05-04 21:57:51,781 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:57:51,782 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:57:54,880 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:57:54,880 - INFO - 
+[92mINFO [0m:      [ROUND 17]
+2025-05-04 21:57:54,880 - INFO - [ROUND 17]
+2025-05-04 21:57:54,880 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:57:54,881 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:57:54,881 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:58:53,604 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:58:53,604 - INFO - aggregating results for round 17
+2025-05-04 21:58:53,617 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:58:53,617 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:58:56,756 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:58:56,756 - INFO - 
+[92mINFO [0m:      [ROUND 18]
+2025-05-04 21:58:56,756 - INFO - [ROUND 18]
+2025-05-04 21:58:56,756 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:58:56,756 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:58:56,756 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:59:54,151 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 21:59:54,151 - INFO - aggregating results for round 18
+2025-05-04 21:59:54,165 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 21:59:54,165 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 21:59:57,318 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 21:59:57,318 - INFO - 
+[92mINFO [0m:      [ROUND 19]
+2025-05-04 21:59:57,318 - INFO - [ROUND 19]
+2025-05-04 21:59:57,318 - INFO - 4 clients available. Selecting for training.
+2025-05-04 21:59:57,318 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 21:59:57,318 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:00:56,912 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:00:56,912 - INFO - aggregating results for round 19
+2025-05-04 22:00:56,924 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:00:56,924 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:01:00,074 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:01:00,074 - INFO - 
+[92mINFO [0m:      [ROUND 20]
+2025-05-04 22:01:00,074 - INFO - [ROUND 20]
+2025-05-04 22:01:00,074 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:01:00,074 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:01:00,074 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:01:57,509 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:01:57,509 - INFO - aggregating results for round 20
+2025-05-04 22:01:57,521 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:01:57,521 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:02:00,682 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:02:00,683 - INFO - 
+[92mINFO [0m:      [ROUND 21]
+2025-05-04 22:02:00,683 - INFO - [ROUND 21]
+2025-05-04 22:02:00,683 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:02:00,683 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:02:00,683 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:02:58,063 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:02:58,063 - INFO - aggregating results for round 21
+2025-05-04 22:02:58,075 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:02:58,076 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:03:01,252 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:03:01,252 - INFO - 
+[92mINFO [0m:      [ROUND 22]
+2025-05-04 22:03:01,252 - INFO - [ROUND 22]
+2025-05-04 22:03:01,252 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:03:01,252 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:03:01,252 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:03:58,605 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:03:58,605 - INFO - aggregating results for round 22
+2025-05-04 22:03:58,617 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:03:58,617 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:04:01,754 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:04:01,754 - INFO - 
+[92mINFO [0m:      [ROUND 23]
+2025-05-04 22:04:01,754 - INFO - [ROUND 23]
+2025-05-04 22:04:01,754 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:04:01,754 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:04:01,754 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:05:00,351 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:05:00,351 - INFO - aggregating results for round 23
+2025-05-04 22:05:00,364 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:05:00,364 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:05:03,512 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:05:03,512 - INFO - 
+[92mINFO [0m:      [ROUND 24]
+2025-05-04 22:05:03,512 - INFO - [ROUND 24]
+2025-05-04 22:05:03,512 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:05:03,512 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:05:03,512 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:06:00,925 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:06:00,925 - INFO - aggregating results for round 24
+2025-05-04 22:06:00,937 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:06:00,938 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:06:04,039 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:06:04,040 - INFO - 
+[92mINFO [0m:      [ROUND 25]
+2025-05-04 22:06:04,040 - INFO - [ROUND 25]
+2025-05-04 22:06:04,040 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:06:04,040 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:06:04,040 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:07:01,512 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:07:01,513 - INFO - aggregating results for round 25
+2025-05-04 22:07:01,525 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:07:01,525 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:07:04,677 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:07:04,677 - INFO - 
+[92mINFO [0m:      [ROUND 26]
+2025-05-04 22:07:04,677 - INFO - [ROUND 26]
+2025-05-04 22:07:04,678 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:07:04,678 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:07:04,678 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:08:03,859 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:08:03,859 - INFO - aggregating results for round 26
+2025-05-04 22:08:03,871 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:08:03,871 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:08:07,038 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:08:07,038 - INFO - 
+[92mINFO [0m:      [ROUND 27]
+2025-05-04 22:08:07,038 - INFO - [ROUND 27]
+2025-05-04 22:08:07,038 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:08:07,038 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:08:07,038 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:09:04,388 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:09:04,388 - INFO - aggregating results for round 27
+2025-05-04 22:09:04,400 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:09:04,401 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:09:07,562 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:09:07,563 - INFO - 
+[92mINFO [0m:      [ROUND 28]
+2025-05-04 22:09:07,563 - INFO - [ROUND 28]
+2025-05-04 22:09:07,563 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:09:07,563 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:09:07,563 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:10:06,766 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:10:06,766 - INFO - aggregating results for round 28
+2025-05-04 22:10:06,779 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:10:06,779 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:10:09,913 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:10:09,913 - INFO - 
+[92mINFO [0m:      [ROUND 29]
+2025-05-04 22:10:09,913 - INFO - [ROUND 29]
+2025-05-04 22:10:09,913 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:10:09,913 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:10:09,913 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:11:07,271 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:11:07,271 - INFO - aggregating results for round 29
+2025-05-04 22:11:07,283 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:11:07,284 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:11:10,432 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:11:10,432 - INFO - 
+[92mINFO [0m:      [ROUND 30]
+2025-05-04 22:11:10,432 - INFO - [ROUND 30]
+2025-05-04 22:11:10,432 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:11:10,432 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:11:10,432 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:12:07,790 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:12:07,790 - INFO - aggregating results for round 30
+2025-05-04 22:12:07,803 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:12:07,803 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:12:10,953 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:12:10,953 - INFO - 
+[92mINFO [0m:      [ROUND 31]
+2025-05-04 22:12:10,953 - INFO - [ROUND 31]
+2025-05-04 22:12:10,953 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:12:10,953 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:12:10,953 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:13:08,415 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:13:08,415 - INFO - aggregating results for round 31
+2025-05-04 22:13:08,427 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:13:08,427 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:13:11,558 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:13:11,558 - INFO - 
+[92mINFO [0m:      [ROUND 32]
+2025-05-04 22:13:11,558 - INFO - [ROUND 32]
+2025-05-04 22:13:11,558 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:13:11,558 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:13:11,558 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:14:09,082 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:14:09,082 - INFO - aggregating results for round 32
+2025-05-04 22:14:09,095 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:14:09,095 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:14:12,247 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:14:12,247 - INFO - 
+[92mINFO [0m:      [ROUND 33]
+2025-05-04 22:14:12,247 - INFO - [ROUND 33]
+2025-05-04 22:14:12,247 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:14:12,247 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:14:12,247 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:15:09,838 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:15:09,838 - INFO - aggregating results for round 33
+2025-05-04 22:15:09,851 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:15:09,851 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:15:13,020 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:15:13,021 - INFO - 
+[92mINFO [0m:      [ROUND 34]
+2025-05-04 22:15:13,021 - INFO - [ROUND 34]
+2025-05-04 22:15:13,021 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:15:13,021 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:15:13,021 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:16:10,545 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:16:10,545 - INFO - aggregating results for round 34
+2025-05-04 22:16:10,557 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:16:10,557 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:16:13,706 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:16:13,706 - INFO - 
+[92mINFO [0m:      [ROUND 35]
+2025-05-04 22:16:13,706 - INFO - [ROUND 35]
+2025-05-04 22:16:13,706 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:16:13,706 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:16:13,706 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:17:11,179 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:17:11,179 - INFO - aggregating results for round 35
+2025-05-04 22:17:11,192 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:17:11,192 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:17:14,314 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:17:14,315 - INFO - 
+[92mINFO [0m:      [ROUND 36]
+2025-05-04 22:17:14,315 - INFO - [ROUND 36]
+2025-05-04 22:17:14,315 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:17:14,315 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:17:14,315 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:18:11,914 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:18:11,915 - INFO - aggregating results for round 36
+2025-05-04 22:18:11,927 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:18:11,927 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:18:15,046 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:18:15,046 - INFO - 
+[92mINFO [0m:      [ROUND 37]
+2025-05-04 22:18:15,046 - INFO - [ROUND 37]
+2025-05-04 22:18:15,046 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:18:15,046 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:18:15,046 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:19:12,557 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:19:12,557 - INFO - aggregating results for round 37
+2025-05-04 22:19:12,570 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:19:12,570 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:19:15,695 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:19:15,695 - INFO - 
+[92mINFO [0m:      [ROUND 38]
+2025-05-04 22:19:15,695 - INFO - [ROUND 38]
+2025-05-04 22:19:15,696 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:19:15,696 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:19:15,696 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:20:13,231 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:20:13,231 - INFO - aggregating results for round 38
+2025-05-04 22:20:13,243 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:20:13,243 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:20:16,392 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:20:16,392 - INFO - 
+[92mINFO [0m:      [ROUND 39]
+2025-05-04 22:20:16,392 - INFO - [ROUND 39]
+2025-05-04 22:20:16,392 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:20:16,392 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:20:16,392 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:21:15,462 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:21:15,463 - INFO - aggregating results for round 39
+2025-05-04 22:21:15,475 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:21:15,475 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:21:18,663 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:21:18,663 - INFO - 
+[92mINFO [0m:      [ROUND 40]
+2025-05-04 22:21:18,663 - INFO - [ROUND 40]
+2025-05-04 22:21:18,663 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:21:18,664 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:21:18,664 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:22:16,346 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:22:16,346 - INFO - aggregating results for round 40
+2025-05-04 22:22:16,359 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:22:16,359 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:22:21,664 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:22:21,664 - INFO - 
+[92mINFO [0m:      [ROUND 41]
+2025-05-04 22:22:21,664 - INFO - [ROUND 41]
+2025-05-04 22:22:21,664 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:22:21,664 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:22:21,664 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:23:19,334 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:23:19,335 - INFO - aggregating results for round 41
+2025-05-04 22:23:19,347 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:23:19,347 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:23:22,500 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:23:22,500 - INFO - 
+[92mINFO [0m:      [ROUND 42]
+2025-05-04 22:23:22,500 - INFO - [ROUND 42]
+2025-05-04 22:23:22,500 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:23:22,500 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:23:22,500 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:24:20,061 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:24:20,061 - INFO - aggregating results for round 42
+2025-05-04 22:24:20,074 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:24:20,074 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:24:23,253 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:24:23,253 - INFO - 
+[92mINFO [0m:      [ROUND 43]
+2025-05-04 22:24:23,253 - INFO - [ROUND 43]
+2025-05-04 22:24:23,253 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:24:23,253 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:24:23,253 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:25:20,865 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:25:20,865 - INFO - aggregating results for round 43
+2025-05-04 22:25:20,878 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:25:20,879 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:25:24,043 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:25:24,043 - INFO - 
+[92mINFO [0m:      [ROUND 44]
+2025-05-04 22:25:24,043 - INFO - [ROUND 44]
+2025-05-04 22:25:24,043 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:25:24,044 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:25:24,044 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:26:21,759 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:26:21,759 - INFO - aggregating results for round 44
+2025-05-04 22:26:21,771 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:26:21,771 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:26:24,882 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:26:24,883 - INFO - 
+[92mINFO [0m:      [ROUND 45]
+2025-05-04 22:26:24,883 - INFO - [ROUND 45]
+2025-05-04 22:26:24,883 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:26:24,883 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:26:24,883 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:27:22,436 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:27:22,436 - INFO - aggregating results for round 45
+2025-05-04 22:27:22,448 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:27:22,449 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:27:25,572 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:27:25,572 - INFO - 
+[92mINFO [0m:      [ROUND 46]
+2025-05-04 22:27:25,572 - INFO - [ROUND 46]
+2025-05-04 22:27:25,572 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:27:25,572 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:27:25,572 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:28:24,705 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:28:24,705 - INFO - aggregating results for round 46
+2025-05-04 22:28:24,718 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:28:24,718 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:28:27,890 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:28:27,890 - INFO - 
+[92mINFO [0m:      [ROUND 47]
+2025-05-04 22:28:27,890 - INFO - [ROUND 47]
+2025-05-04 22:28:27,890 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:28:27,890 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:28:27,890 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:29:25,444 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:29:25,444 - INFO - aggregating results for round 47
+2025-05-04 22:29:25,456 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:29:25,457 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:29:28,607 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:29:28,607 - INFO - 
+[92mINFO [0m:      [ROUND 48]
+2025-05-04 22:29:28,607 - INFO - [ROUND 48]
+2025-05-04 22:29:28,607 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:29:28,607 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:29:28,607 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:30:26,191 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:30:26,191 - INFO - aggregating results for round 48
+2025-05-04 22:30:26,204 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:30:26,204 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:30:29,365 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:30:29,365 - INFO - 
+[92mINFO [0m:      [ROUND 49]
+2025-05-04 22:30:29,365 - INFO - [ROUND 49]
+2025-05-04 22:30:29,365 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:30:29,365 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:30:29,365 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:31:27,016 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:31:27,016 - INFO - aggregating results for round 49
+2025-05-04 22:31:27,028 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:31:27,028 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:31:30,203 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:31:30,203 - INFO - 
+[92mINFO [0m:      [ROUND 50]
+2025-05-04 22:31:30,203 - INFO - [ROUND 50]
+2025-05-04 22:31:30,203 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:31:30,203 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:31:30,203 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:32:27,643 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:32:27,643 - INFO - aggregating results for round 50
+2025-05-04 22:32:27,656 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:32:27,656 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:32:30,769 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:32:30,769 - INFO - 
+[92mINFO [0m:      [ROUND 51]
+2025-05-04 22:32:30,769 - INFO - [ROUND 51]
+2025-05-04 22:32:30,769 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:32:30,769 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:32:30,769 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:33:28,491 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:33:28,491 - INFO - aggregating results for round 51
+2025-05-04 22:33:28,503 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:33:28,503 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:33:31,668 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:33:31,668 - INFO - 
+[92mINFO [0m:      [ROUND 52]
+2025-05-04 22:33:31,668 - INFO - [ROUND 52]
+2025-05-04 22:33:31,669 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:33:31,669 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:33:31,669 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:34:29,315 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:34:29,315 - INFO - aggregating results for round 52
+2025-05-04 22:34:29,328 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:34:29,328 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:34:32,465 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:34:32,465 - INFO - 
+[92mINFO [0m:      [ROUND 53]
+2025-05-04 22:34:32,465 - INFO - [ROUND 53]
+2025-05-04 22:34:32,465 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:34:32,465 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:34:32,465 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:35:30,063 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:35:30,063 - INFO - aggregating results for round 53
+2025-05-04 22:35:30,075 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:35:30,075 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:35:35,366 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:35:35,366 - INFO - 
+[92mINFO [0m:      [ROUND 54]
+2025-05-04 22:35:35,366 - INFO - [ROUND 54]
+2025-05-04 22:35:35,366 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:35:35,366 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:35:35,366 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:36:32,904 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:36:32,904 - INFO - aggregating results for round 54
+2025-05-04 22:36:32,916 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:36:32,917 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:36:36,033 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:36:36,034 - INFO - 
+[92mINFO [0m:      [ROUND 55]
+2025-05-04 22:36:36,034 - INFO - [ROUND 55]
+2025-05-04 22:36:36,034 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:36:36,034 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:36:36,034 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:37:33,594 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:37:33,595 - INFO - aggregating results for round 55
+2025-05-04 22:37:33,607 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:37:33,607 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:37:36,758 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:37:36,759 - INFO - 
+[92mINFO [0m:      [ROUND 56]
+2025-05-04 22:37:36,759 - INFO - [ROUND 56]
+2025-05-04 22:37:36,759 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:37:36,759 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:37:36,759 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:38:34,990 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:38:34,990 - INFO - aggregating results for round 56
+2025-05-04 22:38:35,002 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:38:35,002 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:38:38,191 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:38:38,191 - INFO - 
+[92mINFO [0m:      [ROUND 57]
+2025-05-04 22:38:38,191 - INFO - [ROUND 57]
+2025-05-04 22:38:38,191 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:38:38,191 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:38:38,191 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:39:35,932 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:39:35,932 - INFO - aggregating results for round 57
+2025-05-04 22:39:35,945 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:39:35,945 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:39:39,109 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:39:39,109 - INFO - 
+[92mINFO [0m:      [ROUND 58]
+2025-05-04 22:39:39,109 - INFO - [ROUND 58]
+2025-05-04 22:39:39,109 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:39:39,109 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:39:39,109 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:40:36,626 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:40:36,626 - INFO - aggregating results for round 58
+2025-05-04 22:40:36,639 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:40:36,639 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:40:39,788 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:40:39,788 - INFO - 
+[92mINFO [0m:      [ROUND 59]
+2025-05-04 22:40:39,788 - INFO - [ROUND 59]
+2025-05-04 22:40:39,788 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:40:39,788 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:40:39,788 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:41:37,459 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:41:37,459 - INFO - aggregating results for round 59
+2025-05-04 22:41:37,471 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:41:37,471 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:41:40,655 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:41:40,656 - INFO - 
+[92mINFO [0m:      [ROUND 60]
+2025-05-04 22:41:40,656 - INFO - [ROUND 60]
+2025-05-04 22:41:40,656 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:41:40,656 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:41:40,656 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:42:38,336 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:42:38,336 - INFO - aggregating results for round 60
+2025-05-04 22:42:38,349 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:42:38,349 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:42:41,478 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:42:41,478 - INFO - 
+[92mINFO [0m:      [ROUND 61]
+2025-05-04 22:42:41,478 - INFO - [ROUND 61]
+2025-05-04 22:42:41,478 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:42:41,478 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:42:41,478 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:43:40,595 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:43:40,596 - INFO - aggregating results for round 61
+2025-05-04 22:43:40,608 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:43:40,608 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:43:43,739 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:43:43,739 - INFO - 
+[92mINFO [0m:      [ROUND 62]
+2025-05-04 22:43:43,739 - INFO - [ROUND 62]
+2025-05-04 22:43:43,739 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:43:43,739 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:43:43,739 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:44:41,420 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:44:41,420 - INFO - aggregating results for round 62
+2025-05-04 22:44:41,433 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:44:41,433 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:44:44,564 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:44:44,564 - INFO - 
+[92mINFO [0m:      [ROUND 63]
+2025-05-04 22:44:44,564 - INFO - [ROUND 63]
+2025-05-04 22:44:44,564 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:44:44,564 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:44:44,564 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:45:42,251 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:45:42,251 - INFO - aggregating results for round 63
+2025-05-04 22:45:42,264 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:45:42,264 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:45:45,395 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:45:45,395 - INFO - 
+[92mINFO [0m:      [ROUND 64]
+2025-05-04 22:45:45,395 - INFO - [ROUND 64]
+2025-05-04 22:45:45,395 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:45:45,395 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:45:45,395 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:46:43,098 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:46:43,098 - INFO - aggregating results for round 64
+2025-05-04 22:46:43,111 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:46:43,111 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:46:46,269 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:46:46,269 - INFO - 
+[92mINFO [0m:      [ROUND 65]
+2025-05-04 22:46:46,269 - INFO - [ROUND 65]
+2025-05-04 22:46:46,269 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:46:46,269 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:46:46,269 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:47:46,688 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:47:46,688 - INFO - aggregating results for round 65
+2025-05-04 22:47:46,700 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:47:46,700 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:47:49,880 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:47:49,880 - INFO - 
+[92mINFO [0m:      [ROUND 66]
+2025-05-04 22:47:49,880 - INFO - [ROUND 66]
+2025-05-04 22:47:49,880 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:47:49,880 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:47:49,880 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:48:47,519 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:48:47,519 - INFO - aggregating results for round 66
+2025-05-04 22:48:47,531 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:48:47,531 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:48:50,704 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:48:50,704 - INFO - 
+[92mINFO [0m:      [ROUND 67]
+2025-05-04 22:48:50,704 - INFO - [ROUND 67]
+2025-05-04 22:48:50,704 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:48:50,705 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:48:50,705 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:49:48,407 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:49:48,407 - INFO - aggregating results for round 67
+2025-05-04 22:49:48,420 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:49:48,420 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:49:53,709 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:49:53,710 - INFO - 
+[92mINFO [0m:      [ROUND 68]
+2025-05-04 22:49:53,710 - INFO - [ROUND 68]
+2025-05-04 22:49:53,710 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:49:53,710 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:49:53,710 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:50:53,208 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:50:53,208 - INFO - aggregating results for round 68
+2025-05-04 22:50:53,221 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:50:53,221 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:50:56,419 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:50:56,419 - INFO - 
+[92mINFO [0m:      [ROUND 69]
+2025-05-04 22:50:56,419 - INFO - [ROUND 69]
+2025-05-04 22:50:56,419 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:50:56,419 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:50:56,419 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:51:54,045 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:51:54,046 - INFO - aggregating results for round 69
+2025-05-04 22:51:54,058 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:51:54,058 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:51:57,239 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:51:57,239 - INFO - 
+[92mINFO [0m:      [ROUND 70]
+2025-05-04 22:51:57,239 - INFO - [ROUND 70]
+2025-05-04 22:51:57,239 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:51:57,239 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:51:57,239 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:52:55,593 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:52:55,593 - INFO - aggregating results for round 70
+2025-05-04 22:52:55,605 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:52:55,605 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:52:58,734 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:52:58,734 - INFO - 
+[92mINFO [0m:      [ROUND 71]
+2025-05-04 22:52:58,734 - INFO - [ROUND 71]
+2025-05-04 22:52:58,734 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:52:58,734 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:52:58,734 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:53:59,092 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:53:59,092 - INFO - aggregating results for round 71
+2025-05-04 22:53:59,105 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:53:59,105 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:54:02,293 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:54:02,293 - INFO - 
+[92mINFO [0m:      [ROUND 72]
+2025-05-04 22:54:02,293 - INFO - [ROUND 72]
+2025-05-04 22:54:02,293 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:54:02,293 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:54:02,293 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:54:59,943 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:54:59,943 - INFO - aggregating results for round 72
+2025-05-04 22:54:59,956 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:54:59,956 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:55:03,137 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:55:03,137 - INFO - 
+[92mINFO [0m:      [ROUND 73]
+2025-05-04 22:55:03,137 - INFO - [ROUND 73]
+2025-05-04 22:55:03,137 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:55:03,137 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:55:03,137 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:56:00,746 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:56:00,746 - INFO - aggregating results for round 73
+2025-05-04 22:56:00,758 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:56:00,759 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:56:03,918 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:56:03,919 - INFO - 
+[92mINFO [0m:      [ROUND 74]
+2025-05-04 22:56:03,919 - INFO - [ROUND 74]
+2025-05-04 22:56:03,919 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:56:03,919 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:56:03,919 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:57:01,537 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:57:01,538 - INFO - aggregating results for round 74
+2025-05-04 22:57:01,550 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:57:01,550 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:57:04,700 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:57:04,700 - INFO - 
+[92mINFO [0m:      [ROUND 75]
+2025-05-04 22:57:04,700 - INFO - [ROUND 75]
+2025-05-04 22:57:04,700 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:57:04,700 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:57:04,700 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:58:03,040 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:58:03,040 - INFO - aggregating results for round 75
+2025-05-04 22:58:03,052 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:58:03,052 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:58:06,219 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:58:06,219 - INFO - 
+[92mINFO [0m:      [ROUND 76]
+2025-05-04 22:58:06,219 - INFO - [ROUND 76]
+2025-05-04 22:58:06,219 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:58:06,219 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:58:06,219 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:59:03,845 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 22:59:03,845 - INFO - aggregating results for round 76
+2025-05-04 22:59:03,857 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 22:59:03,857 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 22:59:07,029 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 22:59:07,029 - INFO - 
+[92mINFO [0m:      [ROUND 77]
+2025-05-04 22:59:07,029 - INFO - [ROUND 77]
+2025-05-04 22:59:07,029 - INFO - 4 clients available. Selecting for training.
+2025-05-04 22:59:07,029 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 22:59:07,029 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:00:04,748 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:00:04,748 - INFO - aggregating results for round 77
+2025-05-04 23:00:04,760 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:00:04,760 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:00:07,952 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:00:07,952 - INFO - 
+[92mINFO [0m:      [ROUND 78]
+2025-05-04 23:00:07,952 - INFO - [ROUND 78]
+2025-05-04 23:00:07,952 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:00:07,952 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:00:07,952 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:01:05,526 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:01:05,526 - INFO - aggregating results for round 78
+2025-05-04 23:01:05,538 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:01:05,538 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:01:08,677 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:01:08,678 - INFO - 
+[92mINFO [0m:      [ROUND 79]
+2025-05-04 23:01:08,678 - INFO - [ROUND 79]
+2025-05-04 23:01:08,678 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:01:08,678 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:01:08,678 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:02:09,122 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:02:09,122 - INFO - aggregating results for round 79
+2025-05-04 23:02:09,135 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:02:09,135 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:02:12,303 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:02:12,303 - INFO - 
+[92mINFO [0m:      [ROUND 80]
+2025-05-04 23:02:12,303 - INFO - [ROUND 80]
+2025-05-04 23:02:12,303 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:02:12,303 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:02:12,303 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:03:10,108 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:03:10,108 - INFO - aggregating results for round 80
+2025-05-04 23:03:10,121 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:03:10,121 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:03:13,278 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:03:13,279 - INFO - 
+[92mINFO [0m:      [ROUND 81]
+2025-05-04 23:03:13,279 - INFO - [ROUND 81]
+2025-05-04 23:03:13,279 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:03:13,279 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:03:13,279 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:04:10,991 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:04:10,991 - INFO - aggregating results for round 81
+2025-05-04 23:04:11,003 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:04:11,003 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:04:14,117 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:04:14,117 - INFO - 
+[92mINFO [0m:      [ROUND 82]
+2025-05-04 23:04:14,117 - INFO - [ROUND 82]
+2025-05-04 23:04:14,117 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:04:14,117 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:04:14,117 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:05:12,553 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:05:12,553 - INFO - aggregating results for round 82
+2025-05-04 23:05:12,565 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:05:12,565 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:05:15,689 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:05:15,689 - INFO - 
+[92mINFO [0m:      [ROUND 83]
+2025-05-04 23:05:15,689 - INFO - [ROUND 83]
+2025-05-04 23:05:15,689 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:05:15,689 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:05:15,689 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:06:13,439 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:06:13,439 - INFO - aggregating results for round 83
+2025-05-04 23:06:13,451 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:06:13,451 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:06:16,599 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:06:16,599 - INFO - 
+[92mINFO [0m:      [ROUND 84]
+2025-05-04 23:06:16,599 - INFO - [ROUND 84]
+2025-05-04 23:06:16,599 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:06:16,599 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:06:16,599 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:07:14,325 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:07:14,325 - INFO - aggregating results for round 84
+2025-05-04 23:07:14,337 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:07:14,337 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:07:17,491 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:07:17,491 - INFO - 
+[92mINFO [0m:      [ROUND 85]
+2025-05-04 23:07:17,491 - INFO - [ROUND 85]
+2025-05-04 23:07:17,491 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:07:17,491 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:07:17,491 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:08:15,268 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:08:15,268 - INFO - aggregating results for round 85
+2025-05-04 23:08:15,280 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:08:15,280 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:08:18,435 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:08:18,435 - INFO - 
+[92mINFO [0m:      [ROUND 86]
+2025-05-04 23:08:18,435 - INFO - [ROUND 86]
+2025-05-04 23:08:18,435 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:08:18,435 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:08:18,435 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:09:16,045 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:09:16,045 - INFO - aggregating results for round 86
+2025-05-04 23:09:16,057 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:09:16,057 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:09:19,241 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:09:19,241 - INFO - 
+[92mINFO [0m:      [ROUND 87]
+2025-05-04 23:09:19,241 - INFO - [ROUND 87]
+2025-05-04 23:09:19,241 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:09:19,241 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:09:19,241 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:10:16,769 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:10:16,769 - INFO - aggregating results for round 87
+2025-05-04 23:10:16,782 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:10:16,782 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:10:19,945 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:10:19,945 - INFO - 
+[92mINFO [0m:      [ROUND 88]
+2025-05-04 23:10:19,945 - INFO - [ROUND 88]
+2025-05-04 23:10:19,946 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:10:19,946 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:10:19,946 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:11:17,497 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:11:17,497 - INFO - aggregating results for round 88
+2025-05-04 23:11:17,509 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:11:17,510 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:11:20,632 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:11:20,633 - INFO - 
+[92mINFO [0m:      [ROUND 89]
+2025-05-04 23:11:20,633 - INFO - [ROUND 89]
+2025-05-04 23:11:20,633 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:11:20,633 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:11:20,633 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:12:21,089 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:12:21,089 - INFO - aggregating results for round 89
+2025-05-04 23:12:21,101 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:12:21,101 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:12:24,280 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:12:24,280 - INFO - 
+[92mINFO [0m:      [ROUND 90]
+2025-05-04 23:12:24,280 - INFO - [ROUND 90]
+2025-05-04 23:12:24,281 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:12:24,281 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:12:24,281 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:13:21,918 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:13:21,919 - INFO - aggregating results for round 90
+2025-05-04 23:13:21,931 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:13:21,931 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:13:25,088 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:13:25,088 - INFO - 
+[92mINFO [0m:      [ROUND 91]
+2025-05-04 23:13:25,088 - INFO - [ROUND 91]
+2025-05-04 23:13:25,088 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:13:25,088 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:13:25,088 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:14:23,497 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:14:23,497 - INFO - aggregating results for round 91
+2025-05-04 23:14:23,509 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:14:23,509 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:14:26,686 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:14:26,686 - INFO - 
+[92mINFO [0m:      [ROUND 92]
+2025-05-04 23:14:26,686 - INFO - [ROUND 92]
+2025-05-04 23:14:26,686 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:14:26,686 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:14:26,686 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:15:24,279 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:15:24,280 - INFO - aggregating results for round 92
+2025-05-04 23:15:24,292 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:15:24,292 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:15:27,462 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:15:27,462 - INFO - 
+[92mINFO [0m:      [ROUND 93]
+2025-05-04 23:15:27,462 - INFO - [ROUND 93]
+2025-05-04 23:15:27,462 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:15:27,462 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:15:27,462 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:16:25,278 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:16:25,278 - INFO - aggregating results for round 93
+2025-05-04 23:16:25,291 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:16:25,291 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:16:28,480 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:16:28,480 - INFO - 
+[92mINFO [0m:      [ROUND 94]
+2025-05-04 23:16:28,480 - INFO - [ROUND 94]
+2025-05-04 23:16:28,480 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:16:28,480 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:16:28,480 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:17:26,149 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:17:26,149 - INFO - aggregating results for round 94
+2025-05-04 23:17:26,162 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:17:26,162 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:17:29,319 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:17:29,319 - INFO - 
+[92mINFO [0m:      [ROUND 95]
+2025-05-04 23:17:29,319 - INFO - [ROUND 95]
+2025-05-04 23:17:29,319 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:17:29,319 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:17:29,319 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:18:27,100 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:18:27,100 - INFO - aggregating results for round 95
+2025-05-04 23:18:27,112 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:18:27,112 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:18:30,344 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:18:30,345 - INFO - 
+[92mINFO [0m:      [ROUND 96]
+2025-05-04 23:18:30,345 - INFO - [ROUND 96]
+2025-05-04 23:18:30,345 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:18:30,345 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:18:30,345 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:19:28,137 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:19:28,137 - INFO - aggregating results for round 96
+2025-05-04 23:19:28,150 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:19:28,150 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:19:31,386 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:19:31,386 - INFO - 
+[92mINFO [0m:      [ROUND 97]
+2025-05-04 23:19:31,386 - INFO - [ROUND 97]
+2025-05-04 23:19:31,386 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:19:31,386 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:19:31,386 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:20:29,181 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:20:29,181 - INFO - aggregating results for round 97
+2025-05-04 23:20:29,193 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:20:29,193 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:20:32,355 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:20:32,355 - INFO - 
+[92mINFO [0m:      [ROUND 98]
+2025-05-04 23:20:32,355 - INFO - [ROUND 98]
+2025-05-04 23:20:32,355 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:20:32,355 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:20:32,355 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:21:29,991 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:21:29,991 - INFO - aggregating results for round 98
+2025-05-04 23:21:30,003 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:21:30,004 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:21:33,167 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:21:33,168 - INFO - 
+[92mINFO [0m:      [ROUND 99]
+2025-05-04 23:21:33,168 - INFO - [ROUND 99]
+2025-05-04 23:21:33,168 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:21:33,168 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:21:33,168 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:22:30,942 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:22:30,942 - INFO - aggregating results for round 99
+2025-05-04 23:22:30,955 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:22:30,955 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:22:34,082 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:22:34,083 - INFO - 
+[92mINFO [0m:      [ROUND 100]
+2025-05-04 23:22:34,083 - INFO - [ROUND 100]
+2025-05-04 23:22:34,083 - INFO - 4 clients available. Selecting for training.
+2025-05-04 23:22:34,083 - INFO - requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-04 23:22:34,083 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:23:31,924 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-04 23:23:31,924 - INFO - aggregating results for round 100
+2025-05-04 23:23:31,936 - INFO - model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-04 23:23:31,936 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-04 23:23:35,080 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-04 23:23:35,080 - INFO - 
+[92mINFO [0m:      [SUMMARY]
+2025-05-04 23:23:35,080 - INFO - [SUMMARY]
+[92mINFO [0m:      Run finished 100 round(s) in 6087.20s
+2025-05-04 23:23:35,080 - INFO - Run finished 100 round(s) in 6087.20s
+[92mINFO [0m:      	History (loss, distributed):
+2025-05-04 23:23:35,080 - INFO - 	History (loss, distributed):
+[92mINFO [0m:      		round 1: 0.0879455991089344
+2025-05-04 23:23:35,080 - INFO - 		round 1: 0.0879455991089344
+[92mINFO [0m:      		round 2: 0.06878391280770302
+2025-05-04 23:23:35,080 - INFO - 		round 2: 0.06878391280770302
+[92mINFO [0m:      		round 3: 0.07862827088683844
+2025-05-04 23:23:35,080 - INFO - 		round 3: 0.07862827088683844
+[92mINFO [0m:      		round 4: 0.1001233421266079
+2025-05-04 23:23:35,080 - INFO - 		round 4: 0.1001233421266079
+[92mINFO [0m:      		round 5: 0.08694004081189632
+2025-05-04 23:23:35,080 - INFO - 		round 5: 0.08694004081189632
+[92mINFO [0m:      		round 6: 0.10113151930272579
+2025-05-04 23:23:35,080 - INFO - 		round 6: 0.10113151930272579
+[92mINFO [0m:      		round 7: 0.10675374791026115
+2025-05-04 23:23:35,080 - INFO - 		round 7: 0.10675374791026115
+[92mINFO [0m:      		round 8: 0.09632734209299088
+2025-05-04 23:23:35,080 - INFO - 		round 8: 0.09632734209299088
+[92mINFO [0m:      		round 9: 0.0971847865730524
+2025-05-04 23:23:35,080 - INFO - 		round 9: 0.0971847865730524
+[92mINFO [0m:      		round 10: 0.1035874243825674
+2025-05-04 23:23:35,080 - INFO - 		round 10: 0.1035874243825674
+[92mINFO [0m:      		round 11: 0.09618914686143398
+2025-05-04 23:23:35,080 - INFO - 		round 11: 0.09618914686143398
+[92mINFO [0m:      		round 12: 0.10973826237022877
+2025-05-04 23:23:35,080 - INFO - 		round 12: 0.10973826237022877
+[92mINFO [0m:      		round 13: 0.12560459226369858
+2025-05-04 23:23:35,080 - INFO - 		round 13: 0.12560459226369858
+[92mINFO [0m:      		round 14: 0.148048659786582
+2025-05-04 23:23:35,080 - INFO - 		round 14: 0.148048659786582
+[92mINFO [0m:      		round 15: 0.15966159850358963
+2025-05-04 23:23:35,080 - INFO - 		round 15: 0.15966159850358963
+[92mINFO [0m:      		round 16: 0.19699081033468246
+2025-05-04 23:23:35,081 - INFO - 		round 16: 0.19699081033468246
+[92mINFO [0m:      		round 17: 0.17057314701378345
+2025-05-04 23:23:35,081 - INFO - 		round 17: 0.17057314701378345
+[92mINFO [0m:      		round 18: 0.15775109641253948
+2025-05-04 23:23:35,081 - INFO - 		round 18: 0.15775109641253948
+[92mINFO [0m:      		round 19: 0.1639674324542284
+2025-05-04 23:23:35,081 - INFO - 		round 19: 0.1639674324542284
+[92mINFO [0m:      		round 20: 0.16807823814451694
+2025-05-04 23:23:35,081 - INFO - 		round 20: 0.16807823814451694
+[92mINFO [0m:      		round 21: 0.15765221416950226
+2025-05-04 23:23:35,081 - INFO - 		round 21: 0.15765221416950226
+[92mINFO [0m:      		round 22: 0.18885622546076775
+2025-05-04 23:23:35,081 - INFO - 		round 22: 0.18885622546076775
+[92mINFO [0m:      		round 23: 0.18399456143379211
+2025-05-04 23:23:35,081 - INFO - 		round 23: 0.18399456143379211
+[92mINFO [0m:      		round 24: 0.13484681770205498
+2025-05-04 23:23:35,081 - INFO - 		round 24: 0.13484681770205498
+[92mINFO [0m:      		round 25: 0.18067906983196735
+2025-05-04 23:23:35,081 - INFO - 		round 25: 0.18067906983196735
+[92mINFO [0m:      		round 26: 0.1983749158680439
+2025-05-04 23:23:35,081 - INFO - 		round 26: 0.1983749158680439
+[92mINFO [0m:      		round 27: 0.23136907443404198
+2025-05-04 23:23:35,081 - INFO - 		round 27: 0.23136907443404198
+[92mINFO [0m:      		round 28: 0.19373697973787785
+2025-05-04 23:23:35,081 - INFO - 		round 28: 0.19373697973787785
+[92mINFO [0m:      		round 29: 0.1682559922337532
+2025-05-04 23:23:35,081 - INFO - 		round 29: 0.1682559922337532
+[92mINFO [0m:      		round 30: 0.16037577204406261
+2025-05-04 23:23:35,081 - INFO - 		round 30: 0.16037577204406261
+[92mINFO [0m:      		round 31: 0.21787218190729618
+2025-05-04 23:23:35,081 - INFO - 		round 31: 0.21787218190729618
+[92mINFO [0m:      		round 32: 0.18412653170526028
+2025-05-04 23:23:35,081 - INFO - 		round 32: 0.18412653170526028
+[92mINFO [0m:      		round 33: 0.17410931177437305
+2025-05-04 23:23:35,081 - INFO - 		round 33: 0.17410931177437305
+[92mINFO [0m:      		round 34: 0.22184743732213974
+2025-05-04 23:23:35,081 - INFO - 		round 34: 0.22184743732213974
+[92mINFO [0m:      		round 35: 0.18868923746049404
+2025-05-04 23:23:35,081 - INFO - 		round 35: 0.18868923746049404
+[92mINFO [0m:      		round 36: 0.2512336429208517
+2025-05-04 23:23:35,081 - INFO - 		round 36: 0.2512336429208517
+[92mINFO [0m:      		round 37: 0.2007671743631363
+2025-05-04 23:23:35,081 - INFO - 		round 37: 0.2007671743631363
+[92mINFO [0m:      		round 38: 0.15482975915074348
+2025-05-04 23:23:35,081 - INFO - 		round 38: 0.15482975915074348
+[92mINFO [0m:      		round 39: 0.20041859336197376
+2025-05-04 23:23:35,081 - INFO - 		round 39: 0.20041859336197376
+[92mINFO [0m:      		round 40: 0.20140991546213627
+2025-05-04 23:23:35,081 - INFO - 		round 40: 0.20140991546213627
+[92mINFO [0m:      		round 41: 0.1865120343863964
+2025-05-04 23:23:35,081 - INFO - 		round 41: 0.1865120343863964
+[92mINFO [0m:      		round 42: 0.1972013134509325
+2025-05-04 23:23:35,081 - INFO - 		round 42: 0.1972013134509325
+[92mINFO [0m:      		round 43: 0.22066069766879082
+2025-05-04 23:23:35,081 - INFO - 		round 43: 0.22066069766879082
+[92mINFO [0m:      		round 44: 0.2123914361000061
+2025-05-04 23:23:35,081 - INFO - 		round 44: 0.2123914361000061
+[92mINFO [0m:      		round 45: 0.21186532638967037
+2025-05-04 23:23:35,081 - INFO - 		round 45: 0.21186532638967037
+[92mINFO [0m:      		round 46: 0.20953524485230446
+2025-05-04 23:23:35,081 - INFO - 		round 46: 0.20953524485230446
+[92mINFO [0m:      		round 47: 0.236079853028059
+2025-05-04 23:23:35,081 - INFO - 		round 47: 0.236079853028059
+[92mINFO [0m:      		round 48: 0.1961316429078579
+2025-05-04 23:23:35,081 - INFO - 		round 48: 0.1961316429078579
+[92mINFO [0m:      		round 49: 0.23427578806877136
+2025-05-04 23:23:35,081 - INFO - 		round 49: 0.23427578806877136
+[92mINFO [0m:      		round 50: 0.1915679331868887
+2025-05-04 23:23:35,081 - INFO - 		round 50: 0.1915679331868887
+[92mINFO [0m:      		round 51: 0.2708495408296585
+2025-05-04 23:23:35,081 - INFO - 		round 51: 0.2708495408296585
+[92mINFO [0m:      		round 52: 0.20458614639937878
+2025-05-04 23:23:35,081 - INFO - 		round 52: 0.20458614639937878
+[92mINFO [0m:      		round 53: 0.2834577690809965
+2025-05-04 23:23:35,081 - INFO - 		round 53: 0.2834577690809965
+[92mINFO [0m:      		round 54: 0.2331582810729742
+2025-05-04 23:23:35,081 - INFO - 		round 54: 0.2331582810729742
+[92mINFO [0m:      		round 55: 0.18359030969440937
+2025-05-04 23:23:35,081 - INFO - 		round 55: 0.18359030969440937
+[92mINFO [0m:      		round 56: 0.20540430769324303
+2025-05-04 23:23:35,081 - INFO - 		round 56: 0.20540430769324303
+[92mINFO [0m:      		round 57: 0.11932090856134892
+2025-05-04 23:23:35,082 - INFO - 		round 57: 0.11932090856134892
+[92mINFO [0m:      		round 58: 0.14752676710486412
+2025-05-04 23:23:35,082 - INFO - 		round 58: 0.14752676710486412
+[92mINFO [0m:      		round 59: 0.20519964210689068
+2025-05-04 23:23:35,082 - INFO - 		round 59: 0.20519964210689068
+[92mINFO [0m:      		round 60: 0.1717846281826496
+2025-05-04 23:23:35,082 - INFO - 		round 60: 0.1717846281826496
+[92mINFO [0m:      		round 61: 0.2143538985401392
+2025-05-04 23:23:35,082 - INFO - 		round 61: 0.2143538985401392
+[92mINFO [0m:      		round 62: 0.21080507524311543
+2025-05-04 23:23:35,082 - INFO - 		round 62: 0.21080507524311543
+[92mINFO [0m:      		round 63: 0.1998962238430977
+2025-05-04 23:23:35,082 - INFO - 		round 63: 0.1998962238430977
+[92mINFO [0m:      		round 64: 0.16549395956099033
+2025-05-04 23:23:35,082 - INFO - 		round 64: 0.16549395956099033
+[92mINFO [0m:      		round 65: 0.19712122064083815
+2025-05-04 23:23:35,082 - INFO - 		round 65: 0.19712122064083815
+[92mINFO [0m:      		round 66: 0.2702267784625292
+2025-05-04 23:23:35,082 - INFO - 		round 66: 0.2702267784625292
+[92mINFO [0m:      		round 67: 0.2300131879746914
+2025-05-04 23:23:35,082 - INFO - 		round 67: 0.2300131879746914
+[92mINFO [0m:      		round 68: 0.1503079328685999
+2025-05-04 23:23:35,082 - INFO - 		round 68: 0.1503079328685999
+[92mINFO [0m:      		round 69: 0.24626945983618498
+2025-05-04 23:23:35,082 - INFO - 		round 69: 0.24626945983618498
+[92mINFO [0m:      		round 70: 0.27163619361817837
+2025-05-04 23:23:35,082 - INFO - 		round 70: 0.27163619361817837
+[92mINFO [0m:      		round 71: 0.21943839080631733
+2025-05-04 23:23:35,082 - INFO - 		round 71: 0.21943839080631733
+[92mINFO [0m:      		round 72: 0.22881776466965675
+2025-05-04 23:23:35,082 - INFO - 		round 72: 0.22881776466965675
+[92mINFO [0m:      		round 73: 0.2530181556940079
+2025-05-04 23:23:35,082 - INFO - 		round 73: 0.2530181556940079
+[92mINFO [0m:      		round 74: 0.2391194012016058
+2025-05-04 23:23:35,082 - INFO - 		round 74: 0.2391194012016058
+[92mINFO [0m:      		round 75: 0.2166870441287756
+2025-05-04 23:23:35,082 - INFO - 		round 75: 0.2166870441287756
+[92mINFO [0m:      		round 76: 0.2471345653757453
+2025-05-04 23:23:35,082 - INFO - 		round 76: 0.2471345653757453
+[92mINFO [0m:      		round 77: 0.2230296116322279
+2025-05-04 23:23:35,082 - INFO - 		round 77: 0.2230296116322279
+[92mINFO [0m:      		round 78: 0.25763659179210663
+2025-05-04 23:23:35,082 - INFO - 		round 78: 0.25763659179210663
+[92mINFO [0m:      		round 79: 0.3441968150436878
+2025-05-04 23:23:35,082 - INFO - 		round 79: 0.3441968150436878
+[92mINFO [0m:      		round 80: 0.30935259722173214
+2025-05-04 23:23:35,082 - INFO - 		round 80: 0.30935259722173214
+[92mINFO [0m:      		round 81: 0.26764932088553905
+2025-05-04 23:23:35,082 - INFO - 		round 81: 0.26764932088553905
+[92mINFO [0m:      		round 82: 0.3302646391093731
+2025-05-04 23:23:35,082 - INFO - 		round 82: 0.3302646391093731
+[92mINFO [0m:      		round 83: 0.2999367509037256
+2025-05-04 23:23:35,082 - INFO - 		round 83: 0.2999367509037256
+[92mINFO [0m:      		round 84: 0.35672080516815186
+2025-05-04 23:23:35,082 - INFO - 		round 84: 0.35672080516815186
+[92mINFO [0m:      		round 85: 0.28531402349472046
+2025-05-04 23:23:35,082 - INFO - 		round 85: 0.28531402349472046
+[92mINFO [0m:      		round 86: 0.2999940998852253
+2025-05-04 23:23:35,082 - INFO - 		round 86: 0.2999940998852253
+[92mINFO [0m:      		round 87: 0.2488635778427124
+2025-05-04 23:23:35,082 - INFO - 		round 87: 0.2488635778427124
+[92mINFO [0m:      		round 88: 0.28878273628652096
+2025-05-04 23:23:35,082 - INFO - 		round 88: 0.28878273628652096
+[92mINFO [0m:      		round 89: 0.24895884096622467
+2025-05-04 23:23:35,082 - INFO - 		round 89: 0.24895884096622467
+[92mINFO [0m:      		round 90: 0.28179424442350864
+2025-05-04 23:23:35,082 - INFO - 		round 90: 0.28179424442350864
+[92mINFO [0m:      		round 91: 0.19682861492037773
+2025-05-04 23:23:35,082 - INFO - 		round 91: 0.19682861492037773
+[92mINFO [0m:      		round 92: 0.22248160652816296
+2025-05-04 23:23:35,082 - INFO - 		round 92: 0.22248160652816296
+[92mINFO [0m:      		round 93: 0.2076395433396101
+2025-05-04 23:23:35,082 - INFO - 		round 93: 0.2076395433396101
+[92mINFO [0m:      		round 94: 0.21633517369627953
+2025-05-04 23:23:35,082 - INFO - 		round 94: 0.21633517369627953
+[92mINFO [0m:      		round 95: 0.27248452231287956
+2025-05-04 23:23:35,082 - INFO - 		round 95: 0.27248452231287956
+[92mINFO [0m:      		round 96: 0.18229933455586433
+2025-05-04 23:23:35,082 - INFO - 		round 96: 0.18229933455586433
+[92mINFO [0m:      		round 97: 0.23200094886124134
+2025-05-04 23:23:35,082 - INFO - 		round 97: 0.23200094886124134
+[92mINFO [0m:      		round 98: 0.2728407308459282
+2025-05-04 23:23:35,082 - INFO - 		round 98: 0.2728407308459282
+[92mINFO [0m:      		round 99: 0.22613241709768772
+2025-05-04 23:23:35,082 - INFO - 		round 99: 0.22613241709768772
+[92mINFO [0m:      		round 100: 0.1405553799122572
+2025-05-04 23:23:35,082 - INFO - 		round 100: 0.1405553799122572
+[92mINFO [0m:      
+2025-05-04 23:23:35,082 - INFO - 

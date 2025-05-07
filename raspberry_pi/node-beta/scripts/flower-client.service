@@ -1,0 +1,15 @@
+[Unit]
+Description=Flower Client for Federated Learning
+After=network.target
+
+[Service]
+User=rtikes
+WorkingDirectory=/home/rtikes/Blockchain-Distributed-IDS/raspberry_pi/node-beta/scripts
+ExecStart=/home/rtikes/Blockchain-Distributed-IDS/venv/bin/python3 flower_client.py
+Restart=always
+RestartSec=5
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
+

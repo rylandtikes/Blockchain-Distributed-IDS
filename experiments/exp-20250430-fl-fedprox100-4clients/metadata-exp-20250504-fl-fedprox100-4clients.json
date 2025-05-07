@@ -1,0 +1,13 @@
+{
+  "experiment": "exp-20250504-fl-fedprox100-4clients",
+  "date": "2025-05-04",
+  "component": "Federated Learning",
+  "test_type": "Aggregation Strategy Comparison",
+  "clients": 4,
+  "aggregation": "FedProx",
+  "rounds": 100,
+  "dataset": "Portion of CICIDS2017 (Alpha, Beta, Epsilon, Zeta)",
+  "hardware": "2x RPi 4B, 2x RPi 5",
+  "notes": "FedProx strategy with proximal_mu=0.1 to evaluate training stability and fairness."
+}
+

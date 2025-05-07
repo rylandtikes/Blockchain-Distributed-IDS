@@ -5,10 +5,10 @@ import { promises as fs } from 'fs';
 import * as path from 'path';
 
 const channelName = 'mychannel';
-const chaincodeName = 'basic';
+const chaincodeName = 'model';
 const mspId = 'Org1MSP';
 
-const cryptoPath = path.resolve(__dirname, '..', '..', '..', 'test-network', 'organizations', 'peerOrganizations', 'org1.example.com');
+const cryptoPath = path.resolve(__dirname, '..', '..', '..', 'fabric-ids', 'fabric-ids-network', 'organizations', 'peerOrganizations', 'org1.example.com');
 const keyDirectoryPath = path.resolve(cryptoPath, 'users', 'User1@org1.example.com', 'msp', 'keystore');
 const certDirectoryPath = path.resolve(cryptoPath, 'users', 'User1@org1.example.com', 'msp', 'signcerts');
 const tlsCertPath = path.resolve(cryptoPath, 'peers', 'peer0.org1.example.com', 'tls', 'ca.crt');
@@ -44,16 +44,21 @@ async function main(): Promise<void> {
             throw new Error(`Invalid log format: "${lastLine}"`);
         }
 
-        const assetId = modelHash;
+        console.log(`Checking if model hash ${modelHash} exists...`);
+        try {
+            const existing = await contract.evaluateTransaction('ReadModelUpdate', modelHash);
+            const parsed = JSON.parse(existing.toString());
+            console.log(`Model update already exists on ledger:\n`, parsed);
+        } catch (readErr) {
+            console.log('Model hash not found. Submitting CreateModelUpdate transaction...');
+            await contract.submitTransaction('CreateModelUpdate', modelHash, timestamp, nodeId);
+            console.log('CreateModelUpdate transaction submitted.');
 
-        console.log('Submitting CreateAsset transaction...');
-        await contract.submitTransaction('CreateAsset', assetId, timestamp, '1', nodeId, '0');
-        console.log('CreateAsset transaction submitted.');
-
-        console.log('Querying asset to verify...');
-        const resultBytes = await contract.evaluateTransaction('ReadAsset', assetId);
-        const resultJson = Buffer.from(resultBytes).toString('utf8');
-        console.log('Query result:', JSON.parse(resultJson));
+            console.log('Querying model update to verify...');
+            const resultBytes = await contract.evaluateTransaction('ReadModelUpdate', modelHash);
+            const resultJson = Buffer.from(resultBytes).toString('utf8');
+            console.log('Query result:', JSON.parse(resultJson));
+        }
 
     } catch (error) {
         console.error('Error:', error);
@@ -92,3 +97,4 @@ async function newSigner(): Promise<Signer> {
 }
 
 main();
+

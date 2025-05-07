@@ -86,13 +86,9 @@ services:
       - CORE_METRICS_PROVIDER=prometheus
       - CHAINCODE_AS_A_SERVICE_BUILDER_CONFIG={"peername":"peer0org1"}
       - CORE_CHAINCODE_EXECUTETIMEOUT=300s
-      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
-
     volumes:
       - ../organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com:/etc/hyperledger/fabric
       - peer0.org1.example.com:/var/hyperledger/production
-      - /home/rtikes/Blockchain-Distributed-IDS/ids/fabric-ids/config/core.yaml:/etc/hyperledger/peercfg/core.yaml
-      - /var/run/docker.sock:/host/var/run/docker.sock
     working_dir: /root
     command: peer node start
     ports:
@@ -129,12 +125,9 @@ services:
       - CORE_METRICS_PROVIDER=prometheus
       - CHAINCODE_AS_A_SERVICE_BUILDER_CONFIG={"peername":"peer0org2"}
       - CORE_CHAINCODE_EXECUTETIMEOUT=300s
-      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
-    
     volumes:
       - ../organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com:/etc/hyperledger/fabric
-      - peer0.org2.example.com:/var/hyperledger/productioni
-      - /home/rtikes/Blockchain-Distributed-IDS/ids/fabric-ids/config/core.yaml:/etc/hyperledger/peercfg/core.yaml
+      - peer0.org2.example.com:/var/hyperledger/production
     working_dir: /root
     command: peer node start
     ports:
