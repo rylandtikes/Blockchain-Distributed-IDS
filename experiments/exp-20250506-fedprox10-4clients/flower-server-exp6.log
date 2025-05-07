@@ -1,0 +1,278 @@
+2025-05-06 23:13:33.432653: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1746594813.443276   40610 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1746594813.446478   40610 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-05-06 23:13:33.458218: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+W0000 00:00:1746594814.858883   40610 gpu_device.cc:2433] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+2025-05-06 23:13:34,912 - INFO - Loaded existing ANN model for server.
+2025-05-06 23:13:34,912 - INFO - Starting Flower Server...
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-05-06 23:13:34,912 - WARNING - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=10, round_timeout=300s
+2025-05-06 23:13:34,912 - INFO - Starting Flower server, config: num_rounds=10, round_timeout=300s
+[92mINFO [0m:      Flower ECE: gRPC server running (10 rounds), SSL is disabled
+2025-05-06 23:13:34,916 - INFO - Flower ECE: gRPC server running (10 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+2025-05-06 23:13:34,917 - INFO - [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+2025-05-06 23:13:34,917 - INFO - Requesting initial parameters from one random client
+[92mINFO [0m:      Received initial parameters from one random client
+2025-05-06 23:15:10,230 - INFO - Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+2025-05-06 23:15:10,230 - INFO - Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+2025-05-06 23:15:10,230 - INFO - Evaluation returned no results (`None`)
+[92mINFO [0m:      
+2025-05-06 23:15:10,230 - INFO - 
+[92mINFO [0m:      [ROUND 1]
+2025-05-06 23:15:10,230 - INFO - [ROUND 1]
+2025-05-06 23:15:10,231 - INFO - 1 clients available. Selecting for training.
+2025-05-06 23:15:10,231 - INFO - Requesting training from 1 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 1 clients (out of 1)
+2025-05-06 23:15:10,231 - INFO - configure_fit: strategy sampled 1 clients (out of 1)
+[92mINFO [0m:      aggregate_fit: received 1 results and 0 failures
+2025-05-06 23:16:17,623 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-05-06 23:16:17,623 - INFO - Aggregating results for round 1
+2025-05-06 23:16:17,624 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: b75a91979347adaaeebdc686bfb66f831dc779715b1fdb144511d29ca7aaa9a9
+/home/rtikes/anaconda3/envs/flower-env/lib/python3.11/site-packages/keras/src/backend/tensorflow/core.py:155: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  return np.array(x)
+2025-05-06 23:16:17,639 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 2 clients (out of 2)
+2025-05-06 23:16:28,044 - INFO - configure_evaluate: strategy sampled 2 clients (out of 2)
+[92mINFO [0m:      aggregate_evaluate: received 2 results and 0 failures
+2025-05-06 23:16:33,686 - INFO - aggregate_evaluate: received 2 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+2025-05-06 23:16:33,686 - WARNING - No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+2025-05-06 23:16:33,686 - INFO - 
+[92mINFO [0m:      [ROUND 2]
+2025-05-06 23:16:33,686 - INFO - [ROUND 2]
+2025-05-06 23:16:33,686 - INFO - 2 clients available. Selecting for training.
+2025-05-06 23:16:33,686 - INFO - Requesting training from 2 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 2)
+2025-05-06 23:16:33,686 - INFO - configure_fit: strategy sampled 2 clients (out of 2)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+2025-05-06 23:17:38,991 - INFO - aggregate_fit: received 2 results and 0 failures
+2025-05-06 23:17:38,991 - INFO - Aggregating results for round 2
+2025-05-06 23:17:38,992 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 3457b5a377850f2590a34061667dd9c1d1f6f74b3fa1c8a84b3a575c5ec675ab
+2025-05-06 23:17:38,992 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: ff697e64dbd0ce7dd0bb2c478c4411951ff578c438dbf018f6ce9a33668ad8f2
+2025-05-06 23:17:39,003 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+2025-05-06 23:17:39,003 - INFO - configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+2025-05-06 23:17:42,549 - INFO - aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:17:42,550 - INFO - 
+[92mINFO [0m:      [ROUND 3]
+2025-05-06 23:17:42,550 - INFO - [ROUND 3]
+2025-05-06 23:17:42,550 - INFO - 3 clients available. Selecting for training.
+2025-05-06 23:17:42,550 - INFO - Requesting training from 3 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+2025-05-06 23:17:42,550 - INFO - configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+2025-05-06 23:18:44,839 - INFO - aggregate_fit: received 3 results and 0 failures
+2025-05-06 23:18:44,839 - INFO - Aggregating results for round 3
+2025-05-06 23:18:44,840 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: 70d22d131ccf822d1184256e83205a765c43e47d3312119b0799a86c6be9c642
+2025-05-06 23:18:44,840 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: 5ddbd8c419d87481cf11b5819042406a5e79a61ff26fc0e656a1bf3e7a862308
+2025-05-06 23:18:44,840 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 55b5d9bfb295b3314b969c3513cdda2bfccd33eb2ac097114153174ac104fff6
+2025-05-06 23:18:44,851 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+2025-05-06 23:18:44,851 - INFO - configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+2025-05-06 23:18:48,302 - INFO - aggregate_evaluate: received 3 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:18:48,302 - INFO - 
+[92mINFO [0m:      [ROUND 4]
+2025-05-06 23:18:48,302 - INFO - [ROUND 4]
+2025-05-06 23:18:48,302 - INFO - 3 clients available. Selecting for training.
+2025-05-06 23:18:48,302 - INFO - Requesting training from 3 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 3)
+2025-05-06 23:18:48,302 - INFO - configure_fit: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+2025-05-06 23:19:49,209 - INFO - aggregate_fit: received 3 results and 0 failures
+2025-05-06 23:19:49,209 - INFO - Aggregating results for round 4
+2025-05-06 23:19:49,210 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: c5aea0f40beebd133c2d8807d8ade2d018da5f6dcb47127b306b3fcaa2924d22
+2025-05-06 23:19:49,210 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: d2d0ee55dc2d1e179428b4dccce38aac696062da877b2978b3a834b368baa9f4
+2025-05-06 23:19:49,210 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 31e1b8bec28eca7d1e5f1f2c95a20f3271c90884dd71de3037e5ede074a05e08
+2025-05-06 23:19:49,221 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:19:49,221 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:19:52,733 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:19:52,733 - INFO - 
+[92mINFO [0m:      [ROUND 5]
+2025-05-06 23:19:52,733 - INFO - [ROUND 5]
+2025-05-06 23:19:52,733 - INFO - 4 clients available. Selecting for training.
+2025-05-06 23:19:52,733 - INFO - Requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-06 23:19:52,733 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:20:53,619 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:20:53,619 - INFO - Aggregating results for round 5
+2025-05-06 23:20:53,620 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: 0d7280d0b921b2ffbfc926b9e9036e2581d3b3581bf14e21b6b09bcbd3179dcb
+2025-05-06 23:20:53,621 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: 75323d0cc363593859e2cce09495240941db4b7c1dc2439430596a609a280ac8
+2025-05-06 23:20:53,621 - INFO - Received model update from 2805ef1cf4f24214926106f3eaeb3106 with SHA-256 hash: e73805ce820dee84aea3d8127d71b29c1ca74e0fad4f59c7a5abd77bcec3fc68
+2025-05-06 23:20:53,621 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 950f56d5086e8b8bd7181fa7172efe3ad0871df81eafcfa0ba972d1f11ac77c1
+2025-05-06 23:20:53,631 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:20:53,632 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:20:57,008 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:20:57,008 - INFO - 
+[92mINFO [0m:      [ROUND 6]
+2025-05-06 23:20:57,008 - INFO - [ROUND 6]
+2025-05-06 23:20:57,008 - INFO - 4 clients available. Selecting for training.
+2025-05-06 23:20:57,008 - INFO - Requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-06 23:20:57,008 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:21:58,199 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:21:58,199 - INFO - Aggregating results for round 6
+2025-05-06 23:21:58,201 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: 62ccac2b9e61684813874904c039869433cf4404588059f1b1d766c93a6f8cda
+2025-05-06 23:21:58,201 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: cc9dfff84d9b43d34085cea66e79f165196dfdee4d046cef7a874a33126f16f1
+2025-05-06 23:21:58,201 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: 1edee5305ef1e089c37f5aaabf56fb1af5588500fcec25b9254dc4b8e23dd018
+2025-05-06 23:21:58,201 - INFO - Received model update from 2805ef1cf4f24214926106f3eaeb3106 with SHA-256 hash: f46f00ad40c932a3406ec617404e40524591dda6fa6f629e4e42a90a38249967
+2025-05-06 23:21:58,211 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:21:58,212 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:22:01,629 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:22:01,629 - INFO - 
+[92mINFO [0m:      [ROUND 7]
+2025-05-06 23:22:01,629 - INFO - [ROUND 7]
+2025-05-06 23:22:01,629 - INFO - 4 clients available. Selecting for training.
+2025-05-06 23:22:01,629 - INFO - Requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-06 23:22:01,629 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:23:02,645 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:23:02,645 - INFO - Aggregating results for round 7
+2025-05-06 23:23:02,646 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: 417bd381fef21e7379d8a56871d016c49b9a85a31fb4df7040c07d3c936ea837
+2025-05-06 23:23:02,647 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 38a4a9cd11ef6cfcd0ed69b5746f88b48554eb466d2025f9c88606eb910ba6c4
+2025-05-06 23:23:02,647 - INFO - Received model update from 2805ef1cf4f24214926106f3eaeb3106 with SHA-256 hash: 462bcd2a38c8ff600114ff13d55c749a4d506d96e91bc01cf555aaab50dd8b10
+2025-05-06 23:23:02,647 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: 6cff87743639ff8b0efcbac9018d9e14e3ca1ca804f804169bde06251cc54714
+2025-05-06 23:23:02,657 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:23:02,658 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:23:06,118 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:23:06,118 - INFO - 
+[92mINFO [0m:      [ROUND 8]
+2025-05-06 23:23:06,118 - INFO - [ROUND 8]
+2025-05-06 23:23:06,118 - INFO - 4 clients available. Selecting for training.
+2025-05-06 23:23:06,118 - INFO - Requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-06 23:23:06,118 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:24:07,249 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:24:07,249 - INFO - Aggregating results for round 8
+2025-05-06 23:24:07,250 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: fad04a96b174e20ade7b393151f8412a1ef1cb182cb8f5ce00fb36c5f5d33cc3
+2025-05-06 23:24:07,250 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: d1ccc3ec73d51c602864dfa6bd49a50e049f4a2cd5073ac9a558336fe8ccb8d6
+2025-05-06 23:24:07,250 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: bf3a819164174c58632195c1f199e56592e05b92773deb1842113702fdf1add3
+2025-05-06 23:24:07,250 - INFO - Received model update from 2805ef1cf4f24214926106f3eaeb3106 with SHA-256 hash: 8a6d91b432df279eb6dcc4cf5abd92163a1e40dd69d01f6cea9dca520fc37568
+2025-05-06 23:24:07,261 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:24:07,261 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:24:10,708 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:24:10,708 - INFO - 
+[92mINFO [0m:      [ROUND 9]
+2025-05-06 23:24:10,708 - INFO - [ROUND 9]
+2025-05-06 23:24:10,708 - INFO - 4 clients available. Selecting for training.
+2025-05-06 23:24:10,708 - INFO - Requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-06 23:24:10,708 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:25:11,874 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:25:11,874 - INFO - Aggregating results for round 9
+2025-05-06 23:25:11,876 - INFO - Received model update from 2805ef1cf4f24214926106f3eaeb3106 with SHA-256 hash: 05aaa0e271aaf0b1c636cf69675fd3496661f8e024629e7a3b4d259e0d80439c
+2025-05-06 23:25:11,876 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: f9317907bd6d40438b0427d232b6d1628233b513bdac9f088e61c0b1ef34c0ac
+2025-05-06 23:25:11,876 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: bc49e2cd9ddc0aeeefd23eb7f29570d2e323fd561bf586c2b75f0c95ade1ee53
+2025-05-06 23:25:11,876 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 69c528434b5fb565e9758137dbb70904e45bd725301ccce9e05a6b68759d42cc
+2025-05-06 23:25:11,886 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:25:11,887 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:25:15,270 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:25:15,270 - INFO - 
+[92mINFO [0m:      [ROUND 10]
+2025-05-06 23:25:15,270 - INFO - [ROUND 10]
+2025-05-06 23:25:15,270 - INFO - 4 clients available. Selecting for training.
+2025-05-06 23:25:15,270 - INFO - Requesting training from 4 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 4)
+2025-05-06 23:25:15,270 - INFO - configure_fit: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:26:16,413 - INFO - aggregate_fit: received 4 results and 0 failures
+2025-05-06 23:26:16,413 - INFO - Aggregating results for round 10
+2025-05-06 23:26:16,414 - INFO - Received model update from 587c4295cb3443059fbc324940550a72 with SHA-256 hash: c461cecefd0fa3d1db62832fe20c187f31d5f2573d5e5dd14f085f33ac80b120
+2025-05-06 23:26:16,414 - INFO - Received model update from e518b44c8f6149f68f1b58e2fc93d816 with SHA-256 hash: 68717eecf7e0100e055733e289044008144a15ce364b5db399e58b59a332f322
+2025-05-06 23:26:16,414 - INFO - Received model update from 2805ef1cf4f24214926106f3eaeb3106 with SHA-256 hash: 58683dbcb6397261b5437d874a70953c90b9a291d81a175d07d6945a90712452
+2025-05-06 23:26:16,414 - INFO - Received model update from a0acb62f082e479ca25359daa131b036 with SHA-256 hash: 5507518b299753eafd4b75e0dda3ef794ae75d4ff2ea280dd243b53b83ac0686
+2025-05-06 23:26:16,425 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-05-06 23:26:16,425 - INFO - configure_evaluate: strategy sampled 4 clients (out of 4)
+[92mINFO [0m:      aggregate_evaluate: received 4 results and 0 failures
+2025-05-06 23:26:19,768 - INFO - aggregate_evaluate: received 4 results and 0 failures
+[92mINFO [0m:      
+2025-05-06 23:26:19,768 - INFO - 
+[92mINFO [0m:      [SUMMARY]
+2025-05-06 23:26:19,768 - INFO - [SUMMARY]
+[92mINFO [0m:      Run finished 10 round(s) in 669.54s
+2025-05-06 23:26:19,768 - INFO - Run finished 10 round(s) in 669.54s
+[92mINFO [0m:      	History (loss, distributed):
+2025-05-06 23:26:19,768 - INFO - 	History (loss, distributed):
+[92mINFO [0m:      		round 1: 0.07160462997853756
+2025-05-06 23:26:19,769 - INFO - 		round 1: 0.07160462997853756
+[92mINFO [0m:      		round 2: 0.08639153589804967
+2025-05-06 23:26:19,769 - INFO - 		round 2: 0.08639153589804967
+[92mINFO [0m:      		round 3: 0.07388386502861977
+2025-05-06 23:26:19,769 - INFO - 		round 3: 0.07388386502861977
+[92mINFO [0m:      		round 4: 0.09720690734684467
+2025-05-06 23:26:19,769 - INFO - 		round 4: 0.09720690734684467
+[92mINFO [0m:      		round 5: 0.09372935816645622
+2025-05-06 23:26:19,769 - INFO - 		round 5: 0.09372935816645622
+[92mINFO [0m:      		round 6: 0.11449545808136463
+2025-05-06 23:26:19,769 - INFO - 		round 6: 0.11449545808136463
+[92mINFO [0m:      		round 7: 0.12710858322679996
+2025-05-06 23:26:19,769 - INFO - 		round 7: 0.12710858322679996
+[92mINFO [0m:      		round 8: 0.11620265990495682
+2025-05-06 23:26:19,769 - INFO - 		round 8: 0.11620265990495682
+[92mINFO [0m:      		round 9: 0.1294387523084879
+2025-05-06 23:26:19,769 - INFO - 		round 9: 0.1294387523084879
+[92mINFO [0m:      		round 10: 0.1174418032169342
+2025-05-06 23:26:19,769 - INFO - 		round 10: 0.1174418032169342
+[92mINFO [0m:      
+2025-05-06 23:26:19,769 - INFO - 
