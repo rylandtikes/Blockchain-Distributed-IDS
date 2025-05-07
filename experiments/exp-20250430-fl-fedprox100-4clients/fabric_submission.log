@@ -1,0 +1,12 @@
+> model-update-chaincode@1.0.0 start
+> node dist/app.js
+
+Checking if model hash c80fd81b12700b0b850410ff080f34256f9a44a0d7598d3fc0d24c0cbeea6a45 exists...
+Model hash not found. Submitting CreateModelUpdate transaction...
+CreateModelUpdate transaction submitted.
+Querying model update to verify...
+Query result: {
+  hash: 'c80fd81b12700b0b850410ff080f34256f9a44a0d7598d3fc0d24c0cbeea6a45',
+  node_id: 'node-beta',
+  timestamp: '2025-05-05T05:23:31.528148Z'
+}
