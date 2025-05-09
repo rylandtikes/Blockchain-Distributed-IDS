@@ -1,0 +1,19 @@
+{
+    "experiment_id": "exp-20250506-fedprox10-4clients",
+    "description": "FedProx strategy, 10 rounds, all 4 nodes (alpha, beta, epsilon, zeta)",
+    "strategy": "FedProx",
+    "num_rounds": 10,
+    "clients": [
+        "node-alpha",
+        "node-beta",
+        "node-epsilon",
+        "node-zeta"
+    ],
+    "dataset": "CICIDS2017",
+    "model": "ANN (2 hidden layers: 64 ReLU, 32 ReLU, sigmoid output)",
+    "start_time": "2025-05-07T05:20:23.807078Z",
+    "flower_server": "fl-server",
+    "hash_logging_enabled": true,
+    "blockchain_logging_enabled": true,
+    "notes": "Short FedProx run for hash consistency validation across server and client blockchain logs"
+}
