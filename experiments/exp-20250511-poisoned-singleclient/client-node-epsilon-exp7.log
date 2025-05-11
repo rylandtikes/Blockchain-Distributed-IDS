@@ -1,0 +1,78 @@
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+INFO:__main__:initializing model
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__: starting flower Client node-epsilon. connecting to server at 192.168.0.51:9091...
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 59b6a4ca-3ad6-4d8c-a3c6-3f3cb09ff88b
+INFO:flwr:Received: evaluate message 59b6a4ca-3ad6-4d8c-a3c6-3f3cb09ff88b
+INFO:__main__:evaluating model
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20717, 'PortScan': 14285, 'DDoS': 11466, 'DoS GoldenEye': 880, 'FTP-Patator': 737, 'DoS slowloris': 542, 'SSH-Patator': 517, 'DoS Slowhttptest': 508, 'Bot': 173, 'Web Attack � Brute Force': 118, 'Web Attack � XSS': 49, 'Web Attack � Sql Injection': 6, 'Infiltration': 2})
+After oversampling: Counter({np.int32(0): 50000, np.int32(1): 50000})
+625/625 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - AUC: 0.5523 - Precision: 0.5423 - Recall: 0.3276 - accuracy: 0.5256 - loss: 53.5135    
+INFO:__main__:Evaluation completed. Loss: 52.94443893432617, Accuracy: 0.5255500078201294, Precision: 0.5413497090339661, Recall: 0.3345000147819519, AUC: 0.5500707030296326
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message 33d0c564-c6a8-4c9f-b457-6839c9ac08e5
+INFO:flwr:Received: reconnect message 33d0c564-c6a8-4c9f-b457-6839c9ac08e5
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
