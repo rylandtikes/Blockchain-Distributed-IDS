@@ -1,0 +1,26 @@
+(venv) rtikes@node-beta:~/Blockchain-Distributed-IDS/esp32/sensor-1/firmware $ arduino-cli monitor -p /dev/ttyUSB0 -c baudrate=115200
+Monitor port settings:
+  baudrate=115200
+  bits=8
+  dtr=on
+  parity=none
+  rts=on
+  stop_bits=1
+
+Connecting to /dev/ttyUSB0. Press CTRL-C to exit.
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4916
+load:0x40078000,len:16436
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3524
+entry 0x400805b8
+
+Booting Node: Sensor-1
+.
+WiFi connected
