@@ -1,0 +1,102 @@
+INFO:__main__:Using CPU only.
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__:Starting Flower client node-zeta connecting to 192.168.0.51:9091
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+[92mINFO [0m:      
+INFO:flwr:
+[92mINFO [0m:      Received: get_parameters message 4c59f136-6beb-474a-968d-d15913050722
+INFO:flwr:Received: get_parameters message 4c59f136-6beb-474a-968d-d15913050722
+[92mINFO [0m:      Sent reply
+INFO:flwr:Sent reply
+[92mINFO [0m:      
+INFO:flwr:
+[92mINFO [0m:      Received: train message 0b039c59-c06a-479c-b109-813d680a032b
+INFO:flwr:Received: train message 0b039c59-c06a-479c-b109-813d680a032b
+INFO:__main__:Starting training round 1...
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9779 - Precision: 0.9166 - Recall: 0.9366 - accuracy: 0.9257 - loss: 0.1987 - val_AUC: 0.9917 - val_Precision: 0.9403 - val_Recall: 0.9686 - val_accuracy: 0.9535 - val_loss: 0.1145
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9898 - Precision: 0.9400 - Recall: 0.9682 - accuracy: 0.9532 - loss: 0.1261 - val_AUC: 0.9932 - val_Precision: 0.9394 - val_Recall: 0.9828 - val_accuracy: 0.9597 - val_loss: 0.0994
+Epoch 3/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9917 - Precision: 0.9463 - Recall: 0.9749 - accuracy: 0.9598 - loss: 0.1112 - val_AUC: 0.9941 - val_Precision: 0.9436 - val_Recall: 0.9896 - val_accuracy: 0.9653 - val_loss: 0.0907
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9929 - Precision: 0.9504 - Recall: 0.9783 - accuracy: 0.9636 - loss: 0.1014 - val_AUC: 0.9949 - val_Precision: 0.9598 - val_Recall: 0.9851 - val_accuracy: 0.9719 - val_loss: 0.0850
+Epoch 5/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9937 - Precision: 0.9528 - Recall: 0.9804 - accuracy: 0.9659 - loss: 0.0946 - val_AUC: 0.9954 - val_Precision: 0.9627 - val_Recall: 0.9826 - val_accuracy: 0.9722 - val_loss: 0.0799
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9943 - Precision: 0.9563 - Recall: 0.9809 - accuracy: 0.9681 - loss: 0.0901 - val_AUC: 0.9960 - val_Precision: 0.9609 - val_Recall: 0.9886 - val_accuracy: 0.9742 - val_loss: 0.0766
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9949 - Precision: 0.9578 - Recall: 0.9822 - accuracy: 0.9694 - loss: 0.0853 - val_AUC: 0.9963 - val_Precision: 0.9615 - val_Recall: 0.9901 - val_accuracy: 0.9753 - val_loss: 0.0720
+INFO:__main__:Training completed for round 1.
+WARNING:__main__:Injecting poisoned weights on this client...
+INFO:__main__:Logged model hash: aadb468985ea1b3d48042679ca5f412161b00867b92dc50af7174c50ba7b5ecb
+[92mINFO [0m:      Sent reply
+INFO:flwr:Sent reply
+[92mINFO [0m:      
+INFO:flwr:
+[92mINFO [0m:      Received: evaluate message c66057ec-d445-41ad-bba5-de123d18249f
+INFO:flwr:Received: evaluate message c66057ec-d445-41ad-bba5-de123d18249f
+[1m  1/625[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m14s[0m 23ms/step - AUC: 0.3745 - Precision: 0.2500 - Recall: 0.1538 - accuracy: 0.4688 - loss: 47.8657[1m 37/625[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5001 - Precision: 0.5283 - Recall: 0.2998 - accuracy: 0.5146 - loss: 51.9921  [1m 72/625[0m [32m━━[0m[37m━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5018 - Precision: 0.5213 - Recall: 0.3103 - accuracy: 0.5144 - loss: 52.4649[1m107/625[0m [32m━━━[0m[37m━━━━━━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5014 - Precision: 0.5175 - Recall: 0.3146 - accuracy: 0.5121 - loss: 53.2768[1m142/625[0m [32m━━━━[0m[37m━━━━━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5035 - Precision: 0.5190 - Recall: 0.3188 - accuracy: 0.5131 - loss: 53.4871[1m179/625[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5049 - Precision: 0.5194 - Recall: 0.3212 - accuracy: 0.5142 - loss: 53.6784[1m215/625[0m [32m━━━━━━[0m[37m━━━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5054 - Precision: 0.5196 - Recall: 0.3228 - accuracy: 0.5145 - loss: 53.7152[1m251/625[0m [32m━━━━━━━━[0m[37m━━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5057 - Precision: 0.5197 - Recall: 0.3237 - accuracy: 0.5144 - loss: 53.7764[1m287/625[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5060 - Precision: 0.5204 - Recall: 0.3244 - accuracy: 0.5143 - loss: 53.8734[1m323/625[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5061 - Precision: 0.5206 - Recall: 0.3249 - accuracy: 0.5140 - loss: 53.9871[1m359/625[0m [32m━━━━━━━━━━━[0m[37m━━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5062 - Precision: 0.5207 - Recall: 0.3250 - accuracy: 0.5140 - loss: 54.0656[1m396/625[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5064 - Precision: 0.5211 - Recall: 0.3252 - accuracy: 0.5140 - loss: 54.1487[1m432/625[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5066 - Precision: 0.5217 - Recall: 0.3253 - accuracy: 0.5140 - loss: 54.2401[1m469/625[0m [32m━━━━━━━━━━━━━━━[0m[37m━━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5068 - Precision: 0.5223 - Recall: 0.3253 - accuracy: 0.5140 - loss: 54.3053[1m506/625[0m [32m━━━━━━━━━━━━━━━━[0m[37m━━━━[0m [1m0s[0m 1ms/step - AUC: 0.5071 - Precision: 0.5228 - Recall: 0.3254 - accuracy: 0.5142 - loss: 54.3583[1m542/625[0m [32m━━━━━━━━━━━━━━━━━[0m[37m━━━[0m [1m0s[0m 1ms/step - AUC: 0.5073 - Precision: 0.5233 - Recall: 0.3257 - accuracy: 0.5144 - loss: 54.3979[1m579/625[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 1ms/step - AUC: 0.5076 - Precision: 0.5238 - Recall: 0.3259 - accuracy: 0.5146 - loss: 54.3993[1m615/625[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 1ms/step - AUC: 0.5079 - Precision: 0.5243 - Recall: 0.3261 - accuracy: 0.5148 - loss: 54.3920[1m625/625[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 1ms/step - AUC: 0.5080 - Precision: 0.5244 - Recall: 0.3262 - accuracy: 0.5149 - loss: 54.3893
+[92mINFO [0m:      Sent reply
+INFO:flwr:Sent reply
+[92mINFO [0m:      
+INFO:flwr:
+[92mINFO [0m:      Received: reconnect message 9e7488b5-29bd-4d22-a5e4-b95cda777557
+INFO:flwr:Received: reconnect message 9e7488b5-29bd-4d22-a5e4-b95cda777557
+DEBUG:flwr:gRPC channel closed
+[92mINFO [0m:      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
