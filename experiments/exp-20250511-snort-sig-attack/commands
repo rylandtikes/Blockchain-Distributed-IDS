@@ -1,0 +1,2 @@
+echo "05/11-12:11:16 SYN Flood detected from 192.168.8.170 to 192.168.8.215" | sha256sum
+
