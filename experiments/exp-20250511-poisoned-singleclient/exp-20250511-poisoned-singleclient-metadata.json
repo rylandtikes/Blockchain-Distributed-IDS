@@ -1,0 +1,36 @@
+{
+  "experiment_id": "E6",
+  "title": "Single-Node Model Poisoning Attack",
+  "description": "This experiment evaluates the impact of a single poisoned model update submitted by node-zeta. The poisoned model was trained normally but replaced with randomized weights before submission. The resulting global model was evaluated by three clean clients.",
+  "clients": ["node-zeta (poisoned)", "node-beta (evaluation)", "node-epsilon (evaluation)", "node-zeta (evaluation)"],
+  "rounds": 1,
+  "strategy": "FedAvg",
+  "poisoned_client": "node-zeta",
+  "model_hash": "aadb468985ea1b3d48042679ca5f412161b00867b92dc50af7174c50ba7b5ecb",
+  "metrics": {
+    "node-zeta": {
+      "accuracy": 0.5149,
+      "precision": 0.5244,
+      "recall": 0.3262,
+      "auc": 0.5080,
+      "loss": 54.3893
+    },
+    "node-beta": {
+      "accuracy": 0.5387,
+      "precision": 0.5566,
+      "recall": 0.3803,
+      "auc": 0.5675,
+      "loss": 56.1934
+    },
+    "node-epsilon": {
+      "accuracy": 0.5256,
+      "precision": 0.5413,
+      "recall": 0.3345,
+      "auc": 0.5501,
+      "loss": 52.9444
+    }
+  },
+  "date": "2025-05-11",
+  "notes": "This experiment demonstrates how a single malicious contribution can corrupt the global model in federated learning. All clients evaluating the poisoned model experienced sharp drops in detection accuracy and AUC."
+}
+

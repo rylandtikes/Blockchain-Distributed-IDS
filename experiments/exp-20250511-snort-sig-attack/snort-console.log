@@ -1,0 +1,383 @@
+(venv) rtikes@node-beta:~/Blockchain-Distributed-IDS/experiments/exp-20250511-poisoned-singleclient $ sudo snort -i eth0 -A console -c /etc/snort/snort.conf
+Running in IDS mode
+
+        --== Initializing Snort ==--
+Initializing Output Plugins!
+Initializing Preprocessors!
+Initializing Plug-ins!
+Parsing Rules file "/etc/snort/snort.conf"
+Tagged Packet Limit: 256
+Log directory = /var/log/snort
+      Max Expected Streams: 768
+Stream global config:
+    Track TCP sessions: ACTIVE
+    Max TCP sessions: 262144
+    TCP cache pruning timeout: 30 seconds
+    TCP cache nominal timeout: 3600 seconds
+    Memcap (for reassembly packet storage): 8388608
+    Track UDP sessions: ACTIVE
+    Max UDP sessions: 131072
+    UDP cache pruning timeout: 30 seconds
+    UDP cache nominal timeout: 180 seconds
+    Track ICMP sessions: INACTIVE
+    Track IP sessions: INACTIVE
+    Log info if session memory consumption exceeds 1048576
+    Send up to 0 active responses
+    Protocol Aware Flushing: ACTIVE
+        Maximum Flush Point: 16384
+Stream TCP Policy config:
+    Bound Address: default
+    Reassembly Policy: WINDOWS
+    Timeout: 30 seconds
+    Maximum number of bytes to queue per session: 1048576
+    Maximum number of segs to queue per session: 2621
+    Reassembly Ports:
+Stream UDP Policy config:
+    Timeout: 30 seconds
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+Initializing rule chains...
+WARNING: /home/rtikes/Lightweight-IDS/detection/snort/rules/local.rules(3) threshold (in rule) is deprecated; use detection_filter instead.
+
+5 Snort rules read
+    5 detection rules
+    0 decoder rules
+    0 preprocessor rules
+5 Option Chains linked into 5 Chain Headers
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-------------------[Rule Port Counts]---------------------------------------
+|             tcp     udp    icmp      ip
+|     src       0       0       0       0
+|     dst       3       0       0       0
+|     any       1       0       1       0
+|      nc       1       0       1       0
+|     s+d       0       0       0       0
++----------------------------------------------------------------------------
+
++-----------------------[detection-filter-config]------------------------------
+| memory-cap : 1048576 bytes
++-----------------------[detection-filter-rules]-------------------------------
+| none
+-------------------------------------------------------------------------------
+
++-----------------------[rate-filter-config]-----------------------------------
+| memory-cap : 1048576 bytes
++-----------------------[rate-filter-rules]------------------------------------
+| none
+-------------------------------------------------------------------------------
+
++-----------------------[event-filter-config]----------------------------------
+| memory-cap : 1048576 bytes
++-----------------------[event-filter-global]----------------------------------
+| none
++-----------------------[event-filter-local]-----------------------------------
+| gen-id=1      sig-id=1000007    type=Both      tracking=src count=5   seconds=60 
+| gen-id=1      sig-id=1000002    type=Both      tracking=src count=70  seconds=10 
++-----------------------[suppression]------------------------------------------
+| none
+-------------------------------------------------------------------------------
+Rule application order: pass->drop->sdrop->reject->alert->log
+Verifying Preprocessor Configurations!
+
+[ Port Based Pattern Matching Memory ]
++-[AC-BNFA Search Info Summary]------------------------------
+| Instances        : 2
+| Patterns         : 2
+| Pattern Chars    : 11
+| Num States       : 11
+| Num Match States : 2
+| Memory           :   3.15Kbytes
+|   Patterns       :   0.09K
+|   Match Lists    :   0.15K
+|   Transitions    :   2.11K
++-------------------------------------------------
+pcap DAQ configured to passive.
+Acquiring network traffic from "eth0".
+Reload thread starting...
+Reload thread started, thread 0x7f902b10c0 (354771)
+Decoding Ethernet
+
+        --== Initialization Complete ==--
+
+   ,,_     -*> Snort! <*-
+  o"  )~   Version 2.9.20 GRE (Build 82) 
+   ''''    By Martin Roesch & The Snort Team: http://www.snort.org/contact#team
+           Copyright (C) 2014-2022 Cisco and/or its affiliates. All rights reserved.
+           Copyright (C) 1998-2013 Sourcefire, Inc., et al.
+           Using libpcap version 1.10.3 (with TPACKET_V3)
+           Using PCRE version: 8.39 2016-06-14
+           Using ZLIB version: 1.2.13
+
+Commencing packet processing (pid=354770)
+05/11-12:10:56.811919  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:2391 -> 192.168.8.215:80
+05/11-12:11:06.002142  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:25314 -> 192.168.8.215:80
+05/11-12:11:16.002223  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:8826 -> 192.168.8.215:80
+05/11-12:11:26.002157  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:56441 -> 192.168.8.215:80
+05/11-12:11:36.002239  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:40272 -> 192.168.8.215:80
+05/11-12:11:46.002632  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:21958 -> 192.168.8.215:80
+05/11-12:11:56.002238  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:2616 -> 192.168.8.215:80
+05/11-12:12:06.002284  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:47600 -> 192.168.8.215:80
+05/11-12:12:16.002257  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:26625 -> 192.168.8.215:80
+05/11-12:12:26.002232  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:6086 -> 192.168.8.215:80
+05/11-12:12:36.002211  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:51341 -> 192.168.8.215:80
+05/11-12:12:46.002140  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:31108 -> 192.168.8.215:80
+05/11-12:12:56.002169  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:9484 -> 192.168.8.215:80
+05/11-12:13:06.002282  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:54331 -> 192.168.8.215:80
+05/11-12:13:16.002221  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:33826 -> 192.168.8.215:80
+05/11-12:13:26.002216  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:13552 -> 192.168.8.215:80
+05/11-12:13:36.002200  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:58408 -> 192.168.8.215:80
+05/11-12:13:46.002301  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:37978 -> 192.168.8.215:80
+05/11-12:13:56.002280  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:17232 -> 192.168.8.215:80
+05/11-12:14:06.002259  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:62226 -> 192.168.8.215:80
+05/11-12:14:16.002218  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:41736 -> 192.168.8.215:80
+05/11-12:14:26.002260  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:21775 -> 192.168.8.215:80
+05/11-12:14:36.002193  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:1602 -> 192.168.8.215:80
+05/11-12:14:46.002216  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:47090 -> 192.168.8.215:80
+05/11-12:14:56.002281  [**] [1:1000002:1] SYN Flood detected [**] [Priority: 0] {TCP} 192.168.8.170:26710 -> 192.168.8.215:80
+^C*** Caught Int-Signal
+===============================================================================
+Run time for packet processing was 256.115036 seconds
+Snort processed 15169418 packets.
+Snort ran for 0 days 0 hours 4 minutes 16 seconds
+   Pkts/min:      3792354
+   Pkts/sec:        59255
+===============================================================================
+Memory usage summary:
+  Total non-mmapped bytes (arena):       40914944
+  Bytes in mapped regions (hblkhd):      30797824
+  Total allocated space (uordblks):      4838352
+  Total free space (fordblks):           36076592
+  Topmost releasable block (keepcost):   193664
+===============================================================================
+Packet I/O Totals:
+   Received:     15245416
+   Analyzed:     15169418 ( 99.502%)
+    Dropped:        74202 (  0.484%)
+   Filtered:            0 (  0.000%)
+Outstanding:        75998 (  0.498%)
+   Injected:            0
+===============================================================================
+Breakdown by protocol (includes rebuilt packets):
+        Eth:     15169418 (100.000%)
+       VLAN:            0 (  0.000%)
+        IP4:     15169165 ( 99.998%)
+       Frag:            0 (  0.000%)
+       ICMP:            0 (  0.000%)
+        UDP:            0 (  0.000%)
+        TCP:     15169165 ( 99.998%)
+        IP6:            0 (  0.000%)
+    IP6 Ext:            0 (  0.000%)
+   IP6 Opts:            0 (  0.000%)
+      Frag6:            0 (  0.000%)
+      ICMP6:            0 (  0.000%)
+       UDP6:            0 (  0.000%)
+       TCP6:            0 (  0.000%)
+     Teredo:            0 (  0.000%)
+    ICMP-IP:            0 (  0.000%)
+    IP4/IP4:            0 (  0.000%)
+    IP4/IP6:            0 (  0.000%)
+    IP6/IP4:            0 (  0.000%)
+    IP6/IP6:            0 (  0.000%)
+        GRE:            0 (  0.000%)
+    GRE Eth:            0 (  0.000%)
+   GRE VLAN:            0 (  0.000%)
+    GRE IP4:            0 (  0.000%)
+    GRE IP6:            0 (  0.000%)
+GRE IP6 Ext:            0 (  0.000%)
+   GRE PPTP:            0 (  0.000%)
+    GRE ARP:            0 (  0.000%)
+    GRE IPX:            0 (  0.000%)
+   GRE Loop:            0 (  0.000%)
+       MPLS:            0 (  0.000%)
+        ARP:          253 (  0.002%)
+        IPX:            0 (  0.000%)
+   Eth Loop:            0 (  0.000%)
+   Eth Disc:            0 (  0.000%)
+   IP4 Disc:            0 (  0.000%)
+   IP6 Disc:            0 (  0.000%)
+   TCP Disc:            0 (  0.000%)
+   UDP Disc:            0 (  0.000%)
+  ICMP Disc:            0 (  0.000%)
+All Discard:            0 (  0.000%)
+      Other:            0 (  0.000%)
+Bad Chk Sum:         1060 (  0.007%)
+    Bad TTL:            0 (  0.000%)
+     S5 G 1:            0 (  0.000%)
+     S5 G 2:            0 (  0.000%)
+      Total:     15169418
+===============================================================================
+Action Stats:
+     Alerts:           25 (  0.000%)
+     Logged:           25 (  0.000%)
+     Passed:            0 (  0.000%)
+Limits:
+      Match:            0
+      Queue:            0
+        Log:            0
+      Event:      7583798
+      Alert:            0
+Verdicts:
+      Allow:     15169418 ( 99.502%)
+      Block:            0 (  0.000%)
+    Replace:            0 (  0.000%)
+  AllowFlow:            0 (  0.000%)
+  BlockFlow:            0 (  0.000%)
+     Ignore:            0 (  0.000%)
+      Retry:            0 (  0.000%)
+===============================================================================
+===============================================================================
+Stream statistics:
+            Total sessions: 74
+              TCP sessions: 74
+       Active TCP sessions: 0
+  Non mempool TCP sess mem: 0
+          TCP mempool used: 0
+              UDP sessions: 0
+       Active UDP sessions: 0
+          UDP mempool used: 0
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+         ICMP mempool used: 0
+               IP sessions: 0
+        Active IP sessions: 0
+           IP mempool used: 0
+                TCP Prunes: 0
+                UDP Prunes: 0
+               ICMP Prunes: 0
+                 IP Prunes: 0
+TCP StreamTrackers Created: 74
+TCP StreamTrackers Deleted: 74
+              TCP Timeouts: 0
+              TCP Overlaps: 0
+       TCP Segments Queued: 0
+     TCP Segments Released: 0
+       TCP Rebuilt Packets: 0
+         TCP Segments Used: 0
+              TCP Discards: 0
+                  TCP Gaps: 0
+      UDP Sessions Created: 0
+      UDP Sessions Deleted: 0
+              UDP Timeouts: 0
+              UDP Discards: 0
+     ICMP Dest unreachable: 0
+ ICMP Fragmentation needed: 0
+                    Events: 0
+           Internal Events: 0
+           TCP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 15168105
+           UDP Port Filter
+                  Filtered: 0
+                 Inspected: 0
+                   Tracked: 0
+===============================================================================
+
+Memory Statistics of Frag3 on: Sun May 11 12:15:05 2025
+
+    Memory in use         : 0
+    prealloc nodes in use : 0
+
+
+Heap Statistics of frag:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              0
+                 No of frees:              0
+===============================================================================
+ Memory Statistics of Http Inspect on: Sun May 11 12:15:05 2025
+
+     Current active session          : 0
+    No of POST methods encountered  : 0
+    No of GET methods encountered   : 0
+    No of successfully extract post params      : 0
+    No of successfully extract request params   : 0
+    No of successfully extract response params  : 0
+ Http Memory Pool       :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Mime Decode Memory Pool   :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Gzip Memory Pool     :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+ Http Mime log Memory Pool :
+      Free Memory:                 0 bytes
+      Used Memory:                 0 bytes
+      Max Memory :                 0 bytes
+
+Heap Statistics of httpinspect:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              0
+                 No of frees:              0
+===============================================================================
+
+Memory Statistics of Stream on: Sun May 11 12:15:05 2025
+
+Stream Session Statistics:
+            Total sessions: 74
+              TCP sessions: 74
+       Active TCP sessions: 0
+              UDP sessions: 0
+       Active UDP sessions: 0
+             ICMP sessions: 0
+      Active ICMP sessions: 0
+               IP sessions: 0
+        Active IP sessions: 0
+   TCP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   UDP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   ICMP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   IP Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+   Session Flow Memory Pool:
+        Free Memory:                     0 bytes
+        Used Memory:                     0 bytes
+        Max Memory :                     0 bytes
+
+Heap Statistics of stream:
+          Total Statistics:
+               Memory in use:        2072952 bytes
+                No of allocs:             13
+                 No of frees:              9
+         Config Statistics:
+               Memory in use:        2072952 bytes
+                No of allocs:             13
+                 No of frees:              9
+===============================================================================
+
+Memory Statistics for File at:Sun May 11 12:15:05 2025
+
+Total buffers allocated:           0          
+Total buffers freed:               0          
+Total buffers released:            0          
+Total file mempool:                0          
+Total allocated file mempool:      0          
+Total freed file mempool:          0          
+Total released file mempool:       0          
+
+Heap Statistics of file:
+          Total Statistics:
+               Memory in use:              0 bytes
+                No of allocs:              0
+                 No of frees:              0
+===============================================================================
++-----------------------[filtered events]--------------------------------------
+| gen-id=1      sig-id=1000002    type=Both      tracking=src count=70  seconds=10  filtered=7583798
+Snort exiting

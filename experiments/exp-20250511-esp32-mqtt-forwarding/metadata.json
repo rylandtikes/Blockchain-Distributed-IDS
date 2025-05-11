@@ -1,0 +1,17 @@
+{
+  "id": "exp-20250511-esp32-mqtt-forwarding",
+  "title": "ESP32 Data Forwarding Demo (Integration Validation)",
+  "date": "2025-05-11",
+  "nodes": ["esp32", "node-beta", "odroid"],
+  "type": "integration",
+  "description": "This experiment validates that an ESP32 sensor node can successfully publish mock telemetry to a Raspberry Pi (node-beta) over MQTT. The ESP32 firmware connects to WiFi, publishes a JSON payload to the topic `esp32/telemetry`, and the broker forwards this to subscribed clients.",
+  "metrics": {
+    "mqtt_broker": "mosquitto on node-beta",
+    "message_frequency": "1 msg/sec",
+    "message_format": "JSON",
+    "topic": "esp32/telemetry",
+    "confirmation": "Verified via mosquitto_sub on odroid"
+  },
+  "notes": "This test confirms wireless MQTT telemetry from the ESP32 to a local MQTT broker. It lays the groundwork for secure telemetry forwarding and future blockchain-backed message logging."
+}
+

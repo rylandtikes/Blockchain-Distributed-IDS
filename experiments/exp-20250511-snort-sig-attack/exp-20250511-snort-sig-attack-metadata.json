@@ -1,0 +1,13 @@
+{
+  "id": "exp-20250511-snort-sig-attack",
+  "date": "2025-05-11",
+  "type": "signature-based",
+  "nodes": ["node-beta"],
+  "attack": "SYN Flood",
+  "tool": "hping3",
+  "trigger": "TCP SYN flood to port 80",
+  "rule_sid": 1000002,
+  "hash": "f5d8c5e96042b52197f7d3a034c20db35eb0a3988be2776f88b0898df2212e53",
+  "description": "Signature-based detection of TCP SYN flood attack using Snort rule SID 1000002."
+}
+

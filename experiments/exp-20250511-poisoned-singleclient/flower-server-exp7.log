@@ -1,0 +1,84 @@
+2025-05-11 13:43:36.076673: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1746992616.086994   48404 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1746992616.090137   48404 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-05-11 13:43:36.101592: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+W0000 00:00:1746992617.428150   48404 gpu_device.cc:2433] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+2025-05-11 13:43:37,480 - INFO - Loaded existing ANN model for server.
+2025-05-11 13:43:37,480 - INFO - Starting Flower Server...
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-05-11 13:43:37,480 - WARNING - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=1, round_timeout=300s
+2025-05-11 13:43:37,480 - INFO - Starting Flower server, config: num_rounds=1, round_timeout=300s
+[92mINFO [0m:      Flower ECE: gRPC server running (1 rounds), SSL is disabled
+2025-05-11 13:43:37,485 - INFO - Flower ECE: gRPC server running (1 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+2025-05-11 13:43:37,485 - INFO - [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+2025-05-11 13:43:37,485 - INFO - Requesting initial parameters from one random client
+[92mINFO [0m:      Received initial parameters from one random client
+2025-05-11 13:43:48,085 - INFO - Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+2025-05-11 13:43:48,085 - INFO - Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+2025-05-11 13:43:48,085 - INFO - Evaluation returned no results (`None`)
+[92mINFO [0m:      
+2025-05-11 13:43:48,085 - INFO - 
+[92mINFO [0m:      [ROUND 1]
+2025-05-11 13:43:48,085 - INFO - [ROUND 1]
+2025-05-11 13:43:48,085 - INFO - 1 clients available. Selecting for training.
+2025-05-11 13:43:48,085 - INFO - Requesting training from 1 clients.
+[92mINFO [0m:      configure_fit: strategy sampled 1 clients (out of 1)
+2025-05-11 13:43:48,085 - INFO - configure_fit: strategy sampled 1 clients (out of 1)
+[92mINFO [0m:      aggregate_fit: received 1 results and 0 failures
+2025-05-11 13:44:10,487 - INFO - aggregate_fit: received 1 results and 0 failures
+2025-05-11 13:44:10,487 - INFO - Aggregating results for round 1
+2025-05-11 13:44:10,488 - INFO - Received model update from ff9ec285cc1044528b37b0fab7264196 with SHA-256 hash: aadb468985ea1b3d48042679ca5f412161b00867b92dc50af7174c50ba7b5ecb
+/home/rtikes/anaconda3/envs/flower-env/lib/python3.11/site-packages/keras/src/backend/tensorflow/core.py:155: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  return np.array(x)
+2025-05-11 13:44:10,503 - INFO - Model aggregated and saved.
+[92mINFO [0m:      configure_evaluate: strategy sampled 3 clients (out of 3)
+2025-05-11 13:44:10,504 - INFO - configure_evaluate: strategy sampled 3 clients (out of 3)
+[92mINFO [0m:      aggregate_evaluate: received 3 results and 0 failures
+2025-05-11 13:44:16,617 - INFO - aggregate_evaluate: received 3 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+2025-05-11 13:44:16,617 - WARNING - No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+2025-05-11 13:44:16,617 - INFO - 
+[92mINFO [0m:      [SUMMARY]
+2025-05-11 13:44:16,617 - INFO - [SUMMARY]
+[92mINFO [0m:      Run finished 1 round(s) in 28.53s
+2025-05-11 13:44:16,617 - INFO - Run finished 1 round(s) in 28.53s
+[92mINFO [0m:      	History (loss, distributed):
+2025-05-11 13:44:16,617 - INFO - 	History (loss, distributed):
+[92mINFO [0m:      		round 1: 54.463433583577476
+2025-05-11 13:44:16,617 - INFO - 		round 1: 54.463433583577476
+[92mINFO [0m:      
+2025-05-11 13:44:16,617 - INFO - 
