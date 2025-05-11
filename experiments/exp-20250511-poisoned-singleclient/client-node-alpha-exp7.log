@@ -1,0 +1,69 @@
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+INFO:__main__:initializing model
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__: starting flower Client node-alpha. connecting to server at 192.168.0.51:9091...
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+[92mINFO [0m:      
+INFO:flwr:
+[92mINFO [0m:      Received: reconnect message 7ca529df-7019-4aae-942f-bf5c96b571e7
+INFO:flwr:Received: reconnect message 7ca529df-7019-4aae-942f-bf5c96b571e7
+DEBUG:flwr:gRPC channel closed
+[92mINFO [0m:      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20685, 'PortScan': 14368, 'DDoS': 11450, 'DoS GoldenEye': 920, 'FTP-Patator': 702, 'SSH-Patator': 516, 'DoS slowloris': 510, 'DoS Slowhttptest': 482, 'Bot': 162, 'Web Attack � Brute Force': 146, 'Web Attack � XSS': 51, 'Infiltration': 4, 'Heartbleed': 2, 'Web Attack � Sql Injection': 2})
+After oversampling: Counter({1: 50000, 0: 50000})
