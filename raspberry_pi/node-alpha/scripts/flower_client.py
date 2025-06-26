@@ -15,7 +15,8 @@
 # - **GitHub:** [Flower GitHub](https://github.com/adap/flower)  
 # - **Reference Paper:** Beutel, D.J., Topal, T., Mathur, A. et al. (2020). *Flower: A Friendly Federated Learning Framework.*  
 #
-
+from prometheus_client import start_http_server, Gauge
+import time
 import json
 import logging
 import hashlib
@@ -109,8 +110,32 @@ def hash_model_weights(weights) -> str:
         hasher.update(weight.tobytes())
     return hasher.hexdigest()
 
+def simulate_detection(X_stream, y_stream, model):
+    logger.info("Starting real-time detection loop with Prometheus metrics...")
+    attack_count = 0
+    for x, y_true in zip(X_stream, y_stream):
+        start = time.time()
+        y_pred = model.predict(np.expand_dims(x, axis=0))[0][0]
+        latency = (time.time() - start) * 1000  # in milliseconds
+        inference_latency.set(latency)
+
+        if y_pred >= 0.5:
+            attack_count += 1
+        alerts_triggered.set(attack_count)
+
+        logger.info(f"Inference latency: {latency:.2f} ms | Prediction: {y_pred:.4f} | Total alerts: {attack_count}")
+        time.sleep(1)  # Simulate one prediction per second
+
 logger.info("initializing model")
 model = build_model()
+
+# start Prometheus metrics endpoint for monitoring
+start_http_server(9100)  # Prometheus scrapes from http://<node-ip>:9100/metrics
+
+# prometheus metric definitions
+inference_latency = Gauge('inference_latency_ms', 'Latency per prediction in milliseconds')
+alerts_triggered = Gauge('alerts_triggered', 'Number of attack predictions')
+
 
 class FlowerClient(fl.client.NumPyClient):
     def get_parameters(self, config):
@@ -160,5 +185,6 @@ class FlowerClient(fl.client.NumPyClient):
 logger.info(f" starting flower Client {CLIENT_ID}. connecting to server at {SERVER_ADDRESS}...")
 fl.client.start_numpy_client(server_address=SERVER_ADDRESS, client=FlowerClient())
 
-
+# Begin simulated real-time detection after training rounds
+simulate_detection(X_val, y_val, model)
 
