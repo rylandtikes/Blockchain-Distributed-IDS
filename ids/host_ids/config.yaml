@@ -1,0 +1,4 @@
+model_path: "distilbert-base-uncased"
+alert_threshold: 0.7  # Probability above which we consider a log line suspicious
+log_lines: 500        # Number of recent lines to fetch from journalctl
+
