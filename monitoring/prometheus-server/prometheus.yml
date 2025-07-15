@@ -1,0 +1,31 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'ids-nodes'
+    static_configs:
+      - targets: ['192.168.0.59:9110']
+        labels:
+          instance: node-alpha
+      - targets: ['192.168.0.59:9111']
+        labels:
+          instance: node-beta
+      - targets: ['192.168.0.59:9112']
+        labels:
+          instance: node-gamma
+      - targets: ['192.168.0.59:9113']
+        labels:
+          instance: node-delta
+      - targets: ['192.168.0.59:9114']
+        labels:
+          instance: node-epsilon
+      - targets: ['192.168.0.59:9115']
+        labels:
+          instance: node-zeta
+      - targets: ['192.168.0.59:9116']
+        labels:
+          instance: node-eta
+      - targets: ['192.168.0.51:9100']
+        labels:
+          instance: fl-server
+

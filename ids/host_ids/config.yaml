@@ -1,0 +1,4 @@
+model_path: "/home/rtikes/Blockchain-Distributed-IDS/ids/models/host_ids_model/bert-mini-hdfs"
+alert_threshold: 0.7
+log_lines: 500
+
