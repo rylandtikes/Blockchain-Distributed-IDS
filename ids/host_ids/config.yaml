@@ -1,4 +1,4 @@
-model_path: "distilbert-base-uncased"
-alert_threshold: 0.7  # Probability above which we consider a log line suspicious
-log_lines: 500        # Number of recent lines to fetch from journalctl
+model_path: "/home/rtikes/Blockchain-Distributed-IDS/ids/models/host_ids_model/bert-mini-hdfs"
+alert_threshold: 0.7
+log_lines: 500
 
