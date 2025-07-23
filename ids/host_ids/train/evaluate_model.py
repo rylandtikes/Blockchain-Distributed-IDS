@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-def evaluate_model(model_dir="bert-mini-hdfs", threshold=0.6, class_weight=1.5):
+def evaluate_model(model_dir="bert-mini-hdfs-best", threshold=0.6, class_weight=1.5):
     model = AutoModelForSequenceClassification.from_pretrained(model_dir, local_files_only=True)
     dataset = prepare_dataset()  # loads tokenized train/test splits with labels
 

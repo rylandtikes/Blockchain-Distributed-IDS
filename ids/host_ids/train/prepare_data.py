@@ -53,6 +53,16 @@ def prepare_dataset():
     print("Train label distribution:", Counter(train["label"]))
     print("Test label distribution:", Counter(test["label"]))
 
+    # Oversample minority class in train set
+    train_df = train.to_pandas()
+    minority = train_df[train_df['label'] == 1]
+    majority = train_df[train_df['label'] == 0]
+    oversample_factor = max(1, int(len(majority) / max(1, len(minority))))
+    minority_oversampled = pd.concat([minority] * oversample_factor, ignore_index=True)
+    train_df_oversampled = pd.concat([majority, minority_oversampled], ignore_index=True)
+    train = Dataset.from_pandas(train_df_oversampled)
+    train = train.cast_column("label", class_label)
+
     tokenizer = AutoTokenizer.from_pretrained("prajjwal1/bert-mini", local_files_only=True)
     MAX_LENGTH = 128
 
