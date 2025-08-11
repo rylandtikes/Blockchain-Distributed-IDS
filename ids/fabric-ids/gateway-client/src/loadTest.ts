@@ -240,7 +240,6 @@ class PerformanceTest {
         await fs.writeFile(summaryFile, JSON.stringify(summaryData, null, 2));
         
         console.log(`Results saved to: ${summaryFile}`);
-        console.log('Use this data to update your blockchain performance table in the paper!');
     }
 
     private async sleep(ms: number): Promise<void> {
@@ -276,9 +275,6 @@ class PerformanceTest {
 }
 
 async function main(): Promise<void> {
-    console.log('Single Script to Reproduce Paper Performance Results');
-    console.log('====================================================');
-    console.log('');
     
     const tester = new PerformanceTest();
     await tester.run();
