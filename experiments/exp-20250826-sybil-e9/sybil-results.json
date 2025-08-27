@@ -1,0 +1,94 @@
+{
+  "testDate": "2025-08-27T04:43:00.368Z",
+  "testId": 1756269780368,
+  "attacks": {
+    "typeA": {
+      "name": "Identity Multiplication",
+      "attempted": 8,
+      "blocked": 7
+    },
+    "typeB": {
+      "name": "Credential Cloning",
+      "attempted": 3,
+      "blocked": 3
+    },
+    "typeC": {
+      "name": "Collusion",
+      "attempted": 2,
+      "blocked": 2
+    }
+  },
+  "performance": {
+    "enrollments": [
+      3043,
+      147,
+      47,
+      74,
+      99,
+      81,
+      39,
+      45
+    ],
+    "modelUpdates": [
+      31,
+      27
+    ]
+  },
+  "logs": [
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeA",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeB",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeB",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeB",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeC",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    },
+    {
+      "type": "TypeC",
+      "message": "10 ABORTED: failed to endorse transaction, see attached details for more info"
+    }
+  ],
+  "summary": {
+    "totalAttacks": 13,
+    "totalBlocked": 12,
+    "preventionRate": 0.9230769230769231,
+    "avgEnrollmentTime": 446.875,
+    "avgModelUpdateTime": 29
+  }
+}
