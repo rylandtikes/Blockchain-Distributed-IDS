@@ -1,0 +1,2416 @@
+{
+  "testType": "RESOURCE_SCALE_TEST",
+  "timestamp": "2025-08-11T00-05-56-057Z",
+  "config": {
+    "totalTransactions": 1000,
+    "concurrentClients": 10,
+    "measurementInterval": 1000,
+    "warmupTransactions": 50
+  },
+  "duration": 55.362,
+  "totalTransactions": 1000,
+  "successfulTransactions": 1000,
+  "throughput": 18.06293125248365,
+  "averageLatency": 552.771,
+  "bytesPerTransaction": 512,
+  "resourceMetrics": [
+    {
+      "timestamp": 1754870593489,
+      "cpuUsage": 11.494403658770437,
+      "memoryUsage": 3362947072,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870594494,
+      "cpuUsage": 11.49440738374956,
+      "memoryUsage": 3369701376,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870595495,
+      "cpuUsage": 11.494406722822731,
+      "memoryUsage": 3370344448,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870596496,
+      "cpuUsage": 11.494407206309702,
+      "memoryUsage": 3368992768,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870597498,
+      "cpuUsage": 11.494406491781888,
+      "memoryUsage": 3257810944,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870598498,
+      "cpuUsage": 11.494406232035715,
+      "memoryUsage": 3256389632,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870599500,
+      "cpuUsage": 11.494405940792262,
+      "memoryUsage": 3254190080,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870600502,
+      "cpuUsage": 11.494406178376764,
+      "memoryUsage": 3251982336,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870601504,
+      "cpuUsage": 11.494405672728575,
+      "memoryUsage": 3249770496,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870602505,
+      "cpuUsage": 11.494406363435616,
+      "memoryUsage": 3247931392,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870603506,
+      "cpuUsage": 11.49440526596537,
+      "memoryUsage": 3232976896,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870604508,
+      "cpuUsage": 11.49440432211469,
+      "memoryUsage": 3230539776,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870605509,
+      "cpuUsage": 11.494404452496937,
+      "memoryUsage": 3228786688,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870606510,
+      "cpuUsage": 11.494404251878649,
+      "memoryUsage": 3227783168,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870607510,
+      "cpuUsage": 11.494404580087576,
+      "memoryUsage": 3226853376,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870608510,
+      "cpuUsage": 11.494403684312942,
+      "memoryUsage": 3226136576,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870609511,
+      "cpuUsage": 11.494402816168417,
+      "memoryUsage": 3222880256,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870610512,
+      "cpuUsage": 11.49440216629624,
+      "memoryUsage": 3200086016,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870611512,
+      "cpuUsage": 11.494402522135076,
+      "memoryUsage": 3198640128,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870612514,
+      "cpuUsage": 11.494404046696786,
+      "memoryUsage": 3195719680,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870613515,
+      "cpuUsage": 11.494404225154014,
+      "memoryUsage": 3194920960,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870614517,
+      "cpuUsage": 11.494402608253509,
+      "memoryUsage": 3194773504,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870615517,
+      "cpuUsage": 11.494402226387322,
+      "memoryUsage": 3192877056,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870616519,
+      "cpuUsage": 11.494401522914941,
+      "memoryUsage": 3192811520,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870617519,
+      "cpuUsage": 11.494401984297184,
+      "memoryUsage": 3192111104,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870618521,
+      "cpuUsage": 11.494402665609343,
+      "memoryUsage": 3188830208,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870619521,
+      "cpuUsage": 11.494402185934874,
+      "memoryUsage": 3188830208,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870620523,
+      "cpuUsage": 11.494401439913887,
+      "memoryUsage": 3188887552,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870621524,
+      "cpuUsage": 11.49440236105039,
+      "memoryUsage": 3194064896,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870622524,
+      "cpuUsage": 11.494408309622386,
+      "memoryUsage": 3203776512,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870623526,
+      "cpuUsage": 11.494409964593444,
+      "memoryUsage": 3222896640,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870624528,
+      "cpuUsage": 11.494409978378727,
+      "memoryUsage": 3225964544,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870625529,
+      "cpuUsage": 11.494408259804402,
+      "memoryUsage": 3224952832,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870626530,
+      "cpuUsage": 11.49440816086215,
+      "memoryUsage": 3226288128,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870627532,
+      "cpuUsage": 11.49440794919208,
+      "memoryUsage": 3225837568,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870628534,
+      "cpuUsage": 11.494408582426857,
+      "memoryUsage": 3225423872,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870629535,
+      "cpuUsage": 11.494409711330746,
+      "memoryUsage": 3228758016,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870630536,
+      "cpuUsage": 11.494408869159727,
+      "memoryUsage": 3226529792,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870631538,
+      "cpuUsage": 11.494407967862202,
+      "memoryUsage": 3225513984,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870632541,
+      "cpuUsage": 11.494410272668546,
+      "memoryUsage": 3217321984,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870633543,
+      "cpuUsage": 11.494409702369865,
+      "memoryUsage": 3217186816,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870634544,
+      "cpuUsage": 11.4944113341257,
+      "memoryUsage": 3216723968,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870635545,
+      "cpuUsage": 11.494411079906342,
+      "memoryUsage": 3216879616,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870636546,
+      "cpuUsage": 11.494409233688387,
+      "memoryUsage": 3216842752,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870637548,
+      "cpuUsage": 11.494409737616422,
+      "memoryUsage": 3215286272,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870638550,
+      "cpuUsage": 11.494409056249225,
+      "memoryUsage": 3215540224,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870639551,
+      "cpuUsage": 11.49440937506185,
+      "memoryUsage": 3215126528,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870640553,
+      "cpuUsage": 11.494410620007685,
+      "memoryUsage": 3234000896,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870641554,
+      "cpuUsage": 11.494410956505504,
+      "memoryUsage": 3251077120,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870642555,
+      "cpuUsage": 11.494412672255422,
+      "memoryUsage": 3267895296,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870643555,
+      "cpuUsage": 11.494413996221411,
+      "memoryUsage": 3286495232,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870644556,
+      "cpuUsage": 11.494414970952604,
+      "memoryUsage": 3323457536,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870645556,
+      "cpuUsage": 11.494416654095971,
+      "memoryUsage": 3330076672,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870646558,
+      "cpuUsage": 11.494415138878267,
+      "memoryUsage": 3330076672,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870647558,
+      "cpuUsage": 11.494414666388224,
+      "memoryUsage": 3330949120,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870648560,
+      "cpuUsage": 11.49441387229389,
+      "memoryUsage": 3330252800,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870649564,
+      "cpuUsage": 11.494413917575457,
+      "memoryUsage": 3328036864,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870650565,
+      "cpuUsage": 11.494416115171603,
+      "memoryUsage": 3329757184,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870651565,
+      "cpuUsage": 11.494415641023295,
+      "memoryUsage": 3329126400,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870652569,
+      "cpuUsage": 11.494416144948744,
+      "memoryUsage": 3328258048,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870653570,
+      "cpuUsage": 11.49441520663052,
+      "memoryUsage": 3327045632,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870654571,
+      "cpuUsage": 11.49441556080562,
+      "memoryUsage": 3325620224,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870655572,
+      "cpuUsage": 11.494414970063062,
+      "memoryUsage": 3324776448,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870656573,
+      "cpuUsage": 11.494417167656493,
+      "memoryUsage": 3324710912,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870657574,
+      "cpuUsage": 11.49441612213748,
+      "memoryUsage": 3331301376,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870658575,
+      "cpuUsage": 11.494415756849548,
+      "memoryUsage": 3329564672,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870659577,
+      "cpuUsage": 11.494415186552573,
+      "memoryUsage": 3328634880,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870660577,
+      "cpuUsage": 11.494415808730409,
+      "memoryUsage": 3327025152,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870661578,
+      "cpuUsage": 11.494417551545581,
+      "memoryUsage": 3326664704,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870662578,
+      "cpuUsage": 11.494418959495661,
+      "memoryUsage": 3327623168,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870663578,
+      "cpuUsage": 11.494417481305291,
+      "memoryUsage": 3327770624,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870664578,
+      "cpuUsage": 11.494417868634713,
+      "memoryUsage": 3329306624,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870665579,
+      "cpuUsage": 11.494417240869964,
+      "memoryUsage": 3328778240,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870666580,
+      "cpuUsage": 11.494417238076068,
+      "memoryUsage": 3327782912,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870667582,
+      "cpuUsage": 11.494419424612701,
+      "memoryUsage": 3325456384,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870668584,
+      "cpuUsage": 11.494418293997938,
+      "memoryUsage": 3325710336,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870669585,
+      "cpuUsage": 11.494417864058036,
+      "memoryUsage": 3327696896,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870670586,
+      "cpuUsage": 11.494417234635407,
+      "memoryUsage": 3327639552,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870671588,
+      "cpuUsage": 11.494417366672053,
+      "memoryUsage": 3328028672,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870672589,
+      "cpuUsage": 11.49442144469404,
+      "memoryUsage": 3327770624,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870673590,
+      "cpuUsage": 11.494421249600961,
+      "memoryUsage": 3328069632,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870674592,
+      "cpuUsage": 11.494419536566156,
+      "memoryUsage": 3327627264,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870675592,
+      "cpuUsage": 11.49441939507399,
+      "memoryUsage": 3327524864,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870676594,
+      "cpuUsage": 11.494418728629,
+      "memoryUsage": 3326877696,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870677594,
+      "cpuUsage": 11.494419345278274,
+      "memoryUsage": 3326935040,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870678596,
+      "cpuUsage": 11.494420757091177,
+      "memoryUsage": 3327705088,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870679597,
+      "cpuUsage": 11.494420305048052,
+      "memoryUsage": 3328536576,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870680598,
+      "cpuUsage": 11.49441897661167,
+      "memoryUsage": 3328536576,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870681600,
+      "cpuUsage": 11.494418866616641,
+      "memoryUsage": 3328217088,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870682601,
+      "cpuUsage": 11.494420038055978,
+      "memoryUsage": 3328471040,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870683602,
+      "cpuUsage": 11.494422620233266,
+      "memoryUsage": 3328892928,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870684603,
+      "cpuUsage": 11.49442253620856,
+      "memoryUsage": 3336376320,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870685604,
+      "cpuUsage": 11.4944208657257,
+      "memoryUsage": 3336376320,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870686606,
+      "cpuUsage": 11.494421199452503,
+      "memoryUsage": 3337883648,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870687608,
+      "cpuUsage": 11.494420773380938,
+      "memoryUsage": 3337277440,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870688610,
+      "cpuUsage": 11.494421528726036,
+      "memoryUsage": 3338375168,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870689611,
+      "cpuUsage": 11.49442298308415,
+      "memoryUsage": 3335589888,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870690611,
+      "cpuUsage": 11.494422397869968,
+      "memoryUsage": 3335569408,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870691613,
+      "cpuUsage": 11.49442107496185,
+      "memoryUsage": 3335569408,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870692613,
+      "cpuUsage": 11.494422828817534,
+      "memoryUsage": 3335577600,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870693615,
+      "cpuUsage": 11.494422184477543,
+      "memoryUsage": 3335757824,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870694617,
+      "cpuUsage": 11.494424419076424,
+      "memoryUsage": 3335180288,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870695619,
+      "cpuUsage": 11.494424233376876,
+      "memoryUsage": 3335385088,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870696619,
+      "cpuUsage": 11.494423322694146,
+      "memoryUsage": 3335847936,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870697620,
+      "cpuUsage": 11.494422837496856,
+      "memoryUsage": 3335823360,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870698630,
+      "cpuUsage": 11.494423731537367,
+      "memoryUsage": 3336224768,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870699631,
+      "cpuUsage": 11.494423118694712,
+      "memoryUsage": 3337052160,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870700632,
+      "cpuUsage": 11.494424637701414,
+      "memoryUsage": 3337310208,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870701634,
+      "cpuUsage": 11.49443219694696,
+      "memoryUsage": 3360980992,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870702648,
+      "cpuUsage": 11.494444085088787,
+      "memoryUsage": 3377750016,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870703669,
+      "cpuUsage": 11.494452332287693,
+      "memoryUsage": 3387502592,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870704671,
+      "cpuUsage": 11.494462236113975,
+      "memoryUsage": 3400171520,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870705672,
+      "cpuUsage": 11.4944731384454,
+      "memoryUsage": 3410841600,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870706673,
+      "cpuUsage": 11.494484312641035,
+      "memoryUsage": 3413192704,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870707692,
+      "cpuUsage": 11.494493931877543,
+      "memoryUsage": 3417968640,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870708700,
+      "cpuUsage": 11.494503924652989,
+      "memoryUsage": 3420368896,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870709708,
+      "cpuUsage": 11.494513116739796,
+      "memoryUsage": 3425308672,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870710714,
+      "cpuUsage": 11.494523109508023,
+      "memoryUsage": 3432964096,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870711718,
+      "cpuUsage": 11.494533701267287,
+      "memoryUsage": 3447226368,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870712720,
+      "cpuUsage": 11.494546286170504,
+      "memoryUsage": 3452686336,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870713720,
+      "cpuUsage": 11.494555420775797,
+      "memoryUsage": 3453857792,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870714720,
+      "cpuUsage": 11.494564736622863,
+      "memoryUsage": 3454971904,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870715738,
+      "cpuUsage": 11.494574514971887,
+      "memoryUsage": 3459194880,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870716753,
+      "cpuUsage": 11.494583647907945,
+      "memoryUsage": 3459751936,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870717754,
+      "cpuUsage": 11.494594742490335,
+      "memoryUsage": 3469312000,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870718756,
+      "cpuUsage": 11.494606268077206,
+      "memoryUsage": 3475443712,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870719757,
+      "cpuUsage": 11.494615204839008,
+      "memoryUsage": 3477827584,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870720794,
+      "cpuUsage": 11.494624417331408,
+      "memoryUsage": 3480485888,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870721797,
+      "cpuUsage": 11.494633428131209,
+      "memoryUsage": 3481829376,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870722806,
+      "cpuUsage": 11.49464556927407,
+      "memoryUsage": 3482021888,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870723816,
+      "cpuUsage": 11.49465853153957,
+      "memoryUsage": 3483783168,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870724823,
+      "cpuUsage": 11.494666826742034,
+      "memoryUsage": 3483586560,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870725824,
+      "cpuUsage": 11.494676495647042,
+      "memoryUsage": 3484299264,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870726824,
+      "cpuUsage": 11.494686493881872,
+      "memoryUsage": 3488333824,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870727825,
+      "cpuUsage": 11.494695768794614,
+      "memoryUsage": 3487952896,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870728826,
+      "cpuUsage": 11.494704588933203,
+      "memoryUsage": 3487973376,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870729827,
+      "cpuUsage": 11.494716522833158,
+      "memoryUsage": 3483365376,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870730832,
+      "cpuUsage": 11.494725657379618,
+      "memoryUsage": 3489763328,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870731839,
+      "cpuUsage": 11.494734891937114,
+      "memoryUsage": 3489517568,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870732859,
+      "cpuUsage": 11.494744858654315,
+      "memoryUsage": 3489992704,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870733860,
+      "cpuUsage": 11.494754329709139,
+      "memoryUsage": 3492401152,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870734880,
+      "cpuUsage": 11.494764803129769,
+      "memoryUsage": 3484356608,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870735882,
+      "cpuUsage": 11.4947763728576,
+      "memoryUsage": 3488063488,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870736883,
+      "cpuUsage": 11.49478590136762,
+      "memoryUsage": 3487449088,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870737893,
+      "cpuUsage": 11.494795734896343,
+      "memoryUsage": 3486666752,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870738906,
+      "cpuUsage": 11.494805841947695,
+      "memoryUsage": 3486707712,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870739908,
+      "cpuUsage": 11.494814710123151,
+      "memoryUsage": 3487731712,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870740909,
+      "cpuUsage": 11.49482504095944,
+      "memoryUsage": 3487191040,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870741924,
+      "cpuUsage": 11.49483639626375,
+      "memoryUsage": 3486982144,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870742938,
+      "cpuUsage": 11.494847668128273,
+      "memoryUsage": 3488178176,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870743948,
+      "cpuUsage": 11.494856375489874,
+      "memoryUsage": 3490299904,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870744963,
+      "cpuUsage": 11.494865733779775,
+      "memoryUsage": 3489370112,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870745964,
+      "cpuUsage": 11.494875445162108,
+      "memoryUsage": 3488923648,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870746984,
+      "cpuUsage": 11.494887451378062,
+      "memoryUsage": 3490865152,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870747985,
+      "cpuUsage": 11.494897153361379,
+      "memoryUsage": 3496939520,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870748985,
+      "cpuUsage": 11.494906692880747,
+      "memoryUsage": 3496882176,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870749987,
+      "cpuUsage": 11.494916178796643,
+      "memoryUsage": 3497496576,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870750990,
+      "cpuUsage": 11.494925912265359,
+      "memoryUsage": 3497951232,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870752014,
+      "cpuUsage": 11.494935418617928,
+      "memoryUsage": 3498688512,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870753053,
+      "cpuUsage": 11.494949240565731,
+      "memoryUsage": 3499597824,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870754063,
+      "cpuUsage": 11.494959811722879,
+      "memoryUsage": 3499061248,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    },
+    {
+      "timestamp": 1754870755067,
+      "cpuUsage": 11.494968239995046,
+      "memoryUsage": 3498377216,
+      "memoryTotal": 3981893632,
+      "networkBytesSent": 0,
+      "networkBytesReceived": 0
+    }
+  ],
+  "transactionResults": [
+    {
+      "txId": "client_1_tx_0",
+      "startTime": 1754870700687,
+      "endTime": 1754870701279,
+      "latency": 592,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.494429625809872,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_7_tx_0",
+      "startTime": 1754870700689,
+      "endTime": 1754870701282,
+      "latency": 593,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.49442962028398,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_5_tx_0",
+      "startTime": 1754870700688,
+      "endTime": 1754870701284,
+      "latency": 596,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.49442966283246,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_9_tx_0",
+      "startTime": 1754870700690,
+      "endTime": 1754870701289,
+      "latency": 599,
+      "success": true,
+      "cpuBefore": 11.494424639910335,
+      "cpuAfter": 11.49442974240354,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_0_tx_0",
+      "startTime": 1754870700686,
+      "endTime": 1754870701292,
+      "latency": 606,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.49442974240354,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_2_tx_0",
+      "startTime": 1754870700687,
+      "endTime": 1754870701294,
+      "latency": 607,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.4944297313518,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_4_tx_0",
+      "startTime": 1754870700688,
+      "endTime": 1754870701297,
+      "latency": 609,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.494429768374403,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_3_tx_0",
+      "startTime": 1754870700687,
+      "endTime": 1754870701300,
+      "latency": 613,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.494429768374403,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_8_tx_0",
+      "startTime": 1754870700689,
+      "endTime": 1754870701302,
+      "latency": 613,
+      "success": true,
+      "cpuBefore": 11.494424639910335,
+      "cpuAfter": 11.494429768374403,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_6_tx_0",
+      "startTime": 1754870700688,
+      "endTime": 1754870701305,
+      "latency": 617,
+      "success": true,
+      "cpuBefore": 11.494424645436212,
+      "cpuAfter": 11.49442975732265,
+      "memoryBefore": 3337523200,
+      "memoryAfter": 3355369472
+    },
+    {
+      "txId": "client_4_tx_1",
+      "startTime": 1754870701297,
+      "endTime": 1754870701987,
+      "latency": 690,
+      "success": true,
+      "cpuBefore": 11.494429768374403,
+      "cpuAfter": 11.494437022051898,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367919616
+    },
+    {
+      "txId": "client_7_tx_1",
+      "startTime": 1754870701283,
+      "endTime": 1754870701990,
+      "latency": 707,
+      "success": true,
+      "cpuBefore": 11.49442962028398,
+      "cpuAfter": 11.494437064600362,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_8_tx_1",
+      "startTime": 1754870701303,
+      "endTime": 1754870701995,
+      "latency": 692,
+      "success": true,
+      "cpuBefore": 11.494429768374403,
+      "cpuAfter": 11.49443710162295,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_5_tx_1",
+      "startTime": 1754870701285,
+      "endTime": 1754870701998,
+      "latency": 713,
+      "success": true,
+      "cpuBefore": 11.49442966283246,
+      "cpuAfter": 11.494437096097073,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_6_tx_1",
+      "startTime": 1754870701305,
+      "endTime": 1754870702001,
+      "latency": 696,
+      "success": true,
+      "cpuBefore": 11.49442975732265,
+      "cpuAfter": 11.494437181194016,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_3_tx_1",
+      "startTime": 1754870701300,
+      "endTime": 1754870702004,
+      "latency": 704,
+      "success": true,
+      "cpuBefore": 11.494429768374403,
+      "cpuAfter": 11.494437181194016,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_1_tx_1",
+      "startTime": 1754870701280,
+      "endTime": 1754870702007,
+      "latency": 727,
+      "success": true,
+      "cpuBefore": 11.494429625809872,
+      "cpuAfter": 11.49443717566814,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_2_tx_1",
+      "startTime": 1754870701295,
+      "endTime": 1754870702010,
+      "latency": 715,
+      "success": true,
+      "cpuBefore": 11.4944297313518,
+      "cpuAfter": 11.494437255239205,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_0_tx_1",
+      "startTime": 1754870701292,
+      "endTime": 1754870702013,
+      "latency": 721,
+      "success": true,
+      "cpuBefore": 11.49442974240354,
+      "cpuAfter": 11.49443729778767,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_9_tx_1",
+      "startTime": 1754870701290,
+      "endTime": 1754870702016,
+      "latency": 726,
+      "success": true,
+      "cpuBefore": 11.49442974240354,
+      "cpuAfter": 11.49443729778767,
+      "memoryBefore": 3355369472,
+      "memoryAfter": 3367923712
+    },
+    {
+      "txId": "client_2_tx_2",
+      "startTime": 1754870702011,
+      "endTime": 1754870702709,
+      "latency": 698,
+      "success": true,
+      "cpuBefore": 11.494437255239205,
+      "cpuAfter": 11.494444605063464,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379093504
+    },
+    {
+      "txId": "client_8_tx_2",
+      "startTime": 1754870701996,
+      "endTime": 1754870702712,
+      "latency": 716,
+      "success": true,
+      "cpuBefore": 11.49443710162295,
+      "cpuAfter": 11.494444599537587,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_1_tx_2",
+      "startTime": 1754870702008,
+      "endTime": 1754870702716,
+      "latency": 708,
+      "success": true,
+      "cpuBefore": 11.49443717566814,
+      "cpuAfter": 11.494444599537587,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_5_tx_2",
+      "startTime": 1754870701999,
+      "endTime": 1754870702719,
+      "latency": 720,
+      "success": true,
+      "cpuBefore": 11.494437096097073,
+      "cpuAfter": 11.494444599537587,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_4_tx_2",
+      "startTime": 1754870701988,
+      "endTime": 1754870702721,
+      "latency": 733,
+      "success": true,
+      "cpuBefore": 11.494437022051898,
+      "cpuAfter": 11.494444679108625,
+      "memoryBefore": 3367919616,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_7_tx_2",
+      "startTime": 1754870701991,
+      "endTime": 1754870702724,
+      "latency": 733,
+      "success": true,
+      "cpuBefore": 11.494437064600362,
+      "cpuAfter": 11.494444673582748,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_6_tx_2",
+      "startTime": 1754870702002,
+      "endTime": 1754870702727,
+      "latency": 725,
+      "success": true,
+      "cpuBefore": 11.494437181194016,
+      "cpuAfter": 11.494444710605336,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_9_tx_2",
+      "startTime": 1754870702016,
+      "endTime": 1754870702730,
+      "latency": 714,
+      "success": true,
+      "cpuBefore": 11.49443729778767,
+      "cpuAfter": 11.494444710605336,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_3_tx_2",
+      "startTime": 1754870702005,
+      "endTime": 1754870702733,
+      "latency": 728,
+      "success": true,
+      "cpuBefore": 11.494437181194016,
+      "cpuAfter": 11.494444710605336,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_0_tx_2",
+      "startTime": 1754870702013,
+      "endTime": 1754870702735,
+      "latency": 722,
+      "success": true,
+      "cpuBefore": 11.49443729778767,
+      "cpuAfter": 11.49444470507946,
+      "memoryBefore": 3367923712,
+      "memoryAfter": 3379298304
+    },
+    {
+      "txId": "client_5_tx_3",
+      "startTime": 1754870702719,
+      "endTime": 1754870703414,
+      "latency": 695,
+      "success": true,
+      "cpuBefore": 11.494444599537587,
+      "cpuAfter": 11.494450325884571,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_7_tx_3",
+      "startTime": 1754870702725,
+      "endTime": 1754870703419,
+      "latency": 694,
+      "success": true,
+      "cpuBefore": 11.494444668056872,
+      "cpuAfter": 11.494450368433036,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_1_tx_3",
+      "startTime": 1754870702717,
+      "endTime": 1754870703422,
+      "latency": 705,
+      "success": true,
+      "cpuBefore": 11.494444599537587,
+      "cpuAfter": 11.494450362907145,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_2_tx_3",
+      "startTime": 1754870702710,
+      "endTime": 1754870703425,
+      "latency": 715,
+      "success": true,
+      "cpuBefore": 11.494444599537587,
+      "cpuAfter": 11.494450442478168,
+      "memoryBefore": 3379093504,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_0_tx_3",
+      "startTime": 1754870702736,
+      "endTime": 1754870703428,
+      "latency": 692,
+      "success": true,
+      "cpuBefore": 11.49444470507946,
+      "cpuAfter": 11.494450485026618,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_9_tx_3",
+      "startTime": 1754870702731,
+      "endTime": 1754870703431,
+      "latency": 700,
+      "success": true,
+      "cpuBefore": 11.494444710605336,
+      "cpuAfter": 11.494450485026618,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_8_tx_3",
+      "startTime": 1754870702713,
+      "endTime": 1754870703434,
+      "latency": 721,
+      "success": true,
+      "cpuBefore": 11.494444599537587,
+      "cpuAfter": 11.494450522049178,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387265024
+    },
+    {
+      "txId": "client_6_tx_3",
+      "startTime": 1754870702728,
+      "endTime": 1754870703438,
+      "latency": 710,
+      "success": true,
+      "cpuBefore": 11.494444710605336,
+      "cpuAfter": 11.494450516523301,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387322368
+    },
+    {
+      "txId": "client_4_tx_3",
+      "startTime": 1754870702722,
+      "endTime": 1754870703441,
+      "latency": 719,
+      "success": true,
+      "cpuBefore": 11.494444679108625,
+      "cpuAfter": 11.494450559071751,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387322368
+    },
+    {
+      "txId": "client_3_tx_3",
+      "startTime": 1754870702733,
+      "endTime": 1754870703444,
+      "latency": 711,
+      "success": true,
+      "cpuBefore": 11.494444710605336,
+      "cpuAfter": 11.494450559071751,
+      "memoryBefore": 3379298304,
+      "memoryAfter": 3387322368
+    },
+    {
+      "txId": "client_4_tx_4",
+      "startTime": 1754870703442,
+      "endTime": 1754870703976,
+      "latency": 534,
+      "success": true,
+      "cpuBefore": 11.494450559071751,
+      "cpuAfter": 11.494455720135662,
+      "memoryBefore": 3387322368,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_7_tx_4",
+      "startTime": 1754870703420,
+      "endTime": 1754870703979,
+      "latency": 559,
+      "success": true,
+      "cpuBefore": 11.494450368433036,
+      "cpuAfter": 11.494455762684112,
+      "memoryBefore": 3387265024,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_0_tx_4",
+      "startTime": 1754870703429,
+      "endTime": 1754870703982,
+      "latency": 553,
+      "success": true,
+      "cpuBefore": 11.494450485026618,
+      "cpuAfter": 11.494455762684112,
+      "memoryBefore": 3387265024,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_6_tx_4",
+      "startTime": 1754870703439,
+      "endTime": 1754870703985,
+      "latency": 546,
+      "success": true,
+      "cpuBefore": 11.494450516523301,
+      "cpuAfter": 11.494455794180794,
+      "memoryBefore": 3387322368,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_1_tx_4",
+      "startTime": 1754870703423,
+      "endTime": 1754870703988,
+      "latency": 565,
+      "success": true,
+      "cpuBefore": 11.494450362907145,
+      "cpuAfter": 11.494455788654918,
+      "memoryBefore": 3387265024,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_9_tx_4",
+      "startTime": 1754870703432,
+      "endTime": 1754870703990,
+      "latency": 558,
+      "success": true,
+      "cpuBefore": 11.494450485026618,
+      "cpuAfter": 11.494455831203354,
+      "memoryBefore": 3387265024,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_3_tx_4",
+      "startTime": 1754870703444,
+      "endTime": 1754870703993,
+      "latency": 549,
+      "success": true,
+      "cpuBefore": 11.494450559071751,
+      "cpuAfter": 11.494455873751804,
+      "memoryBefore": 3387322368,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_5_tx_4",
+      "startTime": 1754870703416,
+      "endTime": 1754870703995,
+      "latency": 579,
+      "success": true,
+      "cpuBefore": 11.494450325884571,
+      "cpuAfter": 11.494455873751804,
+      "memoryBefore": 3387265024,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_2_tx_4",
+      "startTime": 1754870703426,
+      "endTime": 1754870703998,
+      "latency": 572,
+      "success": true,
+      "cpuBefore": 11.494450442478168,
+      "cpuAfter": 11.494455899722595,
+      "memoryBefore": 3387265024,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_8_tx_4",
+      "startTime": 1754870703435,
+      "endTime": 1754870704000,
+      "latency": 565,
+      "success": true,
+      "cpuBefore": 11.494450522049178,
+      "cpuAfter": 11.494455899722595,
+      "memoryBefore": 3387322368,
+      "memoryAfter": 3394965504
+    },
+    {
+      "txId": "client_7_tx_5",
+      "startTime": 1754870703980,
+      "endTime": 1754870704507,
+      "latency": 527,
+      "success": true,
+      "cpuBefore": 11.494455762684112,
+      "cpuAfter": 11.494460822072512,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_2_tx_5",
+      "startTime": 1754870703998,
+      "endTime": 1754870704510,
+      "latency": 512,
+      "success": true,
+      "cpuBefore": 11.494455899722595,
+      "cpuAfter": 11.494460944191943,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_8_tx_5",
+      "startTime": 1754870704001,
+      "endTime": 1754870704513,
+      "latency": 512,
+      "success": true,
+      "cpuBefore": 11.494455942271031,
+      "cpuAfter": 11.494460944191943,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_3_tx_5",
+      "startTime": 1754870703993,
+      "endTime": 1754870704518,
+      "latency": 525,
+      "success": true,
+      "cpuBefore": 11.494455873751804,
+      "cpuAfter": 11.494460986740378,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_0_tx_5",
+      "startTime": 1754870703982,
+      "endTime": 1754870704521,
+      "latency": 539,
+      "success": true,
+      "cpuBefore": 11.494455762684112,
+      "cpuAfter": 11.494461018237047,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_4_tx_5",
+      "startTime": 1754870703977,
+      "endTime": 1754870704524,
+      "latency": 547,
+      "success": true,
+      "cpuBefore": 11.494455720135662,
+      "cpuAfter": 11.494461018237047,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_6_tx_5",
+      "startTime": 1754870703986,
+      "endTime": 1754870704527,
+      "latency": 541,
+      "success": true,
+      "cpuBefore": 11.494455788654918,
+      "cpuAfter": 11.494461018237047,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_9_tx_5",
+      "startTime": 1754870703991,
+      "endTime": 1754870704530,
+      "latency": 539,
+      "success": true,
+      "cpuBefore": 11.494455831203354,
+      "cpuAfter": 11.494461060785483,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_1_tx_5",
+      "startTime": 1754870703988,
+      "endTime": 1754870704533,
+      "latency": 545,
+      "success": true,
+      "cpuBefore": 11.494455788654918,
+      "cpuAfter": 11.494461092282151,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_5_tx_5",
+      "startTime": 1754870703996,
+      "endTime": 1754870704536,
+      "latency": 540,
+      "success": true,
+      "cpuBefore": 11.494455873751804,
+      "cpuAfter": 11.494461092282151,
+      "memoryBefore": 3394965504,
+      "memoryAfter": 3399966720
+    },
+    {
+      "txId": "client_5_tx_6",
+      "startTime": 1754870704537,
+      "endTime": 1754870705105,
+      "latency": 568,
+      "success": true,
+      "cpuBefore": 11.494461092282151,
+      "cpuAfter": 11.494466320204594,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_9_tx_6",
+      "startTime": 1754870704530,
+      "endTime": 1754870705107,
+      "latency": 577,
+      "success": true,
+      "cpuBefore": 11.494461060785483,
+      "cpuAfter": 11.494466314678718,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_4_tx_6",
+      "startTime": 1754870704525,
+      "endTime": 1754870705110,
+      "latency": 585,
+      "success": true,
+      "cpuBefore": 11.494461018237047,
+      "cpuAfter": 11.494466394249685,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_7_tx_6",
+      "startTime": 1754870704508,
+      "endTime": 1754870705112,
+      "latency": 604,
+      "success": true,
+      "cpuBefore": 11.494460822072512,
+      "cpuAfter": 11.494466388723794,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_6_tx_6",
+      "startTime": 1754870704527,
+      "endTime": 1754870705114,
+      "latency": 587,
+      "success": true,
+      "cpuBefore": 11.494461018237047,
+      "cpuAfter": 11.494466388723794,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_8_tx_6",
+      "startTime": 1754870704513,
+      "endTime": 1754870705117,
+      "latency": 604,
+      "success": true,
+      "cpuBefore": 11.494460944191943,
+      "cpuAfter": 11.494466388723794,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_2_tx_6",
+      "startTime": 1754870704510,
+      "endTime": 1754870705119,
+      "latency": 609,
+      "success": true,
+      "cpuBefore": 11.494460944191943,
+      "cpuAfter": 11.494466377672026,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_0_tx_6",
+      "startTime": 1754870704521,
+      "endTime": 1754870705125,
+      "latency": 604,
+      "success": true,
+      "cpuBefore": 11.494461018237047,
+      "cpuAfter": 11.494466414694571,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_1_tx_6",
+      "startTime": 1754870704534,
+      "endTime": 1754870705127,
+      "latency": 593,
+      "success": true,
+      "cpuBefore": 11.494461092282151,
+      "cpuAfter": 11.494466414694571,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_3_tx_6",
+      "startTime": 1754870704519,
+      "endTime": 1754870705130,
+      "latency": 611,
+      "success": true,
+      "cpuBefore": 11.494460986740378,
+      "cpuAfter": 11.494466414694571,
+      "memoryBefore": 3399966720,
+      "memoryAfter": 3404447744
+    },
+    {
+      "txId": "client_1_tx_7",
+      "startTime": 1754870705128,
+      "endTime": 1754870705718,
+      "latency": 590,
+      "success": true,
+      "cpuBefore": 11.494466414694571,
+      "cpuAfter": 11.494473493751755,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410665472
+    },
+    {
+      "txId": "client_6_tx_7",
+      "startTime": 1754870705115,
+      "endTime": 1754870705722,
+      "latency": 607,
+      "success": true,
+      "cpuBefore": 11.494466388723794,
+      "cpuAfter": 11.494473488225864,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_8_tx_7",
+      "startTime": 1754870705118,
+      "endTime": 1754870705726,
+      "latency": 608,
+      "success": true,
+      "cpuBefore": 11.494466383197903,
+      "cpuAfter": 11.494473567796817,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_7_tx_7",
+      "startTime": 1754870705113,
+      "endTime": 1754870705728,
+      "latency": 615,
+      "success": true,
+      "cpuBefore": 11.494466388723794,
+      "cpuAfter": 11.494473610345239,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_4_tx_7",
+      "startTime": 1754870705110,
+      "endTime": 1754870705732,
+      "latency": 622,
+      "success": true,
+      "cpuBefore": 11.494466394249685,
+      "cpuAfter": 11.494473610345239,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_2_tx_7",
+      "startTime": 1754870705120,
+      "endTime": 1754870705736,
+      "latency": 616,
+      "success": true,
+      "cpuBefore": 11.494466377672026,
+      "cpuAfter": 11.494473604819348,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_3_tx_7",
+      "startTime": 1754870705130,
+      "endTime": 1754870705740,
+      "latency": 610,
+      "success": true,
+      "cpuBefore": 11.494466414694571,
+      "cpuAfter": 11.4944736843903,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_9_tx_7",
+      "startTime": 1754870705108,
+      "endTime": 1754870705744,
+      "latency": 636,
+      "success": true,
+      "cpuBefore": 11.494466314678718,
+      "cpuAfter": 11.49447376948713,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_5_tx_7",
+      "startTime": 1754870705105,
+      "endTime": 1754870705750,
+      "latency": 645,
+      "success": true,
+      "cpuBefore": 11.494466314678718,
+      "cpuAfter": 11.494473806509674,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_0_tx_7",
+      "startTime": 1754870705126,
+      "endTime": 1754870705754,
+      "latency": 628,
+      "success": true,
+      "cpuBefore": 11.494466414694571,
+      "cpuAfter": 11.494473849058096,
+      "memoryBefore": 3404447744,
+      "memoryAfter": 3410661376
+    },
+    {
+      "txId": "client_6_tx_8",
+      "startTime": 1754870705722,
+      "endTime": 1754870706446,
+      "latency": 724,
+      "success": true,
+      "cpuBefore": 11.494473488225864,
+      "cpuAfter": 11.494482966570231,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_4_tx_8",
+      "startTime": 1754870705732,
+      "endTime": 1754870706448,
+      "latency": 716,
+      "success": true,
+      "cpuBefore": 11.494473610345239,
+      "cpuAfter": 11.494483003592748,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_9_tx_8",
+      "startTime": 1754870705745,
+      "endTime": 1754870706451,
+      "latency": 706,
+      "success": true,
+      "cpuBefore": 11.49447376948713,
+      "cpuAfter": 11.494483003592748,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_0_tx_8",
+      "startTime": 1754870705755,
+      "endTime": 1754870706454,
+      "latency": 699,
+      "success": true,
+      "cpuBefore": 11.494473849058096,
+      "cpuAfter": 11.494483046141156,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_8_tx_8",
+      "startTime": 1754870705726,
+      "endTime": 1754870706456,
+      "latency": 730,
+      "success": true,
+      "cpuBefore": 11.494473567796817,
+      "cpuAfter": 11.494483040615265,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_2_tx_8",
+      "startTime": 1754870705737,
+      "endTime": 1754870706458,
+      "latency": 721,
+      "success": true,
+      "cpuBefore": 11.494473604819348,
+      "cpuAfter": 11.494483035089374,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_3_tx_8",
+      "startTime": 1754870705740,
+      "endTime": 1754870706463,
+      "latency": 723,
+      "success": true,
+      "cpuBefore": 11.4944736843903,
+      "cpuAfter": 11.494483029563483,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_1_tx_8",
+      "startTime": 1754870705719,
+      "endTime": 1754870706466,
+      "latency": 747,
+      "success": true,
+      "cpuBefore": 11.494473493751755,
+      "cpuAfter": 11.49448307211189,
+      "memoryBefore": 3410665472,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_7_tx_8",
+      "startTime": 1754870705729,
+      "endTime": 1754870706468,
+      "latency": 739,
+      "success": true,
+      "cpuBefore": 11.494473610345239,
+      "cpuAfter": 11.49448307211189,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_5_tx_8",
+      "startTime": 1754870705751,
+      "endTime": 1754870706470,
+      "latency": 719,
+      "success": true,
+      "cpuBefore": 11.494473806509674,
+      "cpuAfter": 11.494483066586,
+      "memoryBefore": 3410661376,
+      "memoryAfter": 3412676608
+    },
+    {
+      "txId": "client_4_tx_9",
+      "startTime": 1754870706449,
+      "endTime": 1754870706997,
+      "latency": 548,
+      "success": true,
+      "cpuBefore": 11.494483003592748,
+      "cpuAfter": 11.494487757952825,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_9_tx_9",
+      "startTime": 1754870706452,
+      "endTime": 1754870707000,
+      "latency": 548,
+      "success": true,
+      "cpuBefore": 11.494483003592748,
+      "cpuAfter": 11.494487757952825,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_5_tx_9",
+      "startTime": 1754870706471,
+      "endTime": 1754870707002,
+      "latency": 531,
+      "success": true,
+      "cpuBefore": 11.494483061060095,
+      "cpuAfter": 11.494487794975328,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_0_tx_9",
+      "startTime": 1754870706454,
+      "endTime": 1754870707005,
+      "latency": 551,
+      "success": true,
+      "cpuBefore": 11.494483046141156,
+      "cpuAfter": 11.494487794975328,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_7_tx_9",
+      "startTime": 1754870706469,
+      "endTime": 1754870707007,
+      "latency": 538,
+      "success": true,
+      "cpuBefore": 11.49448307211189,
+      "cpuAfter": 11.494487783923546,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_6_tx_9",
+      "startTime": 1754870706446,
+      "endTime": 1754870707009,
+      "latency": 563,
+      "success": true,
+      "cpuBefore": 11.494482966570231,
+      "cpuAfter": 11.494487783923546,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_8_tx_9",
+      "startTime": 1754870706457,
+      "endTime": 1754870707012,
+      "latency": 555,
+      "success": true,
+      "cpuBefore": 11.494483040615265,
+      "cpuAfter": 11.494487778397641,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_1_tx_9",
+      "startTime": 1754870706466,
+      "endTime": 1754870707014,
+      "latency": 548,
+      "success": true,
+      "cpuBefore": 11.49448307211189,
+      "cpuAfter": 11.494487820946048,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_3_tx_9",
+      "startTime": 1754870706464,
+      "endTime": 1754870707016,
+      "latency": 552,
+      "success": true,
+      "cpuBefore": 11.494483029563483,
+      "cpuAfter": 11.494487815420158,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    },
+    {
+      "txId": "client_2_tx_9",
+      "startTime": 1754870706459,
+      "endTime": 1754870707019,
+      "latency": 560,
+      "success": true,
+      "cpuBefore": 11.494483035089374,
+      "cpuAfter": 11.494487809894267,
+      "memoryBefore": 3412676608,
+      "memoryAfter": 3414413312
+    }
+  ]
+}
