@@ -1,0 +1,45 @@
+epsilon 
+
+INFO:__main__:Evaluation completed. Loss: 1.7988495826721191, Accuracy: 0.7813000082969666, Precision: 0.7099253535270691, Recall: 0.9513000249862671, AUC: 0.827339768409729
+
+zeta (poisoned client)
+
+INFO:flwr:Received: train message 336085ce-aede-4bc4-9bc1-babf61be6b4e
+INFO:__main__:Starting training round 1...
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9762 - Precision: 0.9054 - Recall: 0.9386 - accuracy: 0.9203 - loss: 0.2105 - val_AUC: 0.9907 - val_Precision: 0.9389 - val_Recall: 0.9678 - val_accuracy: 0.9524 - val_loss: 0.1237
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9895 - Precision: 0.9409 - Recall: 0.9623 - accuracy: 0.9509 - loss: 0.1341 - val_AUC: 0.9933 - val_Precision: 0.9406 - val_Recall: 0.9715 - val_accuracy: 0.9551 - val_loss: 0.1035
+Epoch 3/7
+1250/1250 - 3s - 3ms/step - AUC: 0.9917 - Precision: 0.9459 - Recall: 0.9699 - accuracy: 0.9572 - loss: 0.1150 - val_AUC: 0.9942 - val_Precision: 0.9592 - val_Recall: 0.9820 - val_accuracy: 0.9701 - val_loss: 0.0935
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9929 - Precision: 0.9504 - Recall: 0.9756 - accuracy: 0.9623 - loss: 0.1026 - val_AUC: 0.9949 - val_Precision: 0.9611 - val_Recall: 0.9839 - val_accuracy: 0.9721 - val_loss: 0.0869
+Epoch 5/7
+1250/1250 - 3s - 3ms/step - AUC: 0.9937 - Precision: 0.9546 - Recall: 0.9785 - accuracy: 0.9660 - loss: 0.0959 - val_AUC: 0.9952 - val_Precision: 0.9601 - val_Recall: 0.9890 - val_accuracy: 0.9740 - val_loss: 0.0829
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9942 - Precision: 0.9562 - Recall: 0.9812 - accuracy: 0.9682 - loss: 0.0899 - val_AUC: 0.9959 - val_Precision: 0.9626 - val_Recall: 0.9857 - val_accuracy: 0.9737 - val_loss: 0.0774
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9947 - Precision: 0.9583 - Recall: 0.9821 - accuracy: 0.9697 - loss: 0.0855 - val_AUC: 0.9954 - val_Precision: 0.9522 - val_Recall: 0.9911 - val_accuracy: 0.9707 - val_loss: 0.0796
+INFO:__main__:Training completed for round 1.
+WARNING:__main__:Injecting poisoned weights on this client...
+INFO:__main__:Logged model hash: c1f6338b1f8a686090cea706e61ea00fc4582831ad775641367f9dfdb73e7714
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message d2d25482-bc26-4277-a780-05694ebab373
+INFO:flwr:Received: evaluate message d2d25482-bc26-4277-a780-05694ebab373
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.8335 - Precision: 0.7150 - Recall: 0.9558 - accuracy: 0.7872 - loss: 1.7147  
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message 9d430e97-f627-4450-8235-2b9ac4636f30
+INFO:flwr:Received: reconnect message 9d430e97-f627-4450-8235-2b9ac4636f30
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+
+
+beta 
+
+INFO:__main__:Evaluation completed. Loss: 1.8557994365692139, Accuracy: 0.7681499719619751, Precision: 0.692512035369873, Recall: 0.9646000266075134, AUC: 0.8302932977676392

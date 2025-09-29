@@ -1,0 +1,44 @@
+2025-09-24 23:25:20,928 - INFO - [ROUND 1]
+INFO :      configure_fit: strategy sampled 3 clients (out of 3)
+2025-09-24 23:25:25,317 - INFO - configure_fit: strategy sampled 3 clients (out of 3)
+INFO :      aggregate_fit: received 3 results and 0 failures
+2025-09-24 23:26:33,820 - INFO - aggregate_fit: received 3 results and 0 failures
+2025-09-24 23:26:33,820 - INFO - === REPUTATION-BASED AGGREGATION - Round 1 ===
+2025-09-24 23:26:33,821 - INFO - Client bc811fc2508c475bbde56bc93d026367: Update norm = 16.9709
+2025-09-24 23:26:33,821 - INFO - Client 6ef3a234d0ae49b486ebc20ae2b04cf9: Update norm = 85.8079
+2025-09-24 23:26:33,821 - INFO - Client 1359d734fbbc458f8d538f147b17cae7: Update norm = 16.3117
+2025-09-24 23:26:33,822 - INFO - Update norms - Min: 16.3, Max: 85.8
+2025-09-24 23:26:33,822 - INFO - Outlier detected: threshold=81.6
+2025-09-24 23:26:33,822 - INFO - ACCEPTED: Client bc811fc2508c475bbde56bc93d026367 norm=17.0
+2025-09-24 23:26:33,822 - WARNING - BLOCKED: Client 6ef3a234d0ae49b486ebc20ae2b04cf9 norm=85.8 - EXCLUDED from aggregation
+2025-09-24 23:26:33,822 - WARNING - Client 6ef3a234d0ae49b486ebc20ae2b04cf9 flagged as suspicious (extreme_outlier_85.8_vs_16.3). Reputation: 0.800
+2025-09-24 23:26:33,822 - INFO - ACCEPTED: Client 1359d734fbbc458f8d538f147b17cae7 norm=16.3
+2025-09-24 23:26:33,822 - INFO - PREVENTION: Using 2/3 clients after filtering
+2025-09-24 23:26:33,822 - INFO - Current reputation scores:
+2025-09-24 23:26:33,822 - INFO -   bc811fc2508c475bbde56bc93d026367: 1.000
+2025-09-24 23:26:33,822 - INFO -   6ef3a234d0ae49b486ebc20ae2b04cf9: 0.800
+2025-09-24 23:26:33,822 - INFO -   1359d734fbbc458f8d538f147b17cae7: 1.000
+2025-09-24 23:26:33,822 - INFO - Performing clean-client-only aggregation...
+WARNING :   No fit_metrics_aggregation_fn provided
+2025-09-24 23:26:33,823 - WARNING - No fit_metrics_aggregation_fn provided
+2025-09-24 23:26:33,823 - INFO - Client bc811fc2508c475bbde56bc93d026367: hash=1abaec3b114cff41485e232b1d36a817d3e2e87ef219d52354ee151c88ff03e8, reputation=1.000, status=ACCEPTED
+2025-09-24 23:26:33,823 - INFO - Client 6ef3a234d0ae49b486ebc20ae2b04cf9: hash=4f84916dacba766a938aedfcf07ad317902922fc6fca789930528cb48dc2e5b4, reputation=0.800, status=BLOCKED
+2025-09-24 23:26:33,823 - INFO - Client 1359d734fbbc458f8d538f147b17cae7: hash=c0db3716720ebaca175e7b92e156391bc058e6d9b265303e85e327657b17fb49, reputation=1.000, status=ACCEPTED
+INFO :      configure_evaluate: strategy sampled 3 clients (out of 3)
+2025-09-24 23:26:33,823 - INFO - configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO :      aggregate_evaluate: received 3 results and 0 failures
+2025-09-24 23:26:37,253 - INFO - aggregate_evaluate: received 3 results and 0 failures
+WARNING :   No evaluate_metrics_aggregation_fn provided
+2025-09-24 23:26:37,253 - WARNING - No evaluate_metrics_aggregation_fn provided
+INFO :      
+2025-09-24 23:26:37,253 - INFO - 
+INFO :      [SUMMARY]
+2025-09-24 23:26:37,253 - INFO - [SUMMARY]
+INFO :      Run finished 1 round(s) in 76.33s
+2025-09-24 23:26:37,253 - INFO - Run finished 1 round(s) in 76.33s
+INFO :          History (loss, distributed):
+2025-09-24 23:26:37,253 - INFO -        History (loss, distributed):
+INFO :                  round 1: 0.09089925636847813
+2025-09-24 23:26:37,253 - INFO -                round 1: 0.09089925636847813
+INFO :      
+2025-09-24 23:26:37,253 - INFO - 
