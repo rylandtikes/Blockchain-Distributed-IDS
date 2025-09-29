@@ -1,0 +1,306 @@
+(venv) rtikes@node-epsilon:~/Blockchain-Distributed-IDS/raspberry_pi/node-epsilon/scripts $ python flower_client.py 
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20717, 'PortScan': 14285, 'DDoS': 11466, 'DoS GoldenEye': 880, 'FTP-Patator': 737, 'DoS slowloris': 542, 'SSH-Patator': 517, 'DoS Slowhttptest': 508, 'Bot': 173, 'Web Attack � Brute Force': 118, 'Web Attack � XSS': 49, 'Web Attack � Sql Injection': 6, 'Infiltration': 2})
+After oversampling: Counter({np.int32(0): 50000, np.int32(1): 50000})
+INFO:__main__:initializing model
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__: starting flower Client node-epsilon. connecting to server at 192.168.8.147:9091...
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 14ae13f3-c379-4c6d-bf00-c74b2a3f2936
+INFO:flwr:Received: train message 14ae13f3-c379-4c6d-bf00-c74b2a3f2936
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9755 - Precision: 0.9078 - Recall: 0.9355 - accuracy: 0.9203 - loss: 0.2127 - val_AUC: 0.9898 - val_Precision: 0.9367 - val_Recall: 0.9660 - val_accuracy: 0.9503 - val_loss: 0.1285
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9892 - Precision: 0.9389 - Recall: 0.9682 - accuracy: 0.9526 - loss: 0.1346 - val_AUC: 0.9932 - val_Precision: 0.9403 - val_Recall: 0.9808 - val_accuracy: 0.9592 - val_loss: 0.1044
+Epoch 3/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9919 - Precision: 0.9481 - Recall: 0.9755 - accuracy: 0.9610 - loss: 0.1118 - val_AUC: 0.9945 - val_Precision: 0.9397 - val_Recall: 0.9836 - val_accuracy: 0.9603 - val_loss: 0.0935
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9934 - Precision: 0.9534 - Recall: 0.9795 - accuracy: 0.9658 - loss: 0.0987 - val_AUC: 0.9952 - val_Precision: 0.9608 - val_Recall: 0.9803 - val_accuracy: 0.9701 - val_loss: 0.0822
+Epoch 5/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9944 - Precision: 0.9578 - Recall: 0.9822 - accuracy: 0.9695 - loss: 0.0901 - val_AUC: 0.9964 - val_Precision: 0.9584 - val_Recall: 0.9875 - val_accuracy: 0.9723 - val_loss: 0.0782
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9952 - Precision: 0.9601 - Recall: 0.9830 - accuracy: 0.9711 - loss: 0.0823 - val_AUC: 0.9969 - val_Precision: 0.9600 - val_Recall: 0.9891 - val_accuracy: 0.9740 - val_loss: 0.0740
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9958 - Precision: 0.9625 - Recall: 0.9836 - accuracy: 0.9726 - loss: 0.0775 - val_AUC: 0.9972 - val_Precision: 0.9686 - val_Recall: 0.9877 - val_accuracy: 0.9779 - val_loss: 0.0648
+INFO:__main__:Training completed. Final Loss: 0.07750200480222702
+INFO:__main__:Model hash: 39c92cb2de8f661dabbe06393e16d7322a7de4640e4ce7bca3f4e8a8f534730b (saved to /home/rtikes/ml-data/flower/model_hashes.log)
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message e9b07f53-6aa1-4cb3-a361-b6e475f9050c
+INFO:flwr:Received: evaluate message e9b07f53-6aa1-4cb3-a361-b6e475f9050c
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.9949 - Precision: 0.9599 - Recall: 0.9744 - accuracy: 0.9668 - loss: 0.0905  
+INFO:__main__:Evaluation completed. Loss: 0.08991273492574692, Accuracy: 0.9668499827384949, Precision: 0.9608133435249329, Recall: 0.9733999967575073, AUC: 0.9950416088104248
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message a190e608-1c8b-4103-8acf-e3c0b7860667
+INFO:flwr:Received: reconnect message a190e608-1c8b-4103-8acf-e3c0b7860667
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+(venv) rtikes@node-epsilon:~/Blockchain-Distributed-IDS/raspberry_pi/node-epsilon/scripts $ python flower_client.py 
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20717, 'PortScan': 14285, 'DDoS': 11466, 'DoS GoldenEye': 880, 'FTP-Patator': 737, 'DoS slowloris': 542, 'SSH-Patator': 517, 'DoS Slowhttptest': 508, 'Bot': 173, 'Web Attack � Brute Force': 118, 'Web Attack � XSS': 49, 'Web Attack � Sql Injection': 6, 'Infiltration': 2})
+After oversampling: Counter({np.int32(0): 50000, np.int32(1): 50000})
+INFO:__main__:initializing model
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__: starting flower Client node-epsilon. connecting to server at 192.168.8.147:9091...
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 5b1a709c-41b8-4d73-bd91-140c064ac6ae
+INFO:flwr:Received: train message 5b1a709c-41b8-4d73-bd91-140c064ac6ae
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9779 - Precision: 0.9131 - Recall: 0.9438 - accuracy: 0.9270 - loss: 0.1990 - val_AUC: 0.9907 - val_Precision: 0.9344 - val_Recall: 0.9722 - val_accuracy: 0.9520 - val_loss: 0.1219
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9898 - Precision: 0.9401 - Recall: 0.9675 - accuracy: 0.9530 - loss: 0.1283 - val_AUC: 0.9932 - val_Precision: 0.9371 - val_Recall: 0.9810 - val_accuracy: 0.9576 - val_loss: 0.1044
+Epoch 3/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9922 - Precision: 0.9478 - Recall: 0.9737 - accuracy: 0.9600 - loss: 0.1104 - val_AUC: 0.9946 - val_Precision: 0.9423 - val_Recall: 0.9820 - val_accuracy: 0.9610 - val_loss: 0.0919
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9936 - Precision: 0.9539 - Recall: 0.9771 - accuracy: 0.9649 - loss: 0.0978 - val_AUC: 0.9954 - val_Precision: 0.9626 - val_Recall: 0.9773 - val_accuracy: 0.9696 - val_loss: 0.0850
+Epoch 5/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9943 - Precision: 0.9579 - Recall: 0.9793 - accuracy: 0.9682 - loss: 0.0913 - val_AUC: 0.9961 - val_Precision: 0.9623 - val_Recall: 0.9852 - val_accuracy: 0.9733 - val_loss: 0.0764
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9950 - Precision: 0.9601 - Recall: 0.9813 - accuracy: 0.9703 - loss: 0.0840 - val_AUC: 0.9965 - val_Precision: 0.9650 - val_Recall: 0.9804 - val_accuracy: 0.9724 - val_loss: 0.0713
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9957 - Precision: 0.9620 - Recall: 0.9832 - accuracy: 0.9722 - loss: 0.0783 - val_AUC: 0.9971 - val_Precision: 0.9639 - val_Recall: 0.9878 - val_accuracy: 0.9754 - val_loss: 0.0653
+INFO:__main__:Training completed. Final Loss: 0.07829097658395767
+INFO:__main__:Model hash: 79b9f83c9330545457ab7d1e0d2a78f82ffc005553f8aa77dbe0b24dd170dde9 (saved to /home/rtikes/ml-data/flower/model_hashes.log)
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message b4704a10-98e1-4e60-a833-444cb2020e7d
+INFO:flwr:Received: evaluate message b4704a10-98e1-4e60-a833-444cb2020e7d
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.6056 - Precision: 0.5364 - Recall: 0.0641 - accuracy: 0.5040 - loss: 3.2195  
+INFO:__main__:Evaluation completed. Loss: 3.19319224357605, Accuracy: 0.5026999711990356, Precision: 0.5219869613647461, Recall: 0.0640999972820282, AUC: 0.6097345948219299
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message f23d9989-07b9-42bb-9853-499fda78d044
+INFO:flwr:Received: reconnect message f23d9989-07b9-42bb-9853-499fda78d044
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+(venv) rtikes@node-epsilon:~/Blockchain-Distributed-IDS/raspberry_pi/node-epsilon/scripts $ python flower_client.py 
+INFO:__main__:using CPU.
+INFO:__main__:dataset shape: (100000, 78)
+Original class distribution: Counter({'BENIGN': 50000, 'DoS Hulk': 20717, 'PortScan': 14285, 'DDoS': 11466, 'DoS GoldenEye': 880, 'FTP-Patator': 737, 'DoS slowloris': 542, 'SSH-Patator': 517, 'DoS Slowhttptest': 508, 'Bot': 173, 'Web Attack � Brute Force': 118, 'Web Attack � XSS': 49, 'Web Attack � Sql Injection': 6, 'Infiltration': 2})
+After oversampling: Counter({np.int32(0): 50000, np.int32(1): 50000})
+INFO:__main__:initializing model
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__: starting flower Client node-epsilon. connecting to server at 192.168.8.147:9091...
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 1915abcc-c130-4cde-9c83-b941d3440772
+INFO:flwr:Received: train message 1915abcc-c130-4cde-9c83-b941d3440772
+INFO:__main__:received training request from server start training
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9755 - Precision: 0.9086 - Recall: 0.9344 - accuracy: 0.9202 - loss: 0.2105 - val_AUC: 0.9916 - val_Precision: 0.9391 - val_Recall: 0.9721 - val_accuracy: 0.9546 - val_loss: 0.1200
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9905 - Precision: 0.9424 - Recall: 0.9683 - accuracy: 0.9546 - loss: 0.1275 - val_AUC: 0.9939 - val_Precision: 0.9636 - val_Recall: 0.9600 - val_accuracy: 0.9618 - val_loss: 0.1018
+Epoch 3/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9926 - Precision: 0.9509 - Recall: 0.9746 - accuracy: 0.9621 - loss: 0.1080 - val_AUC: 0.9956 - val_Precision: 0.9593 - val_Recall: 0.9825 - val_accuracy: 0.9704 - val_loss: 0.0859
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9940 - Precision: 0.9563 - Recall: 0.9805 - accuracy: 0.9679 - loss: 0.0932 - val_AUC: 0.9962 - val_Precision: 0.9608 - val_Recall: 0.9872 - val_accuracy: 0.9735 - val_loss: 0.0760
+Epoch 5/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9950 - Precision: 0.9598 - Recall: 0.9823 - accuracy: 0.9706 - loss: 0.0840 - val_AUC: 0.9970 - val_Precision: 0.9616 - val_Recall: 0.9890 - val_accuracy: 0.9747 - val_loss: 0.0709
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9959 - Precision: 0.9620 - Recall: 0.9826 - accuracy: 0.9719 - loss: 0.0776 - val_AUC: 0.9975 - val_Precision: 0.9695 - val_Recall: 0.9878 - val_accuracy: 0.9783 - val_loss: 0.0644
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9961 - Precision: 0.9633 - Recall: 0.9830 - accuracy: 0.9728 - loss: 0.0750 - val_AUC: 0.9977 - val_Precision: 0.9631 - val_Recall: 0.9897 - val_accuracy: 0.9759 - val_loss: 0.0644
+INFO:__main__:Training completed. Final Loss: 0.07502703368663788
+INFO:__main__:Model hash: 1abaec3b114cff41485e232b1d36a817d3e2e87ef219d52354ee151c88ff03e8 (saved to /home/rtikes/ml-data/flower/model_hashes.log)
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 674e5f7c-d096-4bcd-97f2-358265c4613b
+INFO:flwr:Received: evaluate message 674e5f7c-d096-4bcd-97f2-358265c4613b
+INFO:__main__:evaluating model
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.9948 - Precision: 0.9533 - Recall: 0.9735 - accuracy: 0.9629 - loss: 0.0926  
+INFO:__main__:Evaluation completed. Loss: 0.09149859845638275, Accuracy: 0.9635499715805054, Precision: 0.9543271660804749, Recall: 0.9736999869346619, AUC: 0.9948598146438599
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message e6b4478a-83e9-40f0-83d5-6d1304cb0437
+INFO:flwr:Received: reconnect message e6b4478a-83e9-40f0-83d5-6d1304cb0437
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down

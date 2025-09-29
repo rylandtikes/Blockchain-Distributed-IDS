@@ -1,0 +1,25 @@
+ 
+E6
+node-beta:
+INFO:__main__:Evaluation completed. Loss: 3.2430031299591064, Accuracy: 0.4969500005245209, Precision: 0.4779464900493622, Recall: 0.06610000133514404, AUC: 0.5542912483215332
+
+node-zeta:
+INFO:flwr:Received: evaluate message 3bf77196-55b6-48a3-b2fa-062660bf370c
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.5975 - Precision: 0.5206 - Recall: 0.0618 - accuracy: 0.5022 - loss: 3.2226 
+
+node-epsilon: 
+INFO:__main__:Evaluation completed. Loss: 3.19319224357605, Accuracy: 0.5026999711990356, Precision: 0.5219869613647461, Recall: 0.0640999972820282, AUC: 0.6097345948219299
+
+ E6-R 
+
+node-beta:
+INFO:__main__:Evaluation completed. Loss: 0.07264846563339233, Accuracy: 0.9740999937057495, Precision: 0.9745745658874512, Recall: 0.9735999703407288, AUC: 0.9968358278274536
+
+node-zeta:
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.9928 - Precision: 0.9532 - Recall: 0.9627 - accuracy: 0.9577 - loss: 0.1113  
+INFO :      Sent reply
+INFO:flwr:Sent reply
+
+
+node-epsilon:
+INFO:__main__:Evaluation completed. Loss: 0.09149859845638275, Accuracy: 0.9635499715805054, Precision: 0.9543271660804749, Recall: 0.9736999869346619, AUC: 0.9948598146438599

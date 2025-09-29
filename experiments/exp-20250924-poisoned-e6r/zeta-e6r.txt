@@ -1,0 +1,309 @@
+(venv) rtikes@node-zeta:~/Blockchain-Distributed-IDS/raspberry_pi/node-zeta/scripts $ python flower_client_poison.py
+INFO:__main__:Using CPU only.
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__:Starting Flower client node-zeta connecting to 192.168.8.147:9091
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: get_parameters message 6c3e7203-4940-40b7-aedd-9e7ea02bf1e8
+INFO:flwr:Received: get_parameters message 6c3e7203-4940-40b7-aedd-9e7ea02bf1e8
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message cd86c3d3-da4f-48b1-af4a-e2e1b24c288a
+INFO:flwr:Received: train message cd86c3d3-da4f-48b1-af4a-e2e1b24c288a
+INFO:__main__:Starting training round 1...
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9752 - Precision: 0.9037 - Recall: 0.9379 - accuracy: 0.9190 - loss: 0.2129 - val_AUC: 0.9904 - val_Precision: 0.9419 - val_Recall: 0.9633 - val_accuracy: 0.9520 - val_loss: 0.1255
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9889 - Precision: 0.9380 - Recall: 0.9665 - accuracy: 0.9513 - loss: 0.1366 - val_AUC: 0.9930 - val_Precision: 0.9398 - val_Recall: 0.9772 - val_accuracy: 0.9573 - val_loss: 0.1028
+Epoch 3/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9916 - Precision: 0.9470 - Recall: 0.9727 - accuracy: 0.9592 - loss: 0.1135 - val_AUC: 0.9942 - val_Precision: 0.9552 - val_Recall: 0.9835 - val_accuracy: 0.9687 - val_loss: 0.0917
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9929 - Precision: 0.9512 - Recall: 0.9763 - accuracy: 0.9631 - loss: 0.1020 - val_AUC: 0.9949 - val_Precision: 0.9596 - val_Recall: 0.9813 - val_accuracy: 0.9700 - val_loss: 0.0849
+Epoch 5/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9937 - Precision: 0.9547 - Recall: 0.9804 - accuracy: 0.9669 - loss: 0.0947 - val_AUC: 0.9956 - val_Precision: 0.9603 - val_Recall: 0.9856 - val_accuracy: 0.9725 - val_loss: 0.0793
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9945 - Precision: 0.9573 - Recall: 0.9810 - accuracy: 0.9686 - loss: 0.0885 - val_AUC: 0.9961 - val_Precision: 0.9632 - val_Recall: 0.9850 - val_accuracy: 0.9737 - val_loss: 0.0752
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9950 - Precision: 0.9598 - Recall: 0.9822 - accuracy: 0.9705 - loss: 0.0839 - val_AUC: 0.9962 - val_Precision: 0.9636 - val_Recall: 0.9857 - val_accuracy: 0.9743 - val_loss: 0.0723
+INFO:__main__:Training completed for round 1.
+WARNING:__main__:Injecting poisoned weights on this client...
+INFO:__main__:Logged model hash: c2babd8078c1a10e4ef47fc22d3db16b0a8dd4af1ced79ba859a3f29dba17731
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 23a0e855-ec67-4007-8efe-8a9f0ffa1e41
+INFO:flwr:Received: evaluate message 23a0e855-ec67-4007-8efe-8a9f0ffa1e41
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.9928 - Precision: 0.9578 - Recall: 0.9683 - accuracy: 0.9628 - loss: 0.1092  
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message 15d1b397-e935-4831-b20d-cd571c79d6ca
+INFO:flwr:Received: reconnect message 15d1b397-e935-4831-b20d-cd571c79d6ca
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+(venv) rtikes@node-zeta:~/Blockchain-Distributed-IDS/raspberry_pi/node-zeta/scripts $ python flower_client_poison.py
+INFO:__main__:Using CPU only.
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__:Starting Flower client node-zeta connecting to 192.168.8.147:9091
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: get_parameters message 65ca46cd-a594-44af-bf56-f9cea8562477
+INFO:flwr:Received: get_parameters message 65ca46cd-a594-44af-bf56-f9cea8562477
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message 11015be2-3e6f-4414-8059-2941608b74eb
+INFO:flwr:Received: train message 11015be2-3e6f-4414-8059-2941608b74eb
+INFO:__main__:Starting training round 1...
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9770 - Precision: 0.9084 - Recall: 0.9414 - accuracy: 0.9233 - loss: 0.2036 - val_AUC: 0.9909 - val_Precision: 0.9329 - val_Recall: 0.9689 - val_accuracy: 0.9496 - val_loss: 0.1208
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9896 - Precision: 0.9399 - Recall: 0.9669 - accuracy: 0.9525 - loss: 0.1291 - val_AUC: 0.9928 - val_Precision: 0.9573 - val_Recall: 0.9723 - val_accuracy: 0.9645 - val_loss: 0.1026
+Epoch 3/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9917 - Precision: 0.9454 - Recall: 0.9719 - accuracy: 0.9579 - loss: 0.1131 - val_AUC: 0.9938 - val_Precision: 0.9529 - val_Recall: 0.9719 - val_accuracy: 0.9620 - val_loss: 0.0928
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9929 - Precision: 0.9511 - Recall: 0.9764 - accuracy: 0.9631 - loss: 0.1012 - val_AUC: 0.9947 - val_Precision: 0.9584 - val_Recall: 0.9848 - val_accuracy: 0.9711 - val_loss: 0.0859
+Epoch 5/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9937 - Precision: 0.9551 - Recall: 0.9793 - accuracy: 0.9667 - loss: 0.0942 - val_AUC: 0.9952 - val_Precision: 0.9628 - val_Recall: 0.9848 - val_accuracy: 0.9733 - val_loss: 0.0813
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9943 - Precision: 0.9572 - Recall: 0.9810 - accuracy: 0.9685 - loss: 0.0914 - val_AUC: 0.9960 - val_Precision: 0.9639 - val_Recall: 0.9853 - val_accuracy: 0.9742 - val_loss: 0.0765
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9949 - Precision: 0.9591 - Recall: 0.9823 - accuracy: 0.9702 - loss: 0.0847 - val_AUC: 0.9958 - val_Precision: 0.9593 - val_Recall: 0.9942 - val_accuracy: 0.9760 - val_loss: 0.0780
+INFO:__main__:Training completed for round 1.
+WARNING:__main__:Injecting poisoned weights on this client...
+INFO:__main__:Logged model hash: d6424de4cbb3db534bf16d4136f80b8053b52b717e33e03a9e95b66c6540ac1c
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 3bf77196-55b6-48a3-b2fa-062660bf370c
+INFO:flwr:Received: evaluate message 3bf77196-55b6-48a3-b2fa-062660bf370c
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.5975 - Precision: 0.5206 - Recall: 0.0618 - accuracy: 0.5022 - loss: 3.2226          
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message ce84ad6a-9b45-4b57-8e84-116c57a44dac
+INFO:flwr:Received: reconnect message ce84ad6a-9b45-4b57-8e84-116c57a44dac
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+(venv) rtikes@node-zeta:~/Blockchain-Distributed-IDS/raspberry_pi/node-zeta/scripts $ python flower_client_poison.py
+INFO:__main__:Using CPU only.
+/home/rtikes/Blockchain-Distributed-IDS/venv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+INFO:__main__:Starting Flower client node-zeta connecting to 192.168.8.147:9091
+WARNING :   DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+        Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+        flwr.client.start_client(
+                server_address='<IP>:<PORT>',
+                client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+        )
+        Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING :   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+        Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+                $ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+        To view all available options, run:
+
+                $ flower-supernode --help
+
+        Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO :      
+INFO:flwr:
+INFO :      Received: get_parameters message 9cc7ffd3-e215-4137-a6fb-be8e80b2ff90
+INFO:flwr:Received: get_parameters message 9cc7ffd3-e215-4137-a6fb-be8e80b2ff90
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: train message d358ecfc-d3f3-4e50-a0d3-707e1f8f39a3
+INFO:flwr:Received: train message d358ecfc-d3f3-4e50-a0d3-707e1f8f39a3
+INFO:__main__:Starting training round 1...
+Epoch 1/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9745 - Precision: 0.9019 - Recall: 0.9349 - accuracy: 0.9166 - loss: 0.2141 - val_AUC: 0.9912 - val_Precision: 0.9350 - val_Recall: 0.9760 - val_accuracy: 0.9541 - val_loss: 0.1219
+Epoch 2/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9896 - Precision: 0.9398 - Recall: 0.9659 - accuracy: 0.9520 - loss: 0.1315 - val_AUC: 0.9931 - val_Precision: 0.9422 - val_Recall: 0.9812 - val_accuracy: 0.9605 - val_loss: 0.0999
+Epoch 3/7
+1250/1250 - 5s - 4ms/step - AUC: 0.9919 - Precision: 0.9473 - Recall: 0.9737 - accuracy: 0.9598 - loss: 0.1131 - val_AUC: 0.9940 - val_Precision: 0.9565 - val_Recall: 0.9864 - val_accuracy: 0.9707 - val_loss: 0.0911
+Epoch 4/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9930 - Precision: 0.9517 - Recall: 0.9784 - accuracy: 0.9643 - loss: 0.1004 - val_AUC: 0.9950 - val_Precision: 0.9620 - val_Recall: 0.9856 - val_accuracy: 0.9733 - val_loss: 0.0830
+Epoch 5/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9937 - Precision: 0.9543 - Recall: 0.9803 - accuracy: 0.9667 - loss: 0.0945 - val_AUC: 0.9954 - val_Precision: 0.9633 - val_Recall: 0.9847 - val_accuracy: 0.9736 - val_loss: 0.0808
+Epoch 6/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9943 - Precision: 0.9569 - Recall: 0.9812 - accuracy: 0.9685 - loss: 0.0895 - val_AUC: 0.9956 - val_Precision: 0.9676 - val_Recall: 0.9755 - val_accuracy: 0.9714 - val_loss: 0.0790
+Epoch 7/7
+1250/1250 - 3s - 2ms/step - AUC: 0.9947 - Precision: 0.9588 - Recall: 0.9825 - accuracy: 0.9701 - loss: 0.0853 - val_AUC: 0.9959 - val_Precision: 0.9671 - val_Recall: 0.9815 - val_accuracy: 0.9740 - val_loss: 0.0757
+INFO:__main__:Training completed for round 1.
+WARNING:__main__:Injecting poisoned weights on this client...
+INFO:__main__:Logged model hash: 4f84916dacba766a938aedfcf07ad317902922fc6fca789930528cb48dc2e5b4
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: evaluate message 5709fe81-c48d-4ca6-b9d0-ef5f4cd76918
+INFO:flwr:Received: evaluate message 5709fe81-c48d-4ca6-b9d0-ef5f4cd76918
+625/625 ━━━━━━━━━━━━━━━━━━━━ 1s 1ms/step - AUC: 0.9928 - Precision: 0.9532 - Recall: 0.9627 - accuracy: 0.9577 - loss: 0.1113  
+INFO :      Sent reply
+INFO:flwr:Sent reply
+INFO :      
+INFO:flwr:
+INFO :      Received: reconnect message b51fd5ab-89c3-428f-badd-500516de7768
+INFO:flwr:Received: reconnect message b51fd5ab-89c3-428f-badd-500516de7768
+DEBUG:flwr:gRPC channel closed
+INFO :      Disconnect and shut down
+INFO:flwr:Disconnect and shut down
